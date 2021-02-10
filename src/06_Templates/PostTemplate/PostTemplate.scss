@@ -1,0 +1,20 @@
+/*
+ * Post Template Styles
+ *
+ */
+
+.post-template {
+    margin-top: spacing(xxxl);
+
+    &__frontmatter {
+        margin: spacing(xxxl) 0;
+    }
+
+    &__date {
+        font-weight: font-weight(bold);
+    }
+
+    &__content {
+        margin: spacing(l) 0;
+    }
+}
