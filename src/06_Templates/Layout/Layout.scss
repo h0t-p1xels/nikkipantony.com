@@ -3,13 +3,13 @@
  *
  */
 
-// Height of Header + Footer Components
-$header-and-footer: 10.5rem;
+// Height of Footer Component
+$footer: 5rem;
 
 .layout {
     margin: 0 auto;
     max-width: wrapper(SiteMaxWidth);
     padding: spacing(xxxl) spacing(l);
     // Sets minimum page height to viewport height - (Header + Footer) height to keep footer at bottom of page
-    min-height: calc(100vh - #{$header-and-footer});
+    min-height: calc(100vh - #{$footer});
 }
