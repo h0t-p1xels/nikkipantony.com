@@ -4,10 +4,10 @@
  */
 
 import React from "react"
-import Layout from "./MainLayout"
+import Layout from "./Layout"
 
 export default {
-    title: "Templates/Main Layout",
+    title: "Templates/Layout",
     component: Layout,
 }
 

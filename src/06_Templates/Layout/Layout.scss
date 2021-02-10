@@ -1,12 +1,12 @@
 /*
- * Main Layout Template Styles
+ * Layout Template Styles
  *
  */
 
 // Height of Header + Footer Components
 $header-and-footer: 10.5rem;
 
-.main-layout {
+.layout {
     margin: 0 auto;
     max-width: wrapper(SiteMaxWidth);
     padding: spacing(xxxl) spacing(l);

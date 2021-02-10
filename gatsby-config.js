@@ -16,6 +16,8 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
         `gatsby-transformer-remark`,
+        `gatsby-transformer-sharp`,
+        `gatsby-plugin-sharp`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -23,22 +25,13 @@ module.exports = {
                 path: `${__dirname}/src/08_Images`,
             },
         },
-        `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
         {
-            resolve: `gatsby-source-filesystem`,
+            resolve: `gatsby-plugin-page-creator`,
             options: {
-                name: `posts`,
-                path: `${__dirname}/src/07_Pages/BlogPosts`,
+                path: `${__dirname}/src/07_Pages`,
             },
         },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `pages`,
-                path: `${__dirname}/src/07_Pages/MainPages`,
-            },
-        },
+
         `gatsby-transformer-json`,
         {
             resolve: `gatsby-source-filesystem`,
