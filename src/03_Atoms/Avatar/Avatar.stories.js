@@ -6,11 +6,11 @@
  */
 
 import React from "react"
-import Figure from "./Figure"
+import Avatar from "./Avatar"
 
 export default {
-    title: "Atoms/Figure",
-    component: Figure,
+    title: "Atoms/Avatar",
+    component: Avatar,
 }
 
-export const maxWidth500 = () => <Figure />
+export const maxWidth500 = () => <Avatar />

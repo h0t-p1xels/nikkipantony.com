@@ -7,9 +7,16 @@
 $footer: 5rem;
 
 .layout {
-    margin: 0 auto;
-    max-width: wrapper(SiteMaxWidth);
-    padding: spacing(xxxl) spacing(l);
+    display: grid;
+    width: 100%;
     // Sets minimum page height to viewport height - (Header + Footer) height to keep footer at bottom of page
     min-height: calc(100vh - #{$footer});
+
+    &__main {
+        margin: auto;
+        max-width: wrapper(SmallSiteMaxWidth);
+        padding: spacing(xxxl) spacing(l);
+
+        // display: flex;
+    }
 }

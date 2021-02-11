@@ -5,15 +5,11 @@
  */
 
 // Typeface Varible String Values
-$rubik: "Rubik", sans-serif;
-$archivo: "Archivo", sans-serif;
-$mono: "IBM Plex Mono", monospace;
+$sourcesans: "Source Sans Pro", sans-serif;
 
 // Typeface Values
 $typefaces: (
-    rubik: $rubik,
-    archivo: $archivo,
-    mono: $mono,
+    sourcesans: $sourcesans,
 );
 
 // Typeface Design Tokens Config
@@ -29,7 +25,5 @@ $typefaces: (
 // Typeface Design Token Usage With VS Code Code Snippets
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
-    tr  font-family: typeface(rubik);
-    ta  font-family: typeface(archivo);
-    tm  font-family: typeface(mono);
+    ??  font-family: typeface(sourcesans);
 */

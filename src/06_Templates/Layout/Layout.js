@@ -8,7 +8,9 @@ import Footer from "../../05_Organisms/Footer/Footer"
 
 const Layout = ({ children }) => (
     <>
-        <main className="layout">{children}</main>
+        <div className="layout">
+            <main className="layout__main">{children}</main>
+        </div>
         <Footer />
     </>
 )

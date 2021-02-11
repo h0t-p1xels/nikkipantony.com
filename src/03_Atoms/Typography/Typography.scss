@@ -16,12 +16,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: typeface(rubik);
+    font-family: typeface(sourcesans);
     font-weight: font-weight(bold);
     line-height: leading(regular);
     letter-spacing: tracking(normal);
     color: brand-color(midnight);
-    margin-bottom: spacing(l);
+    margin: spacing(m) 0;
 }
 
 h2,
@@ -33,7 +33,8 @@ h6 {
 }
 
 h1 {
-    font-size: font-size(hxl);
+    font-size: font-size(hxxs);
+    // font-size: font-size(hxl);
 }
 
 h2 {
@@ -61,13 +62,15 @@ h6 {
 // The <p> element represents a paragraph. Paragraphs are represented in visual media as
 // blocks of text separated from adjacent blocks by blank lines and/or first-line indentation.
 p {
-    font-family: typeface(archivo);
-    font-size: font-size(cm);
-    font-weight: font-weight(regular);
+    font-family: typeface(sourcesans);
+    font-size: font-size(cs);
+    font-weight: font-weight(semibold);
     line-height: leading(regular);
     letter-spacing: tracking(normal);
     color: brand-color(midnight);
     padding-bottom: spacing(l);
+
+    // font-size: font-size(cm);
 }
 
 // Anchor Links
@@ -80,7 +83,7 @@ p {
 a,
 a:link,
 a:visited {
-    font-family: typeface(archivo);
+    font-family: typeface(sourcesans);
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     line-height: leading(regular);
@@ -104,13 +107,17 @@ a:visited {
 // The <ol> element represents an ordered list of items — typically rendered as a numbered list.
 ul,
 ol {
-    margin: spacing(xl) 0;
-    padding-left: spacing(xxxxl);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
 
     li {
-        margin: spacing(xxs) 0;
-        font-size: font-size(cm);
+        margin: spacing(s) 0;
+        font-size: font-size(cxs);
         font-weight: font-weight(bold);
+
+        // font-size: font-size(cm);
     }
 }
 
@@ -271,7 +278,7 @@ code {
     font-weight: font-weight(bold);
     background-color: brand-color(midnight);
     border-radius: radius(square);
-    font-family: typeface(mono);
+    font-family: typeface(sourcesans);
 }
 
 // Preformatted Text (Code Blocks)
@@ -287,7 +294,7 @@ pre {
     ) !important; // Important so it overrides Storybook styling
     background-color: brand-color(midnight);
     border-radius: radius(square);
-    font-family: typeface(mono);
+    font-family: typeface(sourcesans);
     padding: spacing(s);
     margin: 0 0 spacing(xl);
 }
@@ -297,7 +304,7 @@ pre {
 // The <time> element represents a specific period in time. It may include the datetime attribute to translate dates into
 // machine-readable format, allowing for better search engine results or custom features such as reminders.
 time {
-    font-family: typeface(archivo);
+    font-family: typeface(sourcesans);
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     line-height: leading(regular);
@@ -312,7 +319,7 @@ time {
 // this is not mandated by the HTML standard.
 kbd {
     display: inline-block;
-    font-family: typeface(mono);
+    font-family: typeface(sourcesans);
     font-size: font-size(cm);
     color: brand-color(midnight);
     font-weight: font-weight(bold);
@@ -337,7 +344,7 @@ samp {
     font-weight: font-weight(bold);
     background-color: brand-color(midnight);
     border-radius: radius(square);
-    font-family: typeface(mono);
+    font-family: typeface(sourcesans);
     padding: spacing(m);
     margin: 0 0 spacing(xl);
 }

@@ -9,7 +9,7 @@
     width: 100%;
 
     &__inner {
-        max-width: wrapper(SiteMaxWidth);
+        max-width: wrapper(SmallSiteMaxWidth);
         padding: spacing(s) spacing(l);
         margin: 0 auto;
     }
