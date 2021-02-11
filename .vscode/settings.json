@@ -17,6 +17,7 @@
 		"design_assets": "Custom",
 		"design_tokens": "Theme",
 		"node_modules": "Node",
+		"Icon": "",
 		"public": "Public",
 		"public-design-system": "Public",
 		"public-storybook": "Public",
