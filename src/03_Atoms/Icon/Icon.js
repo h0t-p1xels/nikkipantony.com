@@ -13,18 +13,16 @@ import IconsSprite from "./IconSprite.svg"
 
 const Icon = props => {
     return (
-        <>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 24 24"
-                focusable="false"
-                className={`icon ${props.fill} ${props.modifier}`}
-            >
-                <title>{props.title}</title>
-                <use xlinkHref={`${IconsSprite}#${props.name}`} />
-            </svg>
-        </>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 24 24"
+            focusable="false"
+            className={`icon ${props.fill} ${props.modifier}`}
+        >
+            <title>{props.title}</title>
+            <use xlinkHref={`${IconsSprite}#${props.name}`} />
+        </svg>
     )
 }
 

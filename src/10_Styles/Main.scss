@@ -21,11 +21,12 @@
 @import "../10_Styles/Global";
 
 // Atom Styles
-@import "../03_Atoms/Typography/Typography";
 @import "../03_Atoms/Avatar/Avatar";
 @import "../03_Atoms/Icon/Icon";
+@import "../03_Atoms/Typography/Typography";
 
 // Molecule Styles
+@import "../04_Molecules/Contact/Contact";
 @import "../04_Molecules/SocalIcons/SocialIcons";
 
 // Organism Styles

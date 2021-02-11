@@ -1,7 +1,7 @@
 import React from "react"
 import AvatarImage from "../../08_Images/Avatar.jpg"
 
-function Avatar() {
+const Avatar = () => {
     return (
         <img
             className="avatar"
@@ -10,4 +10,5 @@ function Avatar() {
         />
     )
 }
+
 export default Avatar
