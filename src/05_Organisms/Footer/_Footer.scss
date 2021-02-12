@@ -13,11 +13,11 @@
         padding: spacing(s) spacing(l);
         margin: 0 auto;
 
-        @media (min-width: breakpoint(xs)) {
+        @media (min-width: breakpoint(s)) {
             max-width: wrapper(mediumSiteMaxWidth);
         }
 
-        @media (min-width: breakpoint(s)) {
+        @media (min-width: breakpoint(m)) {
             max-width: wrapper(LargeSiteMaxWidth);
         }
     }

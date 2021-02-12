@@ -21,7 +21,7 @@ h6 {
     line-height: leading(regular);
     letter-spacing: tracking(normal);
     color: brand-color(midnight);
-    margin: spacing(m) 0 spacing(xs);
+    margin: spacing(l) 0 spacing(xs);
 }
 
 h2,
@@ -35,11 +35,11 @@ h6 {
 h1 {
     font-size: font-size(hxxs);
 
-    @media (min-width: breakpoint(xs)) {
+    @media (min-width: breakpoint(s)) {
         font-size: font-size(hs);
     }
 
-    @media (min-width: breakpoint(s)) {
+    @media (min-width: breakpoint(m)) {
         font-size: font-size(hl);
     }
 }
@@ -77,11 +77,11 @@ p {
     color: brand-color(midnight);
     padding-bottom: spacing(l);
 
-    @media (min-width: breakpoint(xs)) {
+    @media (min-width: breakpoint(s)) {
         font-size: font-size(cs);
     }
 
-    @media (min-width: breakpoint(s)) {
+    @media (min-width: breakpoint(m)) {
         font-size: font-size(cm);
     }
 }
@@ -131,7 +131,7 @@ ol {
         font-weight: font-weight(bold);
         color: brand-color(midnight);
 
-        @media (min-width: breakpoint(xs)) {
+        @media (min-width: breakpoint(s)) {
             font-size: font-size(cxs);
         }
     }

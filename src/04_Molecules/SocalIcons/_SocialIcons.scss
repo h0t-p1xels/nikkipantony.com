@@ -3,7 +3,7 @@
     justify-content: space-between;
     margin: spacing(l) 0 0 -4px;
 
-    @media (min-width: breakpoint(xs)) {
+    @media (min-width: breakpoint(s)) {
         max-width: 340px;
         margin-top: spacing(xxxxl);
     }
@@ -12,7 +12,7 @@
         width: 36px;
         height: 36px;
 
-        @media (min-width: breakpoint(xs)) {
+        @media (min-width: breakpoint(s)) {
             width: 44px;
             height: 44px;
         }

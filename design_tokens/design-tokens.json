@@ -138,59 +138,64 @@
   },
   {
     "name": "$font-sizes",
-    "value": "( hxl: 3rem, hl: 2.5rem, hm: 2rem, hs: 1.625rem, hxs: 1.25rem, hxxs: 1.125rem, cm: 1.125rem, cs: 1rem, cxs: 0.875rem, )",
+    "value": "( hxl: 5rem, hl: 4.5rem, hm: 4rem, hs: 3.5rem, hxs: 3rem, hxxs: 2.3rem, cm: 1.6rem, cs: 1.3rem, cxs: 1.2rem, cxxs: 1rem, )",
     "mapValue": [
       {
         "name": "hxl",
+        "value": "5rem",
+        "compiledValue": "5rem"
+      },
+      {
+        "name": "hl",
+        "value": "4.5rem",
+        "compiledValue": "4.5rem"
+      },
+      {
+        "name": "hm",
+        "value": "4rem",
+        "compiledValue": "4rem"
+      },
+      {
+        "name": "hs",
+        "value": "3.5rem",
+        "compiledValue": "3.5rem"
+      },
+      {
+        "name": "hxs",
         "value": "3rem",
         "compiledValue": "3rem"
       },
       {
-        "name": "hl",
-        "value": "2.5rem",
-        "compiledValue": "2.5rem"
-      },
-      {
-        "name": "hm",
-        "value": "2rem",
-        "compiledValue": "2rem"
-      },
-      {
-        "name": "hs",
-        "value": "1.625rem",
-        "compiledValue": "1.625rem"
-      },
-      {
-        "name": "hxs",
-        "value": "1.25rem",
-        "compiledValue": "1.25rem"
-      },
-      {
         "name": "hxxs",
-        "value": "1.125rem",
-        "compiledValue": "1.125rem"
+        "value": "2.3rem",
+        "compiledValue": "2.3rem"
       },
       {
         "name": "cm",
-        "value": "1.125rem",
-        "compiledValue": "1.125rem"
+        "value": "1.6rem",
+        "compiledValue": "1.6rem"
       },
       {
         "name": "cs",
-        "value": "1rem",
-        "compiledValue": "1rem"
+        "value": "1.3rem",
+        "compiledValue": "1.3rem"
       },
       {
         "name": "cxs",
-        "value": "0.875rem",
-        "compiledValue": "0.875rem"
+        "value": "1.2rem",
+        "compiledValue": "1.2rem"
+      },
+      {
+        "name": "cxxs",
+        "value": "1rem",
+        "compiledValue": "1rem"
       }
     ],
-    "compiledValue": "(hxl: 3rem, hl: 2.5rem, hm: 2rem, hs: 1.625rem, hxs: 1.25rem, hxxs: 1.125rem, cm: 1.125rem, cs: 1rem, cxs: 0.875rem)"
+    "compiledValue": "(hxl: 5rem, hl: 4.5rem, hm: 4rem, hs: 3.5rem, hxs: 3rem, hxxs: 2.3rem, cm: 1.6rem, cs: 1.3rem, cxs: 1.2rem, cxxs: 1rem)"
   },
   {
     "name": "$font-weights",
-    "value": "( regular: 400, bold: 700, )",
+    "value": "( regular: 400, semibold: 600, bold: 900, )",
     "mapValue": [
       {
         "name": "regular",
@@ -198,12 +203,17 @@
         "compiledValue": "400"
       },
       {
+        "name": "semibold",
+        "value": "600",
+        "compiledValue": "600"
+      },
+      {
         "name": "bold",
-        "value": "700",
-        "compiledValue": "700"
+        "value": "900",
+        "compiledValue": "900"
       }
     ],
-    "compiledValue": "(regular: 400, bold: 700)"
+    "compiledValue": "(regular: 400, semibold: 600, bold: 900)"
   },
   {
     "name": "$leading",
@@ -240,41 +250,21 @@
     "compiledValue": "(normal: \"normal\", wide: 0.1rem)"
   },
   {
-    "name": "$rubik",
-    "value": "\"Rubik\", sans-serif",
-    "compiledValue": "Rubik, sans-serif"
-  },
-  {
-    "name": "$archivo",
-    "value": "\"Archivo\", sans-serif",
-    "compiledValue": "Archivo, sans-serif"
-  },
-  {
-    "name": "$mono",
-    "value": "\"IBM Plex Mono\", monospace",
-    "compiledValue": "IBM Plex Mono, monospace"
+    "name": "$sourcesans",
+    "value": "\"Source Sans Pro\", sans-serif",
+    "compiledValue": "Source Sans Pro, sans-serif"
   },
   {
     "name": "$typefaces",
-    "value": "( rubik: $rubik, archivo: $archivo, mono: $mono, )",
+    "value": "( sourcesans: $sourcesans, )",
     "mapValue": [
       {
-        "name": "rubik",
-        "value": "$rubik",
-        "compiledValue": "Rubik, sans-serif"
-      },
-      {
-        "name": "archivo",
-        "value": "$archivo",
-        "compiledValue": "Archivo, sans-serif"
-      },
-      {
-        "name": "mono",
-        "value": "$mono",
-        "compiledValue": "IBM Plex Mono, monospace"
+        "name": "sourcesans",
+        "value": "$sourcesans",
+        "compiledValue": "Source Sans Pro, sans-serif"
       }
     ],
-    "compiledValue": "(rubik: \"Rubik\", sans-serif, archivo: \"Archivo\", sans-serif, mono: \"IBM Plex Mono\", monospace)"
+    "compiledValue": "(sourcesans: \"Source Sans Pro\", sans-serif)"
   },
   {
     "name": "$icon-sizes",
@@ -300,13 +290,8 @@
   },
   {
     "name": "$breakpoints",
-    "value": "( xs: 380px, s: 500px, m: 950px, l: 1200px, xl: 1600px, )",
+    "value": "( s: 500px, m: 700px, )",
     "mapValue": [
-      {
-        "name": "xs",
-        "value": "380px",
-        "compiledValue": "380px"
-      },
       {
         "name": "s",
         "value": "500px",
@@ -314,21 +299,11 @@
       },
       {
         "name": "m",
-        "value": "950px",
-        "compiledValue": "950px"
-      },
-      {
-        "name": "l",
-        "value": "1200px",
-        "compiledValue": "1200px"
-      },
-      {
-        "name": "xl",
-        "value": "1600px",
-        "compiledValue": "1600px"
+        "value": "700px",
+        "compiledValue": "700px"
       }
     ],
-    "compiledValue": "(xs: 380px, s: 500px, m: 950px, l: 1200px, xl: 1600px)"
+    "compiledValue": "(s: 500px, m: 700px)"
   },
   {
     "name": "$spacing",
@@ -394,15 +369,30 @@
   },
   {
     "name": "$wrappers",
-    "value": "( SiteMaxWidth: 1600px, )",
+    "value": "( SmallSiteMaxWidth: 318px, mediumSiteMaxWidth: 500px, LargeSiteMaxWidth: 800px, SiteMaxWidth: 1200px, )",
     "mapValue": [
       {
+        "name": "SmallSiteMaxWidth",
+        "value": "318px",
+        "compiledValue": "318px"
+      },
+      {
+        "name": "mediumSiteMaxWidth",
+        "value": "500px",
+        "compiledValue": "500px"
+      },
+      {
+        "name": "LargeSiteMaxWidth",
+        "value": "800px",
+        "compiledValue": "800px"
+      },
+      {
         "name": "SiteMaxWidth",
-        "value": "1600px",
-        "compiledValue": "1600px"
+        "value": "1200px",
+        "compiledValue": "1200px"
       }
     ],
-    "compiledValue": "(SiteMaxWidth: 1600px)"
+    "compiledValue": "(SmallSiteMaxWidth: 318px, mediumSiteMaxWidth: 500px, LargeSiteMaxWidth: 800px, SiteMaxWidth: 1200px)"
   },
   {
     "name": "$zlayers",

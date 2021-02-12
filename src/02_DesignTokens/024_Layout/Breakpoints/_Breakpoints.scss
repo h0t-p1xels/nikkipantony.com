@@ -7,11 +7,8 @@
 // These values should be updated according to your design and not set according to device widths
 // Styles set before a breakpoint will apply from 0px - 379px and until overridden using the cascade using a mobile-first approach
 $breakpoints: (
-    xs: 500px,
-    s: 700px,
-    m: 950px,
-    l: 1200px,
-    xl: 1600px,
+    s: 500px,
+    m: 900px,
 );
 
 // Breakpoint Design Tokens Config
@@ -29,9 +26,6 @@ $breakpoints: (
 // A full list of media features can be found at: https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features
 // Snippets can be customized as required in: `./.vscode/ally.code-snippets`
 /*
-    bpxs     @media (min-width: breakpoint(xs)) {}
-    bps      @media (min-width: breakpoint(s)) {}
-    bpm      @media (min-width: breakpoint(m)) {}
-    bpl      @media (min-width: breakpoint(l)) {}
-    bpxl     @media (min-width: breakpoint(xl)) {}
+    bpxs     @media (min-width: breakpoint(s)) {}
+    bps      @media (min-width: breakpoint(m)) {}
 */

@@ -17,11 +17,11 @@ $footer: 5rem;
         max-width: wrapper(SmallSiteMaxWidth);
         padding: spacing(xxxl) spacing(l);
 
-        @media (min-width: breakpoint(xs)) {
+        @media (min-width: breakpoint(s)) {
             max-width: wrapper(mediumSiteMaxWidth);
         }
 
-        @media (min-width: breakpoint(s)) {
+        @media (min-width: breakpoint(m)) {
             display: flex;
             max-width: wrapper(LargeSiteMaxWidth);
         }

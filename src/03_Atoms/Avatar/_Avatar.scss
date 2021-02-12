@@ -9,9 +9,11 @@
     border-radius: 50%;
     box-shadow: spacing(xxxxs) spacing(xxxxs) spacing(xxs) spacing(xxs)
         brand-color(midnight);
-    margin: 0 0 spacing(l);
+    margin: 0 spacing(xxxxl) * 1.1 0 0;
     padding: 0;
 
-    // max-width: 200px;
-    // margin: 0;
+    @media (min-width: breakpoint(m)) {
+        width: 190px;
+        height: 190px;
+    }
 }

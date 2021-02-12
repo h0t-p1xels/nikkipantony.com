@@ -3,7 +3,7 @@
 		"prefix": "bpxs",
 		"body": [
       "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
-      "@media (min-width: breakpoint(xs)) {}",
+      "@media (min-width: breakpoint(s)) {}",
 		],
 		  "description": "Breakpoint xs"
     },
@@ -11,7 +11,7 @@
 		"prefix": "bps",
 		"body": [
       "// Manage in './src/00_design-tokens/001_layout/Breakpoints/Breakpoints'"
-      "@media (min-width: breakpoint(s)) {}",
+      "@media (min-width: breakpoint(m)) {}",
 		],
 		  "description": "Breakpoint s"
     },
