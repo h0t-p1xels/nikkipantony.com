@@ -7,8 +7,8 @@
 // These values should be updated according to your design and not set according to device widths
 // Styles set before a breakpoint will apply from 0px - 379px and until overridden using the cascade using a mobile-first approach
 $breakpoints: (
-    xs: 380px,
-    s: 500px,
+    xs: 500px,
+    s: 700px,
     m: 950px,
     l: 1200px,
     xl: 1600px,

@@ -1,10 +1,20 @@
 .social-icons {
     display: flex;
     justify-content: space-between;
-    margin: spacing(l) 0 0 -5px;
+    margin: spacing(l) 0 0 -4px;
+
+    @media (min-width: breakpoint(xs)) {
+        max-width: 340px;
+        margin-top: spacing(xxxxl);
+    }
 
     svg {
         width: 36px;
         height: 36px;
+
+        @media (min-width: breakpoint(xs)) {
+            width: 44px;
+            height: 44px;
+        }
     }
 }

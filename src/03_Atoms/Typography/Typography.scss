@@ -21,7 +21,7 @@ h6 {
     line-height: leading(regular);
     letter-spacing: tracking(normal);
     color: brand-color(midnight);
-    margin: spacing(m) 0;
+    margin: spacing(m) 0 spacing(xs);
 }
 
 h2,
@@ -34,7 +34,14 @@ h6 {
 
 h1 {
     font-size: font-size(hxxs);
-    // font-size: font-size(hxl);
+
+    @media (min-width: breakpoint(xs)) {
+        font-size: font-size(hs);
+    }
+
+    @media (min-width: breakpoint(s)) {
+        font-size: font-size(hl);
+    }
 }
 
 h2 {
@@ -63,14 +70,20 @@ h6 {
 // blocks of text separated from adjacent blocks by blank lines and/or first-line indentation.
 p {
     font-family: typeface(sourcesans);
-    font-size: font-size(cs);
+    font-size: font-size(cxs);
     font-weight: font-weight(semibold);
     line-height: leading(regular);
     letter-spacing: tracking(normal);
     color: brand-color(midnight);
     padding-bottom: spacing(l);
 
-    // font-size: font-size(cm);
+    @media (min-width: breakpoint(xs)) {
+        font-size: font-size(cs);
+    }
+
+    @media (min-width: breakpoint(s)) {
+        font-size: font-size(cm);
+    }
 }
 
 // Anchor Links
@@ -114,11 +127,13 @@ ol {
 
     li {
         margin: spacing(s) 0;
-        font-size: font-size(cxs);
+        font-size: font-size(cxxs);
         font-weight: font-weight(bold);
         color: brand-color(midnight);
 
-        // font-size: font-size(cm);
+        @media (min-width: breakpoint(xs)) {
+            font-size: font-size(cxs);
+        }
     }
 }
 

@@ -17,6 +17,13 @@ $footer: 5rem;
         max-width: wrapper(SmallSiteMaxWidth);
         padding: spacing(xxxl) spacing(l);
 
-        // display: flex;
+        @media (min-width: breakpoint(xs)) {
+            max-width: wrapper(mediumSiteMaxWidth);
+        }
+
+        @media (min-width: breakpoint(s)) {
+            display: flex;
+            max-width: wrapper(LargeSiteMaxWidth);
+        }
     }
 }

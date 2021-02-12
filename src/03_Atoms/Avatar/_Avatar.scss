@@ -4,9 +4,9 @@
  */
 
 .avatar {
-    max-width: 150px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    width: 100%;
     box-shadow: spacing(xxxxs) spacing(xxxxs) spacing(xxs) spacing(xxs)
         brand-color(midnight);
     margin: 0 0 spacing(l);
