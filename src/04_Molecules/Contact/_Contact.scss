@@ -6,6 +6,12 @@
             width: 26px;
             height: 26px;
             margin: 20px 6px -6px 0;
+
+            @media (min-width: breakpoint(s)) {
+                width: 34px;
+                height: 34px;
+                margin: 20px 6px -7px 0;
+            }
         }
     }
 }

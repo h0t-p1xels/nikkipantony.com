@@ -18,7 +18,9 @@ const Icon = props => {
             xmlnsXlink="http://www.w3.org/1999/xlink"
             viewBox="0 0 24 24"
             focusable="false"
+            role="img"
             className={`icon ${props.fill} ${props.modifier}`}
+            aria-label={props.label}
         >
             <title>{props.title}</title>
             <use xlinkHref={`${IconsSprite}#${props.name}`} />
@@ -31,6 +33,7 @@ Icon.defaultProps = {
     title: "Link will open in a new tab",
     fill: "midnight",
     modifier: "",
+    label: "",
 }
 
 Icon.propTypes = {
@@ -38,6 +41,7 @@ Icon.propTypes = {
     title: PropTypes.string.isRequired,
     fill: PropTypes.oneOf(["midnight", "snow"]),
     modifier: PropTypes.oneOf(["", "--small"]),
+    label: PropTypes.string,
 }
 
 export default Icon

@@ -5,19 +5,54 @@ const SocialIcons = () => {
     return (
         <ul className="social-icons">
             <li>
-                <Icon name="instagram" />
+                <a
+                    aria-label="Instgram logo, Click to visit Instgram profile, opens in a new tab"
+                    href="https://www.instagram.com/nikkipantony/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <Icon name="instagram" />
+                </a>
             </li>
             <li>
-                <Icon name="twitter" />
+                <a
+                    aria-label="Twitter logo, Click to visit Twitter profile, opens in a new tab"
+                    href="https://twitter.com/nikkipantony"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <Icon name="twitter" />
+                </a>
             </li>
             <li>
-                <Icon name="linkedin" />
+                <a
+                    aria-label="Linked Logo, Click to visit LinkedIn profile, opens in a new tab"
+                    href="https://www.linkedin.com/in/nikkipantony/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <Icon name="linkedin" />
+                </a>
             </li>
             <li>
-                <Icon name="github" />
+                <a
+                    aria-label="GitHub Logo, Click to visit GitHub profile, opens in a new tab"
+                    href="https://github.com/nikkipantony"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <Icon name="github" />
+                </a>
             </li>
             <li>
-                <Icon name="medium" />
+                <a
+                    aria-label="Medium Logo, Click to open Medium profile, opens in a new tab"
+                    href="https://medium.com/@nikkipantony"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    <Icon name="medium" />
+                </a>
             </li>
         </ul>
     )

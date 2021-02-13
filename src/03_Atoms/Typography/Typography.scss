@@ -103,12 +103,12 @@ a:visited {
     letter-spacing: tracking(normal);
     color: brand-color(midnight);
     text-decoration: none;
-    border-bottom: border(default);
+    // border-bottom: border(default);
 
     &:hover,
     &:active,
     &.focus-visible {
-        background: brand-color(gold);
+        // background: brand-color(gold);
         text-decoration: none;
     }
 }

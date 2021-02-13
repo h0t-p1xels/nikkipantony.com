@@ -290,7 +290,7 @@
   },
   {
     "name": "$breakpoints",
-    "value": "( s: 500px, m: 700px, )",
+    "value": "( s: 500px, m: 900px, )",
     "mapValue": [
       {
         "name": "s",
@@ -299,11 +299,11 @@
       },
       {
         "name": "m",
-        "value": "700px",
-        "compiledValue": "700px"
+        "value": "900px",
+        "compiledValue": "900px"
       }
     ],
-    "compiledValue": "(s: 500px, m: 700px)"
+    "compiledValue": "(s: 500px, m: 900px)"
   },
   {
     "name": "$spacing",
@@ -369,7 +369,7 @@
   },
   {
     "name": "$wrappers",
-    "value": "( SmallSiteMaxWidth: 318px, mediumSiteMaxWidth: 500px, LargeSiteMaxWidth: 800px, SiteMaxWidth: 1200px, )",
+    "value": "( SmallSiteMaxWidth: 318px, mediumSiteMaxWidth: 500px, LargeSiteMaxWidth: 900px, )",
     "mapValue": [
       {
         "name": "SmallSiteMaxWidth",
@@ -383,16 +383,11 @@
       },
       {
         "name": "LargeSiteMaxWidth",
-        "value": "800px",
-        "compiledValue": "800px"
-      },
-      {
-        "name": "SiteMaxWidth",
-        "value": "1200px",
-        "compiledValue": "1200px"
+        "value": "900px",
+        "compiledValue": "900px"
       }
     ],
-    "compiledValue": "(SmallSiteMaxWidth: 318px, mediumSiteMaxWidth: 500px, LargeSiteMaxWidth: 800px, SiteMaxWidth: 1200px)"
+    "compiledValue": "(SmallSiteMaxWidth: 318px, mediumSiteMaxWidth: 500px, LargeSiteMaxWidth: 900px)"
   },
   {
     "name": "$zlayers",
