@@ -369,7 +369,7 @@
   },
   {
     "name": "$wrappers",
-    "value": "( SmallSiteMaxWidth: 318px, mediumSiteMaxWidth: 500px, LargeSiteMaxWidth: 900px, )",
+    "value": "( SmallSiteMaxWidth: 318px, mediumSiteMaxWidth: 500px, LargeSiteMaxWidth: 920px, )",
     "mapValue": [
       {
         "name": "SmallSiteMaxWidth",
@@ -383,11 +383,11 @@
       },
       {
         "name": "LargeSiteMaxWidth",
-        "value": "900px",
-        "compiledValue": "900px"
+        "value": "920px",
+        "compiledValue": "920px"
       }
     ],
-    "compiledValue": "(SmallSiteMaxWidth: 318px, mediumSiteMaxWidth: 500px, LargeSiteMaxWidth: 900px)"
+    "compiledValue": "(SmallSiteMaxWidth: 318px, mediumSiteMaxWidth: 500px, LargeSiteMaxWidth: 920px)"
   },
   {
     "name": "$zlayers",

@@ -42,11 +42,11 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `ally-starter-kit`,
-                short_name: `ally-starter-kit`,
+                name: `Nikki Pantony`,
+                short_name: `Nikki Pantony`,
                 start_url: `/`,
-                background_color: `#542c85`,
-                theme_color: `#542c85`,
+                background_color: `#000013`,
+                theme_color: `#fefefe`,
                 display: `minimal-ui`, // https://developer.mozilla.org/en-US/docs/Web/Manifest/display
                 icon: `favicon.png`, // This path is relative to the root of the site.
             },
