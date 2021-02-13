@@ -9,11 +9,11 @@
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    // margin: 0;
     padding: 0;
     background-color: brand-color(snow);
     cursor: crosshair;
     margin: 0 spacing(xxxxl) * 1.1 0 -4px;
+    transition: box-shadow transition(ease-in-out);
 
     @media (min-width: breakpoint(m)) {
         min-width: 190px;
@@ -50,5 +50,6 @@
             brand-color(midnight);
         margin: auto;
         padding: 0;
+        transition: box-shadow transition(ease-in-out);
     }
 }
