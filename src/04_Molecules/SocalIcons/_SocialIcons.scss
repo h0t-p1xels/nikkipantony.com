@@ -8,13 +8,34 @@
         margin-top: spacing(xxxxl);
     }
 
-    svg {
-        width: 36px;
-        height: 36px;
+    a {
+        svg {
+            width: 36px;
+            height: 36px;
 
-        @media (min-width: breakpoint(s)) {
-            width: 44px;
-            height: 44px;
+            @media (min-width: breakpoint(s)) {
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        &:hover,
+        &:active,
+        &.focus-visible {
+            svg {
+                border-radius: radius(rounded);
+                background-image: linear-gradient(
+                    45deg,
+                    #f11000,
+                    #ee7300,
+                    #ffe600,
+                    #14eb00,
+                    #007bee,
+                    #af01e4 100%
+                );
+                background-size: 100% 100%;
+                padding: 2px;
+            }
         }
     }
 }
