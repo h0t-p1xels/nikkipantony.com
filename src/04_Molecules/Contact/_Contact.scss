@@ -11,7 +11,7 @@
             }
 
             background-image: linear-gradient(
-                45deg,
+                -45deg,
                 #ce0e00,
                 #cc6300,
                 #dbc500,
@@ -19,7 +19,7 @@
                 #006ed4,
                 #9b00ca 100%
             );
-            background-size: 100% 100%;
+            background-size: 50% 50%;
             color: brand-color(midnight);
             background-color: transparent;
             background-clip: text;

@@ -29,7 +29,7 @@ const IndexPage = () => (
                 Technologies.
             </p>
             <p>
-                I am currently working with a Gatsby / ReactJS / Storybook /
+                I am currently working with a Gatsby, ReactJS, Storybook and
                 Figma stack and am a big Web Accessibility and Design Systems
                 Advocate.
             </p>
