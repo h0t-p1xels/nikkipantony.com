@@ -15,9 +15,10 @@ module.exports = {
     plugins: [
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
-        `gatsby-transformer-remark`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
+        `gatsby-transformer-remark`,
+        `gatsby-transformer-json`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -31,8 +32,6 @@ module.exports = {
                 path: `${__dirname}/src/07_Pages`,
             },
         },
-
-        `gatsby-transformer-json`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {

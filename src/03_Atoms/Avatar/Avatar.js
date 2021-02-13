@@ -1,13 +1,30 @@
 import React from "react"
-import AvatarImage from "../../08_Images/Avatar.jpg"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 const Avatar = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            file(relativePath: { eq: "Avatar.jpg" }) {
+                childImageSharp {
+                    fluid(maxWidth: 400, maxHeight: 400) {
+                        ...GatsbyImageSharpFluid
+                    }
+                }
+            }
+        }
+    `)
+
     return (
-        <img
-            className="avatar"
-            src={AvatarImage}
-            alt="Nikki Pantony in a green field with a tree."
-        />
+        <div className="avatar">
+            <Img
+                fluid={data.file.childImageSharp.fluid}
+                className="avatar__image"
+                alt="Nikki Pantony in a green field with a tree."
+                fadeIn={true}
+                loading="eager"
+            />
+        </div>
     )
 }
 
