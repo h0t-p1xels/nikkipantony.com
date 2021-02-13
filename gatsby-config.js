@@ -8,9 +8,9 @@
 
 module.exports = {
     siteMetadata: {
-        title: `Ally Design System Starter Kit`,
-        description: `The Ally Design System Starter Kit. Built with Gatsby (v2) and Storybook (v5) with a custom project architecture inspired by Brad Frost's Atomic Design Methodology.`,
-        author: `@nikkipantony`,
+        title: `Nikki Pantony`,
+        description: `Personal website of Independent UI/UX Product Designer and Front-End Web Developer Nikki Pantony.`,
+        author: `@nikkipantony Nikki Pantony <hello@nikkipantony.com>`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,

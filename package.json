@@ -1,9 +1,9 @@
 {
-  "name": "ally-design-system-starter-kit",
+  "name": "nikki-pantony",
   "private": true,
-  "description": "The Ally Design System Starter Kit. Built with Gatsby (v2) and Storybook (v6) with a custom project architecture inspired by Brad Frost's Atomic Design Methodology.",
+  "description": "Personal website of Independent UI/UX Product Designer and Front-End Web Developer Nikki Pantony.",
   "version": "0.2.0",
-  "author": "Nikki Pantony <hello@nikkipantony.com>",
+  "author": "@nikkipantony Nikki Pantony <hello@nikkipantony.com>",
   "dependencies": {
     "@reach/menu-button": "^0.10.5",
     "@reach/skip-nav": "^0.10.5",

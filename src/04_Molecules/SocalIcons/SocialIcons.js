@@ -6,7 +6,7 @@ const SocialIcons = () => {
         <ul className="social-icons">
             <li>
                 <a
-                    aria-label="Instgram logo, Click to visit Instgram profile, opens in a new tab"
+                    aria-label="Visit Instgram profile. Opens in a new tab"
                     href="https://www.instagram.com/nikkipantony/"
                     target="_blank"
                     rel="noreferrer"
@@ -16,7 +16,7 @@ const SocialIcons = () => {
             </li>
             <li>
                 <a
-                    aria-label="Twitter logo, Click to visit Twitter profile, opens in a new tab"
+                    aria-label="Visit Twitter profile. Opens in a new tab"
                     href="https://twitter.com/nikkipantony"
                     target="_blank"
                     rel="noreferrer"
@@ -26,7 +26,7 @@ const SocialIcons = () => {
             </li>
             <li>
                 <a
-                    aria-label="Linked Logo, Click to visit LinkedIn profile, opens in a new tab"
+                    aria-label="Visit LinkedIn profile. Opens in a new tab"
                     href="https://www.linkedin.com/in/nikkipantony/"
                     target="_blank"
                     rel="noreferrer"
@@ -36,7 +36,7 @@ const SocialIcons = () => {
             </li>
             <li>
                 <a
-                    aria-label="GitHub Logo, Click to visit GitHub profile, opens in a new tab"
+                    aria-label="Visit GitHub profile, Opens in a new tab"
                     href="https://github.com/nikkipantony"
                     target="_blank"
                     rel="noreferrer"
@@ -46,7 +46,7 @@ const SocialIcons = () => {
             </li>
             <li>
                 <a
-                    aria-label="Medium Logo, Click to open Medium profile, opens in a new tab"
+                    aria-label="Visit Medium profile. Opens in a new tab"
                     href="https://medium.com/@nikkipantony"
                     target="_blank"
                     rel="noreferrer"
