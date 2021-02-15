@@ -7,13 +7,14 @@
 body {
     background-color: brand-color(snow);
     color: brand-color(midnight);
+    transition: all transition(ease-in-out);
 
-    .light-mode {
+    &.light-mode {
         background-color: brand-color(snow);
         color: brand-color(midnight);
     }
 
-    .dark-mode {
+    &.dark-mode {
         background-color: brand-color(dark-snow);
         color: brand-color(dark-midnight);
 
@@ -24,14 +25,14 @@ body {
     }
 
     @media (prefers-color-scheme: light) {
-        .light-mode {
+        &.light-mode {
             background-color: brand-color(snow);
             color: brand-color(midnight);
         }
     }
 
     @media (prefers-color-scheme: dark) {
-        .dark-mode {
+        &.dark-mode {
             background-color: brand-color(dark-snow);
             color: brand-color(dark-midnight);
 
