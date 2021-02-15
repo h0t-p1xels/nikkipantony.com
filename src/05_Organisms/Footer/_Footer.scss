@@ -10,7 +10,7 @@
         display: flex;
         justify-content: space-between;
         max-width: wrapper(SmallSiteMaxWidth);
-        padding: spacing(s) spacing(l);
+        padding: spacing(l);
         margin: 0 auto;
 
         @media (min-width: breakpoint(s)) {
@@ -23,6 +23,7 @@
     }
 
     &__text {
-        margin: 0;
+        margin: auto 0;
+        padding: 0;
     }
 }

@@ -13,15 +13,24 @@ const DarkModeSwitch = () => {
     }
 
     return (
-        <form className="dark-mode-switch">
-            <input
-                type="checkbox"
-                id="dark-mode"
-                name="dark-mode"
-                onChange={toggle}
-            />
-            <label htmlFor="dark-mode">Dark Mode</label>
-        </form>
+        <div>
+            <form className="dark-mode-switch">
+                <input
+                    type="checkbox"
+                    id="dark-mode"
+                    name="dark-mode"
+                    onChange={toggle}
+                    className="dark-mode-switch__input"
+                    tabIndex="0"
+                />
+
+                <div className="dark-mode-switch__toggle"></div>
+
+                <label htmlFor="dark-mode" className="dark-mode-switch__label">
+                    <span className="sr-only">Switch dark mode on and off</span>
+                </label>
+            </form>
+        </div>
     )
 }
 
