@@ -23,7 +23,7 @@
   },
   {
     "name": "$brand-colors",
-    "value": "( snow: #fcfcfc, midnight: #000013, gold: #ffd700, )",
+    "value": "( snow: #fcfcfc, midnight: #000013, dark-snow: #000013, dark-midnight: #fcfcfc, )",
     "mapValue": [
       {
         "name": "snow",
@@ -36,12 +36,17 @@
         "compiledValue": "#000013"
       },
       {
-        "name": "gold",
-        "value": "#ffd700",
-        "compiledValue": "#ffd700"
+        "name": "dark-snow",
+        "value": "#000013",
+        "compiledValue": "#000013"
+      },
+      {
+        "name": "dark-midnight",
+        "value": "#fcfcfc",
+        "compiledValue": "#fcfcfc"
       }
     ],
-    "compiledValue": "(snow: #fcfcfc, midnight: #000013, gold: #ffd700)"
+    "compiledValue": "(snow: #fcfcfc, midnight: #000013, dark-snow: #000013, dark-midnight: #fcfcfc)"
   },
   {
     "name": "$gradients",

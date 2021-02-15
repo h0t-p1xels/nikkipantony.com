@@ -11,8 +11,29 @@
 // Set Body Background Color
 body {
     background-color: brand-color(snow);
+    color: brand-color(midnight);
+
+    .light-mode {
+        background-color: brand-color(snow);
+        color: brand-color(midnight);
+    }
+
+    .dark-mode {
+        background-color: brand-color(dark-snow);
+        color: brand-color(dark-midnight);
+    }
+
+    @media (prefers-color-scheme: light) {
+        .light-mode {
+            background-color: brand-color(snow);
+            color: brand-color(midnight);
+        }
+    }
 
     @media (prefers-color-scheme: dark) {
-        background-color: brand-color(midnight);
+        .dark-mode {
+            background-color: brand-color(dark-snow);
+            color: brand-color(dark-midnight);
+        }
     }
 }

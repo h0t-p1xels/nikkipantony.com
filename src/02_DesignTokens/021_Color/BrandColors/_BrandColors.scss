@@ -7,7 +7,8 @@
 $brand-colors: (
     snow: #fcfcfc,
     midnight: #000013,
-    gold: #ffd700,
+    dark-snow: #0f0f0f,
+    dark-midnight: #b7b7b7,
 );
 
 // Brand Color Design Tokens Config
@@ -25,5 +26,4 @@ $brand-colors: (
 /*
     bcs  brand-color(snow)
     bcm  brand-color(midnight)
-    bcg  brand-color(gold)
 */

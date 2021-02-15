@@ -20,7 +20,7 @@ h6 {
     font-weight: font-weight(bold);
     line-height: leading(regular);
     letter-spacing: tracking(normal);
-    color: brand-color(midnight);
+
     margin: spacing(l) 0 spacing(xs);
 }
 
@@ -74,7 +74,7 @@ p {
     font-weight: font-weight(semibold);
     line-height: leading(regular);
     letter-spacing: tracking(normal);
-    color: brand-color(midnight);
+
     padding: 0 0 spacing(l) spacing(xxxs);
 
     @media (min-width: breakpoint(s)) {
@@ -101,13 +101,12 @@ a:visited {
     font-weight: font-weight(bold);
     line-height: leading(regular);
     letter-spacing: tracking(normal);
-    color: brand-color(midnight);
+
     text-decoration: none;
 
     &:hover,
     &:active,
     &.focus-visible {
-        // background: brand-color(gold);
         border-bottom: border(default);
         text-decoration: none;
     }
@@ -129,7 +128,6 @@ ol {
         margin: spacing(s) 0;
         font-size: font-size(cxxs);
         font-weight: font-weight(bold);
-        color: brand-color(midnight);
 
         @media (min-width: breakpoint(s)) {
             font-size: font-size(cxs);
@@ -148,7 +146,7 @@ caption {
     font-size: font-size(cs);
     font-weight: font-weight(bold);
     padding: spacing(l) spacing(xxs) spacing(xl);
-    color: brand-color(midnight);
+
     text-align: right;
 }
 
@@ -159,7 +157,6 @@ caption {
 small {
     font-size: font-size(cxs);
     font-weight: font-weight(bold);
-    color: brand-color(midnight);
 }
 
 // Emphasis
@@ -170,7 +167,6 @@ em {
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     font-style: italic;
-    color: brand-color(midnight);
 }
 
 // Idiomatic Text
@@ -179,7 +175,6 @@ em {
 // for some reason, such as idiomatic text, technical terms or taxonomical designations.
 i {
     font-style: italic;
-    color: brand-color(midnight);
 }
 
 // Strong Importance
@@ -187,7 +182,6 @@ i {
 // The <strong> element indicates that its contents has a strong importance, seriousness, or urgency.
 strong {
     font-weight: font-weight(bold);
-    color: brand-color(midnight);
 }
 
 // Strikethrough
@@ -209,8 +203,8 @@ s {
 // It can be made to be announced using a span with the .sr-only class at the start and end of the highlighted text.
 // ie: <mark><span className="sr-only"> [highlight starts] </span> Highlighed Text <span className="sr-only"> [highlight ends] </span><mark>
 mark {
-    background-color: brand-color(gold);
-    color: brand-color(midnight);
+    background-color: brand-color(midnight);
+    color: brand-color(snow);
 }
 
 // Quotation
@@ -220,7 +214,6 @@ mark {
 // a URL for the source of the quotation may be given using the cite attribute.
 q {
     font-style: italic;
-    color: brand-color(midnight);
 }
 
 // Block Quotations
@@ -234,19 +227,18 @@ blockquote {
 
     p {
         font-size: font-size(cm);
-        color: brand-color(midnight);
+
         line-height: leading(regular);
         font-weight: font-weight(bold);
         padding: spacing(xl) spacing(xxl);
         border: border(default);
         border-radius: radius(square);
         box-shadow: spacing(s) spacing(s) 0 0 brand-color(midnight);
-        background: brand-color(gold);
     }
 
     footer {
         font-size: font-size(cm);
-        color: brand-color(midnight);
+
         font-weight: font-weight(bold);
         padding: spacing(l) spacing(xxs) spacing(xl);
         text-align: right;
@@ -281,7 +273,6 @@ dfn {
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     font-style: italic;
-    color: brand-color(midnight);
 }
 
 // Inline Code
@@ -325,7 +316,6 @@ time {
     font-weight: font-weight(bold);
     line-height: leading(regular);
     letter-spacing: tracking(normal);
-    color: brand-color(midnight);
 }
 
 // Keyboard Input
@@ -337,7 +327,7 @@ kbd {
     display: inline-block;
     font-family: typeface(sourcesans);
     font-size: font-size(cm);
-    color: brand-color(midnight);
+
     font-weight: font-weight(bold);
     line-height: 1;
     background-color: shade(brand-color(snow), s20);
@@ -385,7 +375,6 @@ var {
     font-size: font-size(cm);
     font-weight: font-weight(bold);
     font-style: italic;
-    color: brand-color(midnight);
 }
 
 // Contact Address
@@ -414,7 +403,7 @@ del,
 ins {
     text-decoration: line-through;
     background-color: tint(action-color(error), t60);
-    color: brand-color(midnight);
+
     font-weight: font-weight(bold);
     padding: spacing(xxxxs) spacing(xxs);
 }

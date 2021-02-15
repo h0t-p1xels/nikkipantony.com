@@ -74,7 +74,7 @@ const Tints = () => {
                                 padding: "1rem 0 2.5rem",
                             }}
                         >
-                            tint(brand-color(gold), {node.name})
+                            tint(brand-color(snow), {node.name})
                         </figcaption>
                     </figure>
                 ))}
@@ -97,7 +97,7 @@ const Tints = () => {
                         <tr>
                             <td className="css-4lbn0a">
                                 <span className="css-in3yi3">
-                                    tint(brand-color(gold), {node.name})
+                                    tint(brand-color(snow), {node.name})
                                 </span>
                             </td>
                             <td>
@@ -113,7 +113,7 @@ const Tints = () => {
                                 <pre style={{ margin: 0 }}>
                                     <code>
                                         background-color:
-                                        tint(brand-color(gold),
+                                        tint(brand-color(snow),
                                         {node.name});
                                     </code>
                                 </pre>
