@@ -25,3 +25,39 @@
         fill: brand-color(snow);
     }
 }
+
+.light-mode {
+    .icon {
+        &.midnight {
+            fill: brand-color(midnight);
+        }
+    }
+}
+
+.dark-mode {
+    .icon {
+        &.midnight {
+            fill: brand-color(dark-midnight);
+        }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .light-mode {
+        .icon {
+            &.midnight {
+                fill: brand-color(midnight);
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark-mode {
+        .icon {
+            &.midnight {
+                fill: brand-color(dark-midnight);
+            }
+        }
+    }
+}

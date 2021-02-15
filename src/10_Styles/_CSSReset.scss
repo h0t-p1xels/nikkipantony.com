@@ -17,16 +17,6 @@
     box-sizing: border-box; // Tell Browsers To Account For Borders And Padding In The CSS Box Model
 }
 
-// Remove All Animations And Transitions For People Who Prefer Not to See Them
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
 html {
     line-height: 1.5; // Set Site Default Line Height For All Browsers
     -webkit-text-size-adjust: 100%; // Prevent Font Size Changes After Orientation Change In iOS

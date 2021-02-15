@@ -1,14 +1,9 @@
 /*
- * Global Styles
+ * Global Dark Mode Styles
  *
+ * light-mode / dark-mode set in template: layout component
  */
 
-// Set the root font-size for REMs
-:root {
-    font-size: 16px;
-}
-
-// Set Body Background Color
 body {
     background-color: brand-color(snow);
     color: brand-color(midnight);

@@ -39,3 +39,19 @@
         }
     }
 }
+
+.dark-mode {
+    .social-icons {
+        a {
+            svg {
+                &:hover,
+                &:active,
+                &.focus-visible {
+                    fill: brand-color(dark-snow);
+                }
+            }
+
+            border-color: brand-color(dark-midnight);
+        }
+    }
+}
