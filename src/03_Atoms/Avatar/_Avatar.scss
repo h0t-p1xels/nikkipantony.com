@@ -62,7 +62,7 @@
             margin: 0;
         }
 
-        &:after {
+        &:before {
             content: "";
             position: absolute;
             top: 100%;
@@ -72,6 +72,7 @@
             border-style: solid;
             border-color: brand-color(midnight) transparent transparent
                 transparent;
+            z-index: -1;
         }
     }
 
@@ -99,6 +100,27 @@
         #{$self}__speech-bubble {
             visibility: visible;
             opacity: 1;
+        }
+    }
+}
+
+.dark-mode {
+    .avatar {
+        &__speech-bubble {
+            background-color: brand-color(dark-snow);
+            color: brand-color(dark-midnight);
+            border: solid border(dark-focus-color) 4px;
+            box-shadow: spacing(xxxxs) spacing(xxxxs) spacing(xxxxs)
+                spacing(xxxxs) brand-color(dark-snow);
+
+            p {
+                color: brand-color(dark-midnight);
+            }
+
+            &:before {
+                border-color: border(dark-focus-color) transparent transparent
+                    transparent;
+            }
         }
     }
 }
