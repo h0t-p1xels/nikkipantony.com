@@ -16,15 +16,32 @@ const Avatar = () => {
     `)
 
     return (
-        <div className="avatar">
-            <Img
-                fluid={data.file.childImageSharp.fluid}
-                className="avatar__image"
-                alt="Nikki Pantony in a green field with a tree."
-                fadeIn={true}
-                loading="eager"
-            />
-        </div>
+        <>
+            {/* eslint-disable jsx-a11y/no-noninteractive-tabindex */}
+            <div
+                className="avatar"
+                tabindex="0"
+                role="region"
+                aria-label="opens speech bubble"
+            >
+                <div className="avatar__speech-bubble">
+                    <p>
+                        Hi!{" "}
+                        <span role="img" aria-label="waving hand">
+                            👋
+                        </span>
+                    </p>
+                </div>
+                <Img
+                    fluid={data.file.childImageSharp.fluid}
+                    className="avatar__image"
+                    alt="Nikki Pantony in a green field with a tree."
+                    fadeIn={true}
+                    loading="eager"
+                />
+            </div>
+            {/* eslint-enable jsx-a11y/no-noninteractive-tabindex */}
+        </>
     )
 }
 

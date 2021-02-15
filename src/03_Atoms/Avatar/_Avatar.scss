@@ -5,6 +5,7 @@
 
 .avatar {
     $self: &;
+    position: relative;
     display: flex;
     border-radius: 50%;
     width: 150px;
@@ -15,9 +16,63 @@
     margin: 0 spacing(xxxxl) * 1.1 0 -4px;
     transition: box-shadow transition(ease-in-out);
 
+    &.focus-visible {
+        outline: 0;
+    }
+
     @media (min-width: breakpoint(m)) {
         min-width: 190px;
         min-height: 190px;
+    }
+
+    &__image {
+        border-radius: 50%;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        box-shadow: spacing(xxxxs) spacing(xxxxs) spacing(xxs) spacing(xxs)
+            brand-color(midnight);
+        margin: auto;
+        padding: 0;
+        transition: box-shadow transition(ease-in-out);
+    }
+
+    &__speech-bubble {
+        visibility: hidden;
+        opacity: 0;
+        width: 100px;
+        background-color: brand-color(snow);
+        color: brand-color(midnight);
+        text-align: center;
+        border: border(default);
+        border-radius: radius(rounded);
+        padding: spacing(xxxs) 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 85%;
+        left: 85%;
+        margin-left: -60px;
+        transform: rotate(15deg);
+        transition: opacity transition(ease-in-out);
+
+        p {
+            color: brand-color(midnight);
+            font-weight: font-weight(bold);
+            font-size: font-size(cs);
+            padding: spacing(xxs);
+            margin: 0;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 40%;
+            margin-left: -15px;
+            border-width: 15px;
+            border-style: solid;
+            border-color: brand-color(midnight) transparent transparent
+                transparent;
+        }
     }
 
     &:hover,
@@ -33,23 +88,17 @@
             #af01e4c4 100%
         );
         background-size: 100% 100%;
-        padding: 2px;
+        padding: spacing(xxxs);
         box-shadow: spacing(xxxxs) spacing(xxxxs) spacing(xxs) spacing(xxs)
             brand-color(midnight);
 
         #{$self}__image {
             box-shadow: none;
         }
-    }
 
-    &__image {
-        border-radius: 50%;
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
-        box-shadow: spacing(xxxxs) spacing(xxxxs) spacing(xxs) spacing(xxs)
-            brand-color(midnight);
-        margin: auto;
-        padding: 0;
-        transition: box-shadow transition(ease-in-out);
+        #{$self}__speech-bubble {
+            visibility: visible;
+            opacity: 1;
+        }
     }
 }

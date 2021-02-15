@@ -29,8 +29,8 @@ const Icon = props => {
 }
 
 Icon.defaultProps = {
-    name: "open-in-new",
-    title: "Link will open in a new tab",
+    name: "",
+    title: "",
     fill: "midnight",
     modifier: "",
     label: "",

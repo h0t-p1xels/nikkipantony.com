@@ -75,7 +75,7 @@ p {
     line-height: leading(regular);
     letter-spacing: tracking(normal);
     color: brand-color(midnight);
-    padding-bottom: spacing(l);
+    padding: 0 0 spacing(l) spacing(xxxs);
 
     @media (min-width: breakpoint(s)) {
         font-size: font-size(cs);
