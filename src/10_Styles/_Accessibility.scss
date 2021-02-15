@@ -18,7 +18,8 @@
 // This defines a strong focus indicator for keyboard focus.
 // If this styling is removed the browser's default focus indicator will be displayed instead.
 .js-focus-visible .focus-visible {
-    outline: border(default);
+    // Dark-mode styling set in `_DarkMode.scss` - Please update styling as appropriate according to dark mode color scheme
+    outline: border(focus);
     outline-offset: spacing(xxs);
 }
 

@@ -16,6 +16,11 @@ body {
     .dark-mode {
         background-color: brand-color(dark-snow);
         color: brand-color(dark-midnight);
+
+        a.js-focus-visible,
+        a.focus-visible {
+            outline: border(dark-focus);
+        }
     }
 
     @media (prefers-color-scheme: light) {
@@ -29,6 +34,11 @@ body {
         .dark-mode {
             background-color: brand-color(dark-snow);
             color: brand-color(dark-midnight);
+
+            a.js-focus-visible,
+            a.focus-visible {
+                outline: border(dark-focus);
+            }
         }
     }
 }

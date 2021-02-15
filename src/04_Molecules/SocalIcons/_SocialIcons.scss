@@ -42,13 +42,11 @@
 
 .dark-mode {
     .social-icons {
-        a {
+        a:hover,
+        a:active,
+        a.focus-visible {
             svg {
-                &:hover,
-                &:active,
-                &.focus-visible {
-                    fill: brand-color(dark-snow);
-                }
+                fill: brand-color(dark-snow) !important;
             }
 
             border-color: brand-color(dark-midnight);
