@@ -13,7 +13,7 @@ const DarkModeSwitch = () => {
     }
 
     return (
-        <form>
+        <form className="dark-mode-switch">
             <input
                 type="checkbox"
                 id="dark-mode"

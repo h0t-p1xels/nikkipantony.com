@@ -20,7 +20,7 @@ const Avatar = () => {
             {/* eslint-disable jsx-a11y/no-noninteractive-tabindex */}
             <div
                 className="avatar"
-                tabindex="0"
+                tabIndex="0"
                 role="region"
                 aria-label="opens speech bubble"
             >
