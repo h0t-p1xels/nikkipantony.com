@@ -104,8 +104,28 @@
     }
 }
 
-// TODO to add @media (prefers-color-scheme: light)
 .dark-mode {
+    .avatar {
+        &__speech-bubble {
+            background-color: brand-color(dark-snow);
+            color: brand-color(dark-midnight);
+            border: solid border(dark-focus-color) 4px;
+            box-shadow: spacing(xxxxs) spacing(xxxxs) spacing(xxxxs)
+                spacing(xxxxs) brand-color(dark-snow);
+
+            p {
+                color: brand-color(dark-midnight);
+            }
+
+            &:before {
+                border-color: border(dark-focus-color) transparent transparent
+                    transparent;
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
     .avatar {
         &__speech-bubble {
             background-color: brand-color(dark-snow);

@@ -40,8 +40,21 @@
     }
 }
 
-// TODO to add @media (prefers-color-scheme: light)
 .dark-mode {
+    .social-icons {
+        a:hover,
+        a:active,
+        a.focus-visible {
+            svg {
+                fill: brand-color(dark-snow) !important;
+            }
+
+            border-color: brand-color(dark-midnight);
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
     .social-icons {
         a:hover,
         a:active,

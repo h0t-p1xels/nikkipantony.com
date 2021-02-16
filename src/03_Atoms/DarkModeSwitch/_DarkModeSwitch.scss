@@ -52,8 +52,6 @@
     }
 }
 
-// TODO to add @media (prefers-color-scheme: light)
-
 input.dark-mode-switch__input.focus-visible {
     ~ label {
         outline: border(focus);
@@ -62,6 +60,20 @@ input.dark-mode-switch__input.focus-visible {
 }
 
 body.dark-mode {
+    input.dark-mode-switch__input.focus-visible {
+        ~ label {
+            outline: border(dark-focus);
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .dark-mode-switch {
+        &__label {
+            background: brand-color(dark-midnight);
+        }
+    }
+
     input.dark-mode-switch__input.focus-visible {
         ~ label {
             outline: border(dark-focus);

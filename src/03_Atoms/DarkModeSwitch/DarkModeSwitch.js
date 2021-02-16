@@ -1,15 +1,23 @@
 import React, { useState } from "react"
 
 const DarkModeSwitch = () => {
-    const [isDark, setIsDark] = useState(false)
+    const userPrefersDark =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+
+    const init = userPrefersDark ? true : false
+
+    let [isDark, setIsDark] = useState(userPrefersDark)
     const toggle = () => setIsDark(!isDark)
 
     let DarkMode = isDark ? true : false
 
     if (DarkMode === true) {
+        document.body.classList.remove("light-mode")
         document.body.classList.add("dark-mode")
     } else {
         document.body.classList.remove("dark-mode")
+        document.body.classList.add("light-mode")
     }
 
     return (
@@ -22,6 +30,7 @@ const DarkModeSwitch = () => {
                     onChange={toggle}
                     className="dark-mode-switch__input"
                     tabIndex="0"
+                    defaultChecked={init}
                 />
 
                 <div className="dark-mode-switch__toggle"></div>
