@@ -26,31 +26,7 @@
     }
 }
 
-.light-mode {
-    .icon {
-        &.midnight {
-            fill: brand-color(midnight);
-        }
-    }
-}
-
 .dark-mode {
-    .icon {
-        &.midnight {
-            fill: brand-color(dark-midnight);
-        }
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    .icon {
-        &.midnight {
-            fill: brand-color(midnight);
-        }
-    }
-}
-
-@media (prefers-color-scheme: dark) {
     .icon {
         &.midnight {
             fill: brand-color(dark-midnight);

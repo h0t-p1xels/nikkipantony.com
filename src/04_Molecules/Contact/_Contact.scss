@@ -67,22 +67,3 @@
         }
     }
 }
-
-@media (prefers-color-scheme: dark) {
-    .contact-details {
-        li {
-            a {
-                color: brand-color(dark-midnight);
-                border-color: brand-color(dark-midnight);
-
-                &:hover,
-                &:active,
-                &.focus-visible {
-                    background-position: 0 0;
-                    color: transparent;
-                    background-color: brand-color(dark-midnight);
-                }
-            }
-        }
-    }
-}

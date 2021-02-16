@@ -41,6 +41,13 @@
                 left: 40%;
             }
         }
+
+        &.focus-visible {
+            ~ label {
+                outline: border(focus);
+                outline-offset: spacing(s);
+            }
+        }
     }
 }
 
@@ -49,34 +56,13 @@
         &__label {
             background: brand-color(dark-midnight);
         }
-    }
-}
 
-input.dark-mode-switch__input.focus-visible {
-    ~ label {
-        outline: border(focus);
-        outline-offset: spacing(s);
-    }
-}
-
-body.dark-mode {
-    input.dark-mode-switch__input.focus-visible {
-        ~ label {
-            outline: border(dark-focus);
-        }
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    .dark-mode-switch {
-        &__label {
-            background: brand-color(dark-midnight);
-        }
-    }
-
-    input.dark-mode-switch__input.focus-visible {
-        ~ label {
-            outline: border(dark-focus);
+        &__input {
+            &.focus-visible {
+                ~ label {
+                    outline: border(dark-focus);
+                }
+            }
         }
     }
 }

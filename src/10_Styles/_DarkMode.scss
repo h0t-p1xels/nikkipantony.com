@@ -1,7 +1,6 @@
 /*
  * Global Dark Mode Styles
  *
- * light-mode / dark-mode set in template: layout component
  */
 
 body {
@@ -9,49 +8,31 @@ body {
     color: brand-color(midnight);
     transition: all transition(ease-in-out);
 
-    &.light-mode {
-        background-color: brand-color(snow);
-        color: brand-color(midnight);
+    a:hover,
+    a:active,
+    a.focus-visible {
+        border-color: brand-color(midnight);
+        text-decoration: none;
     }
 
-    &.dark-mode {
-        background-color: brand-color(dark-snow);
-        color: brand-color(dark-midnight);
-
-        a:hover,
-        a:active,
-        a.focus-visible {
-            border-color: brand-color(dark-midnight);
-            text-decoration: none;
-        }
-
-        a.focus-visible {
-            outline: border(dark-focus);
-        }
+    a.focus-visible {
+        outline: border(focus);
     }
 }
 
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: brand-color(snow);
-        color: brand-color(midnight);
+body.dark-mode {
+    background-color: brand-color(dark-snow);
+    color: brand-color(dark-midnight);
+    transition: all transition(ease-in-out);
+
+    a:hover,
+    a:active,
+    a.focus-visible {
+        border-color: brand-color(dark-midnight);
+        text-decoration: none;
     }
-}
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: brand-color(dark-snow);
-        color: brand-color(dark-midnight);
-
-        a:hover,
-        a:active,
-        a.focus-visible {
-            border-color: brand-color(dark-midnight);
-            text-decoration: none;
-        }
-
-        a.focus-visible {
-            outline: border(dark-focus);
-        }
+    a.focus-visible {
+        outline: border(dark-focus);
     }
 }
