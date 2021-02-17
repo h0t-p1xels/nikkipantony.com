@@ -14,17 +14,21 @@ const DarkModeSwitch = () => {
 
     // If mode is dark mode add `dark-mode` class to body tag
     // Else remove `dark-mode` class if it already exists
-    if (isDark === true) {
-        if (typeof document !== `undefined`) {
+    if (typeof document !== `undefined`) {
+        if (isDark === true) {
             document.body.classList.add("dark-mode")
         }
-    }
-
-    if (isDark === !true) {
-        if (typeof document !== `undefined`) {
+        if (
+            isDark === !true ||
+            isDark === false ||
+            isDark === null ||
+            isDark === `undefined`
+        ) {
             document.body.classList.remove("dark-mode")
         }
     }
+
+    console.log(`isDark = ${isDark}`)
 
     return (
         <div>
