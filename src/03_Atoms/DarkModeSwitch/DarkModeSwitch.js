@@ -9,7 +9,7 @@ const DarkModeSwitch = () => {
             : null
 
     // Use useState to toggle between light and dark mode set to start at user preference
-    let [isDark, setIsDark] = useState(prefersDark)
+    const [isDark, setIsDark] = useState(prefersDark)
     const toggle = () => setIsDark(!isDark)
 
     // If mode is dark mode add `dark-mode` class to body tag
@@ -17,7 +17,10 @@ const DarkModeSwitch = () => {
     if (typeof document !== `undefined`) {
         if (isDark === true) {
             document.body.classList.add("dark-mode")
+        } else {
+            document.body.classList.remove("dark-mode")
         }
+
         if (
             isDark === !true ||
             isDark === false ||
@@ -39,7 +42,7 @@ const DarkModeSwitch = () => {
                     name="dark-mode"
                     tabIndex="0"
                     className="dark-mode-switch__input"
-                    // switch on at page load if visitor has their prefered color scheme set to dark mode
+                    // Switch on at page load if visitor has their prefered color scheme set to dark mode
                     defaultChecked={prefersDark}
                     // On switch toggle between light and dark mode
                     onChange={toggle}
