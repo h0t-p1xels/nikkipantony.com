@@ -12,7 +12,6 @@ body {
     a:active,
     a.focus-visible {
         border-color: brand-color(midnight);
-        text-decoration: none;
     }
 
     a.focus-visible {
@@ -29,7 +28,6 @@ body.dark-mode {
     a:active,
     a.focus-visible {
         border-color: brand-color(dark-midnight);
-        text-decoration: none;
     }
 
     a.focus-visible {

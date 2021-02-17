@@ -8,7 +8,7 @@
  */
 
 // These imports would usually be placed in the `MainLayout` file
-// However, if imported this way they cause an error when being loaded as storybook stories
+// However, if imported this way they cause an error when being loaded as Storybook stories
 // They are instead included here for Gatsby and in `.storybook/preview.js` for Storybook
 
 // Import `focus-visible` package

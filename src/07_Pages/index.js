@@ -17,8 +17,8 @@ const IndexPage = () => (
     <Layout>
         <SEO
             lang="en"
-            title="UI/UX Product Designer and Front-End Web Developer. JAMstack Developer working with Gatsby / ReactJS and Storybook. Web Accessibility and Design Systems Advocate."
-            description="Personal website of Independent UI/UX Product Designer and Front-End Web Developer Nikki Pantony"
+            title="Independent UI/UX Product Designer and Front-End Web Developer."
+            description="Working with JAMstack using Gatsby / ReactJS / GraphQL / Storybook. Big Figma fan for design. Web Accessibility and Design Systems Advocate."
         />
         <Avatar />
         <div>
@@ -29,9 +29,9 @@ const IndexPage = () => (
                 Technologies.
             </p>
             <p>
-                I am currently working with a Gatsby, ReactJS, Storybook and
-                Figma stack and am a big Web Accessibility and Design Systems
-                Advocate.
+                I'm currently working with Gatsby, ReactJS, Storybook, Design
+                Tokens and Figma. Also I am a big Web Accessibility and Design
+                Systems Advocate.
             </p>
             <Contact />
             <Social />
