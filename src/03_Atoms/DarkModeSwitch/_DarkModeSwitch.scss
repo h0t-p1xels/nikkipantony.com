@@ -1,0 +1,68 @@
+.dark-mode-switch {
+    position: relative;
+    width: 70px;
+    height: 20px;
+    margin: auto 0;
+    padding-bottom: 2px;
+
+    &__label {
+        display: flex;
+        background: brand-color(midnight);
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    &__input {
+        opacity: 0;
+        border: 0;
+        height: calc(100% + 20px);
+        width: 100%;
+        margin: -10px auto;
+        background: transparent;
+        position: absolute;
+        cursor: pointer;
+        z-index: 1;
+
+        ~ .dark-mode-switch__toggle:before {
+            content: "☀️";
+            position: absolute;
+            left: 0;
+            top: -15px;
+            font-size: 30px;
+            transition: all transition(ease-in-out);
+        }
+
+        &:checked {
+            ~ .dark-mode-switch__toggle:before {
+                content: "🌙";
+                top: -16px;
+                left: 40%;
+            }
+        }
+
+        &.focus-visible {
+            ~ label {
+                outline: border(focus);
+                outline-offset: spacing(s);
+            }
+        }
+    }
+}
+
+.dark-mode {
+    .dark-mode-switch {
+        &__label {
+            background: brand-color(dark-midnight);
+        }
+
+        &__input {
+            &.focus-visible {
+                ~ label {
+                    outline: border(dark-focus);
+                }
+            }
+        }
+    }
+}

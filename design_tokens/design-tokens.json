@@ -23,7 +23,7 @@
   },
   {
     "name": "$brand-colors",
-    "value": "( snow: #fcfcfc, midnight: #000013, gold: #ffd700, )",
+    "value": "( snow: #fcfcfc, midnight: #000013, dark-snow: #0f0f0f, dark-midnight: #d6d6d6, )",
     "mapValue": [
       {
         "name": "snow",
@@ -36,12 +36,17 @@
         "compiledValue": "#000013"
       },
       {
-        "name": "gold",
-        "value": "#ffd700",
-        "compiledValue": "#ffd700"
+        "name": "dark-snow",
+        "value": "#0f0f0f",
+        "compiledValue": "#0f0f0f"
+      },
+      {
+        "name": "dark-midnight",
+        "value": "#d6d6d6",
+        "compiledValue": "#d6d6d6"
       }
     ],
-    "compiledValue": "(snow: #fcfcfc, midnight: #000013, gold: #ffd700)"
+    "compiledValue": "(snow: #fcfcfc, midnight: #000013, dark-snow: #0f0f0f, dark-midnight: #d6d6d6)"
   },
   {
     "name": "$gradients",
@@ -413,7 +418,7 @@
   },
   {
     "name": "$borders",
-    "value": "( default: solid #000013 3px, error: solid #f30b17 3px, )",
+    "value": "( default: solid #000013 3px, error: solid #f30b17 3px, focus: solid #000013 3px, dark-focus: solid #ee00ce 3px, dark-focus-color: #ee00ce, )",
     "mapValue": [
       {
         "name": "default",
@@ -424,9 +429,24 @@
         "name": "error",
         "value": "solid #f30b17 3px",
         "compiledValue": "solid #f30b17 3px"
+      },
+      {
+        "name": "focus",
+        "value": "solid #000013 3px",
+        "compiledValue": "solid #000013 3px"
+      },
+      {
+        "name": "dark-focus",
+        "value": "solid #ee00ce 3px",
+        "compiledValue": "solid #ee00ce 3px"
+      },
+      {
+        "name": "dark-focus-color",
+        "value": "#ee00ce",
+        "compiledValue": "#ee00ce"
       }
     ],
-    "compiledValue": "(default: solid #000013 3px, error: solid #f30b17 3px)"
+    "compiledValue": "(default: solid #000013 3px, error: solid #f30b17 3px, focus: solid #000013 3px, dark-focus: solid #ee00ce 3px, dark-focus-color: #ee00ce)"
   },
   {
     "name": "$radii",

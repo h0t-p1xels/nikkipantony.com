@@ -25,3 +25,11 @@
         fill: brand-color(snow);
     }
 }
+
+.dark-mode {
+    .icon {
+        &.midnight {
+            fill: brand-color(dark-midnight);
+        }
+    }
+}

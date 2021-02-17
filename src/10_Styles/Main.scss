@@ -17,13 +17,14 @@
 // Accessibility Utilities
 @import "../10_Styles/Accessibility";
 
-// Global (Root and Body)
-@import "../10_Styles/Global";
+// Global Dark / Light Mode
+@import "../10_Styles/DarkMode";
 
 // Atom Styles
 @import "../03_Atoms/Avatar/Avatar";
 @import "../03_Atoms/Icon/Icon";
 @import "../03_Atoms/Typography/Typography";
+@import "../03_Atoms/DarkModeSwitch/DarkModeSwitch";
 
 // Molecule Styles
 @import "../04_Molecules/Contact/Contact";

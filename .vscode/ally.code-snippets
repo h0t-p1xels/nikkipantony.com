@@ -169,7 +169,7 @@
     "Brand color gold": {
 		"prefix": "bcg",
 		"body": [
-      "brand-color(gold)",
+      "brand-color(snow)",
 		],
 		  "description": "Brand color gold"
     },

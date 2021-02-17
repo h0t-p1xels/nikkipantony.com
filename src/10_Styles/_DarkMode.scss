@@ -1,0 +1,38 @@
+/*
+ * Global Dark Mode Styles
+ *
+ */
+
+body {
+    background-color: brand-color(snow);
+    color: brand-color(midnight);
+    transition: all transition(ease-in-out);
+
+    a:hover,
+    a:active,
+    a.focus-visible {
+        border-color: brand-color(midnight);
+        text-decoration: none;
+    }
+
+    a.focus-visible {
+        outline: border(focus);
+    }
+}
+
+body.dark-mode {
+    background-color: brand-color(dark-snow);
+    color: brand-color(dark-midnight);
+    transition: all transition(ease-in-out);
+
+    a:hover,
+    a:active,
+    a.focus-visible {
+        border-color: brand-color(dark-midnight);
+        text-decoration: none;
+    }
+
+    a.focus-visible {
+        outline: border(dark-focus);
+    }
+}

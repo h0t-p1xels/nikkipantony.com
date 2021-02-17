@@ -18,7 +18,8 @@
 // This defines a strong focus indicator for keyboard focus.
 // If this styling is removed the browser's default focus indicator will be displayed instead.
 .js-focus-visible .focus-visible {
-    outline: border(default);
+    // Dark-mode styling set in `_DarkMode.scss` - Please update styling as appropriate according to dark mode color scheme
+    outline: border(focus);
     outline-offset: spacing(xxs);
 }
 
@@ -35,4 +36,14 @@
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+// Remove All Animations And Transitions For People Who Prefer Not to See Them
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

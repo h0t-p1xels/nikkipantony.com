@@ -7,6 +7,7 @@
  */
 
 import React from "react"
+import DarkModeSwitch from "../../03_Atoms/DarkModeSwitch/DarkModeSwitch"
 
 const Footer = () => {
     return (
@@ -15,6 +16,7 @@ const Footer = () => {
                 <p className="footer__text">
                     <small>&copy; {new Date().getFullYear()}</small>
                 </p>
+                <DarkModeSwitch />
             </div>
         </footer>
     )
