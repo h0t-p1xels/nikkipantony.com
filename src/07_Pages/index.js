@@ -24,14 +24,14 @@ const IndexPage = () => (
         <div>
             <h1>NIKKI PANTONY</h1>
             <p>
-                Independent UI/UX Product Designer and Front-End Web Developer
+                Independent UI/UX product designer and front-end web developer
                 creating delightful experiences built with JAMstack
-                Technologies.
+                technologies.
             </p>
             <p>
                 I'm currently working with Gatsby, ReactJS, Storybook, Design
-                Tokens and Figma. Also I am a big Web Accessibility and Design
-                Systems Advocate.
+                Tokens and Figma. I am also a big web accessibility and design
+                systems advocate.
             </p>
             <Contact />
             <Social />
