@@ -12,6 +12,8 @@ const DarkModeSwitch = () => {
     const [isDark, setIsDark] = useState(prefersDark)
     const toggle = () => setIsDark(!isDark)
 
+    console.log(`prefersDark = ${prefersDark}`)
+
     // If mode is dark mode add `dark-mode` class to body tag
     // Else remove `dark-mode` class if it already exists
     if (typeof document !== `undefined`) {
