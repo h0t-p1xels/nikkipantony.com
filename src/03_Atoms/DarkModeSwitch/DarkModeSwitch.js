@@ -13,7 +13,7 @@ const DarkModeSwitch = () => {
 
     // Use useState to toggle between light and dark mode set to start at user preference
     let [isDark, setIsDark] = useState(prefersDark)
-    const toggle = () => setIsDark(!isDark)
+    const toggle = () => setIsDark(isDark)
 
     // If mode is dark mode add `dark-mode` class to body tag
     // Else remove `dark-mode` class if it already exists
