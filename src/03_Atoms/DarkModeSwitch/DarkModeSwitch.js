@@ -8,11 +8,8 @@ const DarkModeSwitch = () => {
               window.matchMedia("(prefers-color-scheme: dark)").matches
             : null
 
-    // Set default color mode according to visitor preference
-    const setDefaultMode = prefersDark ? true : false
-
     // Use useState to toggle between light and dark mode set to start at user preference
-    let [isDark, setIsDark] = useState(setDefaultMode)
+    let [isDark, setIsDark] = useState(prefersDark)
     const toggle = () => setIsDark(!isDark)
 
     // If mode is dark mode add `dark-mode` class to body tag
@@ -21,7 +18,9 @@ const DarkModeSwitch = () => {
         if (typeof document !== `undefined`) {
             document.body.classList.add("dark-mode")
         }
-    } else {
+    }
+
+    if (isDark === !true) {
         if (typeof document !== `undefined`) {
             document.body.classList.remove("dark-mode")
         }
@@ -31,13 +30,15 @@ const DarkModeSwitch = () => {
         <div>
             <form className="dark-mode-switch">
                 <input
-                    className="dark-mode-switch__input"
-                    defaultChecked={setDefaultMode}
-                    onChange={toggle}
                     type="checkbox"
                     id="dark-mode"
                     name="dark-mode"
                     tabIndex="0"
+                    className="dark-mode-switch__input"
+                    // switch on at page load if visitor has their prefered color scheme set to dark mode
+                    defaultChecked={prefersDark}
+                    // On switch toggle between light and dark mode
+                    onChange={toggle}
                 />
 
                 <div className="dark-mode-switch__toggle"></div>
