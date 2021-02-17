@@ -9,8 +9,13 @@
 module.exports = {
     siteMetadata: {
         title: `Nikki Pantony`,
+        titleTemplate: `%s Nikki Pantony`,
         description: `Personal website of Independent UI/UX Product Designer and Front-End Web Developer Nikki Pantony.`,
-        author: `@nikkipantony Nikki Pantony <hello@nikkipantony.com>`,
+        url: "https://www.nikkipantony.com", // Remember no trailing slash
+        image: "/08_Images/SEOSocialMedia.png", // Path to your image you placed in the 'static' folder
+        twitterUsername: "@nikkipantony",
+        author: `Nikki Pantony @nikkipantony`,
+        lang: `en`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
@@ -23,7 +28,7 @@ module.exports = {
             resolve: `gatsby-source-filesystem`,
             options: {
                 name: `images`,
-                path: `${__dirname}/src/08_Images`,
+                path: `${__dirname}/src/08_Images/`,
             },
         },
         {
