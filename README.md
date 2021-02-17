@@ -1,4 +1,4 @@
-# NikkiPantony.com
+# nikkipantony.com
 
 ## Personal MVP / Landing Page
 
