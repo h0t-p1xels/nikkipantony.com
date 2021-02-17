@@ -1,10 +1,12 @@
 import React, { useState } from "react"
 
 const DarkModeSwitch = () => {
-    // Identify if visitor has their color scheme set to dark mode
+    // Identify if visitor has their prefered color scheme set to dark mode
     const prefersDark =
-        window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
+        typeof window !== `undefined`
+            ? window.matchMedia &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches
+            : null
 
     // Set default color mode according to visitor preference
     const setDefaultMode = prefersDark ? true : false
