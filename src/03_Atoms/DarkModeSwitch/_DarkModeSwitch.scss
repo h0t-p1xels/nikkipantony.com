@@ -66,3 +66,19 @@
         }
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    .dark-mode-switch {
+        &__input {
+            ~ .dark-mode-switch__toggle:before {
+                content: "🌙";
+            }
+
+            &:checked {
+                ~ .dark-mode-switch__toggle:before {
+                    content: "☀️";
+                }
+            }
+        }
+    }
+}
