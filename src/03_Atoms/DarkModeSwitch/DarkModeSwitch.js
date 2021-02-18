@@ -1,39 +1,19 @@
-import React, { useState } from "react"
+import React from "react"
 
 const DarkModeSwitch = () => {
-    // Identify if visitor has their prefered color scheme set to dark mode
     const prefersDark =
         typeof window !== `undefined`
             ? window.matchMedia &&
               window.matchMedia("(prefers-color-scheme: dark)").matches
             : null
 
-    // Use useState to toggle between light and dark mode set to start at user preference
-    const [isDark, setIsDark] = useState(prefersDark)
-    const toggle = () => setIsDark(!isDark)
-
-    console.log(`prefersDark = ${prefersDark}`)
-
-    // If mode is dark mode add `dark-mode` class to body tag
-    // Else remove `dark-mode` class if it already exists
     if (typeof document !== `undefined`) {
-        if (isDark === true) {
+        if (prefersDark) {
             document.body.classList.add("dark-mode")
-        } else {
-            document.body.classList.remove("dark-mode")
-        }
-
-        if (
-            isDark === !true ||
-            isDark === false ||
-            isDark === null ||
-            isDark === `undefined`
-        ) {
-            document.body.classList.remove("dark-mode")
         }
     }
 
-    console.log(`isDark = ${isDark}`)
+    let toggle = () => document.body.classList.toggle("dark-mode")
 
     return (
         <div>
