@@ -7,13 +7,13 @@ const DarkModeSwitch = () => {
               window.matchMedia("(prefers-color-scheme: dark)").matches
             : null
 
+    let toggle = () => document.body.classList.toggle("dark-mode")
+
     if (typeof document !== `undefined`) {
         if (prefersDark) {
             document.body.classList.add("dark-mode")
         }
     }
-
-    let toggle = () => document.body.classList.toggle("dark-mode")
 
     return (
         <div>
