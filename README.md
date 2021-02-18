@@ -1,10 +1,16 @@
 # nikkipantony.com
 
-## Personal MVP / Landing Page
+**Personal MVP website of Independent UI/UX Product Designer and Front-End Web Developer Nikki Pantony.**
+
+</br>
+
+_Deployed with Netlify, current status:_
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d36e08a1-5088-495e-a25b-c2d59c7c82d3/deploy-status)](https://app.netlify.com/sites/nikkipantony/deploys)
+
+</br>
 
 <!-- Ally Design System Starter Kit Badge -->
-<br />
-
 <div>
     <img alt="Gatsby" src="./readme_images/GatsbyIconLogo.png" width="24" />&nbsp;
     <img alt="Storybook" src="./readme_images/StorybookIconLogo.png" width="24" />&nbsp;
