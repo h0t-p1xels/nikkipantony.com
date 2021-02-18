@@ -12,7 +12,7 @@ module.exports = {
         titleTemplate: `%s Nikki Pantony`,
         description: `Personal website of Independent UI/UX Product Designer and Front-End Web Developer Nikki Pantony.`,
         url: "https://www.nikkipantony.com", // Remember no trailing slash
-        image: "/08_Images/SEOSocialMedia.png", // Path to your image you placed in the 'static' folder
+        image: "/nikkipantonycom.png", // Path to your image you placed in the 'static' folder
         twitterUsername: "@nikkipantony",
         author: `Nikki Pantony @nikkipantony`,
         lang: `en`,

@@ -41,7 +41,6 @@ const SEO = ({ title, description, image, article }) => {
             title={seo.title}
             titleTemplate={titleTemplate}
         >
-            <meta charSet="utf-8" />
             <meta name="description" content={seo.description} />
             <meta name="image" content={seo.image} />
             <meta name="author" content={author}></meta>
