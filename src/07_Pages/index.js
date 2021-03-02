@@ -24,14 +24,16 @@ const IndexPage = () => (
         <div>
             <h1>NIKKI PANTONY</h1>
             <p>
-                Independent UI/UX product designer and front-end web developer
-                creating delightful experiences built with JAMstack
-                technologies.
-            </p>
-            <p>
-                I'm currently working with Gatsby, ReactJS, Storybook, Design
-                Tokens and Figma. I am also a big web accessibility and design
-                systems advocate.
+                Founder at{" "}
+                <a
+                    href="https://remoteprint.co"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    RemotePrint
+                </a>{" "}
+                & Independent UI/UX Product Designer and Front-End Web
+                Developer.
             </p>
             <Contact />
             <Social />

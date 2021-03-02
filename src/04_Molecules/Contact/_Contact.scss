@@ -2,39 +2,6 @@
     li {
         line-height: 34px;
 
-        a {
-            position: relative;
-            font-size: font-size(cxs);
-
-            @media (min-width: breakpoint(s)) {
-                font-size: font-size(cm);
-            }
-
-            background-image: linear-gradient(
-                -45deg,
-                #ce0e00,
-                #cc6300,
-                #dbc500,
-                #12d600,
-                #006ed4,
-                #9b00ca 100%
-            );
-            background-size: 50% 50%;
-            color: brand-color(midnight);
-            background-color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            transition: opacity transition(ease-in-out);
-
-            &:hover,
-            &:active,
-            &.focus-visible {
-                background-position: 0 0;
-                color: transparent;
-                background-color: brand-color(snow);
-            }
-        }
-
         svg {
             width: 26px;
             height: 26px;
@@ -44,25 +11,6 @@
                 width: 34px;
                 height: 34px;
                 margin: 20px 14px -7px 0;
-            }
-        }
-    }
-}
-
-.dark-mode {
-    .contact-details {
-        li {
-            a {
-                color: brand-color(dark-midnight);
-                border-color: brand-color(dark-midnight);
-
-                &:hover,
-                &:active,
-                &.focus-visible {
-                    background-position: 0 0;
-                    color: transparent;
-                    background-color: brand-color(dark-midnight);
-                }
             }
         }
     }
