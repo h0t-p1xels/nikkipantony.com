@@ -3,6 +3,7 @@ import React from "react"
 const DarkModeSwitch = () => {
     const toggle = () => document.body.classList.toggle("dark-mode")
 
+    // TODO: Update so it is Ally complient!
     return (
         <form className="dark-mode-switch">
             <input
