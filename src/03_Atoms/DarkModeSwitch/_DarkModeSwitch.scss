@@ -6,30 +6,17 @@
     padding-bottom: 2px;
 
     &__label {
-        position: relative;
-        display: flex;
-        background: brand-color(midnight);
-        width: 100%;
-        height: 140%;
-        border-radius: 13px;
-        margin: auto;
-        z-index: -3;
-    }
-
-    &__label::before {
         position: absolute;
-        top: -160%;
-        left: -28%;
-        content: "Dark Mode";
+        top: -205%;
+        left: -25%;
         display: flex;
         color: brand-color(midnight);
         font-family: typeface(sourcesans);
         font-size: font-size(cxxs);
         font-weight: font-weight(bold);
         width: 150%;
-        height: 30%;
+        height: 100%;
         flex-wrap: nowrap;
-        border-radius: 10px;
         justify-content: center;
         align-items: center;
         margin: auto;
@@ -50,7 +37,7 @@
             content: "OFF";
             position: absolute;
             left: 0;
-            top: -8px;
+            top: -11px;
             display: flex;
             flex-wrap: nowrap;
             justify-content: center;
@@ -63,7 +50,7 @@
             transition: all transition(ease-in-out);
             width: 40px;
             height: 40px;
-            background: #14eb00c4;
+            background: #ffe600c4;
             background-image: linear-gradient(
                 -45deg,
                 #f11000c4,
@@ -93,16 +80,24 @@
                 outline-offset: spacing(s);
             }
         }
+
+        label {
+            outline: border(focus);
+            outline-offset: spacing(s);
+        }
+    }
+
+    &__toggle-line {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        background: brand-color(midnight);
     }
 }
 
 .dark-mode {
     .dark-mode-switch {
         &__label {
-            background: brand-color(dark-midnight);
-        }
-
-        &__label::before {
             color: brand-color(dark-midnight);
         }
 
@@ -112,6 +107,19 @@
                     outline: border(dark-focus);
                 }
             }
+        }
+
+        &__toggle-line {
+            background: #ffe600c4;
+            background-image: linear-gradient(
+                -45deg,
+                #f11000c4,
+                #ee7300c4,
+                #ffe600c4,
+                #14eb00c4,
+                #007beec4,
+                #af01e4c4 100%
+            );
         }
     }
 }
@@ -127,7 +135,7 @@
             &:checked {
                 ~ .dark-mode-switch__toggle:before {
                     content: "OFF";
-                    background: #14eb00c4;
+                    background: #ffe600c4;
                     background-image: linear-gradient(
                         -45deg,
                         #f11000c4,
