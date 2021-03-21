@@ -9,7 +9,7 @@
 // the highest section level and <h6> is the lowest.
 // You should only use one <h1> per page. However, using more than one will not result
 // in an error, but using only one is seen as a best practice. Having a single top-level
-// title is also arguably better for screenreader users, and for SEO.
+// title is also arguably better for screen reader users, and for SEO.
 h1,
 h2,
 h3,
@@ -64,7 +64,7 @@ h6 {
     font-size: font-size(hxxs);
 }
 
-// Pargraphs
+// Paragraphs
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
 // The <p> element represents a paragraph. Paragraphs are represented in visual media as
 // blocks of text separated from adjacent blocks by blank lines and/or first-line indentation.
@@ -240,7 +240,7 @@ s {
 // https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible
 // The presence of the mark element is not announced by most screen reading technology in its default configuration.
 // It can be made to be announced using a span with the .sr-only class at the start and end of the highlighted text.
-// ie: <mark><span className="sr-only"> [highlight starts] </span> Highlighed Text <span className="sr-only"> [highlight ends] </span><mark>
+// ie: <mark><span className="sr-only"> [highlight starts] </span> Highlighted Text <span className="sr-only"> [highlight ends] </span><mark>
 mark {
     background-color: brand-color(midnight);
     color: brand-color(snow);

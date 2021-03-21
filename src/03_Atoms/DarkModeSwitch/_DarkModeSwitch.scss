@@ -1,115 +1,60 @@
-.dark-mode-switch {
-    position: relative;
-    width: 70px;
-    height: 20px;
-    margin: auto 0;
-    padding-bottom: 2px;
+/*
+ * Dark Mode Toggle Button Styles
+ *
+ */
 
-    &__label {
-        position: absolute;
-        top: -205%;
-        left: -25%;
-        display: flex;
+.dark-mode-button {
+    display: inline-block;
+    color: brand-color(snow);
+    font-family: typeface(sourcesans);
+    font-size: font-size(cxxs);
+    font-weight: font-weight(bold);
+    background: brand-color(midnight);
+    text-align: center;
+    text-decoration: none;
+    line-height: 1;
+    border: 0;
+    border-radius: radius(round);
+    cursor: pointer;
+    transition: background-color transition(ease-in-out);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: spacing(xs) spacing(s);
+    margin: 0 spacing(m) 0 0;
+
+    &:active {
+        transform: scale(1);
+    }
+
+    &:hover,
+    &:focus,
+    .focus-visible {
         color: brand-color(midnight);
-        font-family: typeface(sourcesans);
-        font-size: font-size(cxxs);
-        font-weight: font-weight(bold);
-        width: 150%;
-        height: 100%;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
+        background: #ffe600c4;
+        background-image: linear-gradient(
+            -45deg,
+            #f11000c4,
+            #ee7300c4,
+            #ffe600c4,
+            #14eb00c4,
+            #007beec4,
+            #af01e4c4 100%
+        );
     }
 
-    &__input {
-        opacity: 0;
-        border: 0;
-        height: calc(100% + 20px);
-        width: 100%;
-        margin: -10px auto;
-        background: transparent;
-        position: absolute;
-        cursor: pointer;
-        z-index: 1;
-
-        ~ .dark-mode-switch__toggle:before {
-            content: "OFF";
-            position: absolute;
-            left: 0;
-            top: -11px;
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            padding: 0;
-            margin: auto;
-            font-family: typeface(sourcesans);
-            font-size: font-size(cxxs);
-            font-weight: font-weight(bold);
-            transition: all transition(ease-in-out);
-            width: 40px;
-            height: 40px;
-            background: #ffe600c4;
-            background-image: linear-gradient(
-                -45deg,
-                #f11000c4,
-                #ee7300c4,
-                #ffe600c4,
-                #14eb00c4,
-                #007beec4,
-                #af01e4c4 100%
-            );
-            border-radius: 50%;
-            border: solid 2px brand-color(snow);
-            box-shadow: spacing(xxxxs) spacing(xxxxs) spacing(xxs) spacing(xxs)
-                brand-color(midnight);
-        }
-
-        &:checked {
-            ~ .dark-mode-switch__toggle:before {
-                content: "ON";
-                left: 40%;
-                background: #302c35;
-            }
-        }
-
-        &.focus-visible {
-            ~ label {
-                outline: border(focus);
-                outline-offset: spacing(s);
-            }
-        }
-
-        label {
-            outline: border(focus);
-            outline-offset: spacing(s);
-        }
-    }
-
-    &__toggle-line {
-        height: 100%;
-        width: 100%;
-        border-radius: 10px;
-        background: brand-color(midnight);
+    &::before {
+        content: "OFF ";
     }
 }
 
 .dark-mode {
-    .dark-mode-switch {
-        &__label {
-            color: brand-color(dark-midnight);
-        }
+    .dark-mode-button {
+        color: brand-color(midnight);
+        background: brand-color(snow);
 
-        &__input {
-            &.focus-visible {
-                ~ label {
-                    outline: border(dark-focus);
-                }
-            }
-        }
-
-        &__toggle-line {
+        &:hover,
+        &:focus,
+        .focus-visible {
             background: #ffe600c4;
             background-image: linear-gradient(
                 -45deg,
@@ -120,32 +65,37 @@
                 #007beec4,
                 #af01e4c4 100%
             );
+        }
+
+        &::before {
+            content: "ON ";
         }
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    .dark-mode-switch {
-        &__input {
-            ~ .dark-mode-switch__toggle:before {
-                content: "ON";
-                background: #302c35;
+    .dark-mode {
+        .dark-mode-button {
+            color: brand-color(midnight);
+            background: brand-color(snow);
+
+            &:hover,
+            &:focus,
+            .focus-visible {
+                background: #ffe600c4;
+                background-image: linear-gradient(
+                    -45deg,
+                    #f11000c4,
+                    #ee7300c4,
+                    #ffe600c4,
+                    #14eb00c4,
+                    #007beec4,
+                    #af01e4c4 100%
+                );
             }
 
-            &:checked {
-                ~ .dark-mode-switch__toggle:before {
-                    content: "OFF";
-                    background: #ffe600c4;
-                    background-image: linear-gradient(
-                        -45deg,
-                        #f11000c4,
-                        #ee7300c4,
-                        #ffe600c4,
-                        #14eb00c4,
-                        #007beec4,
-                        #af01e4c4 100%
-                    );
-                }
+            &::before {
+                content: "ON ";
             }
         }
     }

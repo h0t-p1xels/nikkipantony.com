@@ -450,7 +450,7 @@
   },
   {
     "name": "$radii",
-    "value": "( square: 0px, rounded: 6px, )",
+    "value": "( square: 0px, rounded: 6px, round: 20px, )",
     "mapValue": [
       {
         "name": "square",
@@ -461,9 +461,14 @@
         "name": "rounded",
         "value": "6px",
         "compiledValue": "6px"
+      },
+      {
+        "name": "round",
+        "value": "20px",
+        "compiledValue": "20px"
       }
     ],
-    "compiledValue": "(square: 0px, rounded: 6px)"
+    "compiledValue": "(square: 0px, rounded: 6px, round: 20px)"
   },
   {
     "name": "$shadows",

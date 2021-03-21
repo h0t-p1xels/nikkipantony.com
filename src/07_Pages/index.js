@@ -10,7 +10,7 @@ import React from "react"
 import SEO from "../09_Utilities/SEO"
 import Layout from "../06_Templates/Layout/Layout"
 import Contact from "../04_Molecules/Contact/Contact"
-import Social from "../04_Molecules/SocalIcons/SocialIcons"
+import Social from "../04_Molecules/SocialIcons/SocialIcons"
 import Avatar from "../03_Atoms/Avatar/Avatar"
 
 const IndexPage = () => (

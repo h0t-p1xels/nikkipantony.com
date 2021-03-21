@@ -64,5 +64,10 @@
 
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact"
-	}
+	},
+	"cSpell.words": [
+		"cxxs",
+		"linkedin",
+		"sourcesans"
+	]
 }
