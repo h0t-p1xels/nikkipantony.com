@@ -1,11 +1,12 @@
 import React from "react"
+import Icon from "../Icon/Icon"
 
 const DarkModeSwitch = () => {
     const toggle = () => document.body.classList.toggle("dark-mode")
 
     return (
         <button className="dark-mode-button" onClick={toggle}>
-            Dark Mode
+            <Icon name="darkmode" /> Dark Mode
         </button>
     )
 }

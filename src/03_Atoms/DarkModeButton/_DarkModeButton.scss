@@ -4,7 +4,9 @@
  */
 
 .dark-mode-button {
-    display: inline-block;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
     color: brand-color(snow);
     font-family: typeface(sourcesans);
     font-size: font-size(cxxs);
@@ -19,16 +21,21 @@
     transition: background-color transition(ease-in-out);
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding: spacing(xs) spacing(s);
+    padding: spacing(s) spacing(m);
     margin: 0 spacing(m) 0 0;
+
+    .icon {
+        fill: brand-color(snow);
+        margin: auto spacing(xs) auto 0;
+        transform: scale(1.1);
+    }
 
     &:active {
         transform: scale(1);
     }
 
     &:hover,
-    &:focus,
-    .focus-visible {
+    &.focus-visible {
         color: brand-color(midnight);
         background: #ffe600c4;
         background-image: linear-gradient(
@@ -40,21 +47,24 @@
             #007beec4,
             #af01e4c4 100%
         );
-    }
 
-    &::before {
-        content: "OFF ";
+        .icon {
+            fill: brand-color(midnight);
+        }
     }
 }
 
 .dark-mode {
     .dark-mode-button {
         color: brand-color(midnight);
-        background: brand-color(snow);
+        background: brand-color(dark-midnight);
+
+        .icon {
+            fill: brand-color(midnight);
+        }
 
         &:hover,
-        &:focus,
-        .focus-visible {
+        &.focus-visible {
             background: #ffe600c4;
             background-image: linear-gradient(
                 -45deg,
@@ -65,10 +75,10 @@
                 #007beec4,
                 #af01e4c4 100%
             );
-        }
 
-        &::before {
-            content: "ON ";
+            .icon {
+                fill: brand-color(midnight);
+            }
         }
     }
 }
@@ -77,11 +87,14 @@
     .dark-mode {
         .dark-mode-button {
             color: brand-color(midnight);
-            background: brand-color(snow);
+            background: brand-color(dark-midnight);
+
+            .icon {
+                fill: brand-color(midnight);
+            }
 
             &:hover,
-            &:focus,
-            .focus-visible {
+            &.focus-visible {
                 background: #ffe600c4;
                 background-image: linear-gradient(
                     -45deg,
@@ -92,10 +105,10 @@
                     #007beec4,
                     #af01e4c4 100%
                 );
-            }
 
-            &::before {
-                content: "ON ";
+                .icon {
+                    fill: brand-color(midnight);
+                }
             }
         }
     }
