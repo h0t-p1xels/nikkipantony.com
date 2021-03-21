@@ -6,7 +6,7 @@ const SocialIcons = () => {
         <ul className="social-icons">
             <li>
                 <a
-                    aria-label="Visit Instgram profile. Opens in a new tab"
+                    aria-label="Visit Instagram profile. Opens in a new tab"
                     href="https://www.instagram.com/nikkipantony/"
                     target="_blank"
                     rel="noreferrer"

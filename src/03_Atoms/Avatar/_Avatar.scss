@@ -8,8 +8,8 @@
     position: relative;
     display: flex;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     padding: 0;
     background-color: brand-color(snow);
     cursor: crosshair;
@@ -21,8 +21,8 @@
     }
 
     @media (min-width: breakpoint(m)) {
-        min-width: 190px;
-        min-height: 190px;
+        min-width: 240px;
+        min-height: 240px;
     }
 
     &__image {
