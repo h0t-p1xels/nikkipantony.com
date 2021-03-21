@@ -1,11 +1,10 @@
 .social-icons {
     display: flex;
     justify-content: space-between;
-    margin: spacing(l) 0 0 -4px;
+    margin: spacing(xxxxl) 0 0;
 
     @media (min-width: breakpoint(s)) {
         max-width: 340px;
-        margin-top: spacing(xxxxl);
     }
 
     a {
