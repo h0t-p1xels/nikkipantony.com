@@ -31,9 +31,7 @@ const IndexPage = () => (
                     rel="noreferrer"
                 >
                     RemotePrint
-                </a>{" "}
-                & Independent UI/UX Product Designer and Front-End Web
-                Developer.
+                </a>{" "}.
             </p>
             <Contact />
             <Social />
