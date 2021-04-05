@@ -17,14 +17,14 @@ const IndexPage = () => (
     <Layout>
         <SEO
             lang="en"
-            title="Independent UI/UX Product Designer and Front-End Web Developer."
-            description="Working with JAMstack using Gatsby / ReactJS / GraphQL / Storybook. Big Figma fan for design. Web Accessibility and Design Systems Advocate."
+            title="UX Product Designer and Front-End Web Developer."
+            description="Working on the JAMstack using Gatsby / ReactJS / GraphQL / Storybook. Big Figma fan plus Web Accessibility and Design Systems Advocate."
         />
         <Avatar />
         <div>
             <h1>NIKKI PANTONY</h1>
             <p>
-                Founder at{" "}
+                Founder & UX Product Designer / Web Developer at{" "}
                 <a
                     href="https://remoteprint.co"
                     target="_blank"
