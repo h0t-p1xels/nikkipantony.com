@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Avatar = () => {
     const data = useStaticQuery(graphql`
         query {
-            file(relativePath: { eq: "Avatar-NP.jpg" }) {
+            file(relativePath: { eq: "nikki-pantony-avatar.jpg" }) {
                 childImageSharp {
                     fluid(maxWidth: 400, maxHeight: 400) {
                         ...GatsbyImageSharpFluid
@@ -35,7 +35,7 @@ const Avatar = () => {
                 <Img
                     fluid={data.file.childImageSharp.fluid}
                     className="avatar__image"
-                    alt="Nikki Pantony in a green field with a tree."
+                    alt="Nikki Pantony with trees behind her in the woods."
                     fadeIn={true}
                     loading="eager"
                 />

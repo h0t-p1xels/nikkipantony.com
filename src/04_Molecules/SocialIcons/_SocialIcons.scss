@@ -1,7 +1,7 @@
 .social-icons {
     display: flex;
     justify-content: space-between;
-    margin: spacing(xxxxl) 0 0;
+    margin: spacing(xxl) 0 0;
 
     @media (min-width: breakpoint(s)) {
         max-width: 340px;

@@ -424,7 +424,7 @@ var {
 // It used to be the case that an <address> element was only supposed to be used to represent the contact information of the
 // document's author, however, its definition has since been updated so it can now be used to mark up arbitrary addresses.
 address {
-    font-style: italic;
+    font-style: normal;
     padding-bottom: spacing(l);
 
     p {

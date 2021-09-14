@@ -24,14 +24,15 @@ const IndexPage = () => (
         <div>
             <h1>NIKKI PANTONY</h1>
             <p>
-                Founder & UX Product Designer / Web Developer at{" "}
+                UX Product Designer / Web Developer & soon to be Founder at{" "}
                 <a
                     href="https://remoteprint.co"
                     target="_blank"
                     rel="noreferrer"
                 >
                     RemotePrint
-                </a>{" "}.
+                </a>{" "}
+                .
             </p>
             <Contact />
             <Social />
