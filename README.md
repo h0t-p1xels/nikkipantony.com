@@ -1,6 +1,6 @@
 # nikkipantony.com
 
-**Personal MVP website of Independent UI/UX Product Designer and Front-End Web Developer Nikki Pantony.**
+**Personal MVP website of UI/UX Product Designer and Front-End Web Developer Nikki Pantony.**
 
 </br>
 
