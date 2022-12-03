@@ -1,7 +1,7 @@
 /**
  * Dark Mode Utility Component
  *
- * Detects if app/website visitor has their `prefers-color-scheme` set to dark
+ * Detects if app/site visitor has their `prefers-color-scheme` set to dark
  */
 
 const DarkMode = () => {
@@ -13,7 +13,7 @@ const DarkMode = () => {
 
   if (typeof document !== `undefined`) {
     if (prefersDark) {
-      document.body.classList.add("--dark")
+      document.body.classList.add("dark-mode")
     }
   }
   return null
