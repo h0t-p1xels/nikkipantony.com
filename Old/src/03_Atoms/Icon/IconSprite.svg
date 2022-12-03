@@ -1,11 +1,10 @@
 <!--
  * SVG Icon Sprite
  * 
- * Help (with example) from: https://github.com/parcel-bundler/parcel/issues/2246
  * SVG `symbol` a Good Choice for Icons by Chris Coyier: https://css-tricks.com/svg-symbol-good-choice-icons
  * Creating an SVG Icon System with React by Sarah Drasner: https://css-tricks.com/creating-svg-icon-system-react
- * SVG customization using Figma: https://figma.com
  * SVG's have been optimizated using the SVGO web app SVGOMG: https://jakearchibald.github.io/svgomg
+ * SVG Icons from Material Design Icons: https://materialdesignicons.com
 -->
 
 <svg xmlns="http://www.w3.org/2000/svg">
