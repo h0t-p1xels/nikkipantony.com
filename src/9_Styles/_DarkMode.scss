@@ -1,0 +1,18 @@
+/*
+ * Dark/Light Mode Base Styles
+ *
+ */
+
+// Set body background color and typography base color
+body,
+body.--light {
+  // Unset / Light mode
+  color: $brand-light;
+  background-color: $brand-dark;
+
+  // Dark mode
+  &.--dark {
+    color: $brand-light--dark;
+    background-color: $brand-dark--dark;
+  }
+}

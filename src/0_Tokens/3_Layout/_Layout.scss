@@ -1,0 +1,50 @@
+/*
+ * Layout Design Tokens
+ *
+ * To update "design-tokens.json" for export to Storybook run "yarn gen-dt"
+ */
+
+// Breakpoint Design Tokens
+/**
+ * @sass-export-section="breakpoints"
+ */
+$breakpoint-xs: 300px;
+$breakpoint-s: 380px;
+$breakpoint-m: 940px;
+$breakpoint-l: 1200px;
+$breakpoint-xl: 1600px;
+//@end-sass-export-section
+
+// Wrapper Design Tokens
+/**
+ * @sass-export-section="wrappers"
+ */
+$wrapper-site-max-width: 1600px;
+$wrapper-block-max-width: 740px;
+//@end-sass-export-section
+
+// Spacing Design Tokens
+/**
+ * @sass-export-section="spacing"
+ */
+$spacing-xxxxs: 0.0625rem;
+$spacing-xxxs: 0.125rem;
+$spacing-xxs: 0.25rem;
+$spacing-xs: 0.5rem;
+$spacing-s: 0.75rem;
+$spacing-m: 1rem;
+$spacing-l: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-xxl: 2.5rem;
+$spacing-xxxl: 3rem;
+$spacing-xxxxl: 3.5rem;
+//@end-sass-export-section
+
+// Z Layer Design Tokens
+/**
+ * @sass-export-section="z-layers"
+ */
+$zlayer-skip-link: 10;
+$zlayer-header: 5;
+$zlayer-footer: 5;
+//@end-sass-export-section

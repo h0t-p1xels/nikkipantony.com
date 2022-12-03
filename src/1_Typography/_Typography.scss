@@ -1,0 +1,493 @@
+/*
+ * Typography Element Styles
+ *
+ */
+
+// All Typography elements styled within this stylesheet are
+// accompanied by a link to the appropriate MDN Docs for
+// further information and guidance if needed.
+
+// Headings
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $brand-light;
+  font-family: $typeface-raleway;
+  font-weight: $font-weight-x-bold;
+  line-height: normal;
+  letter-spacing: $tracking-normal;
+  margin-bottom: $spacing-m;
+}
+
+.--dark {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $brand-light--dark;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: $spacing-s 0;
+}
+
+h1 {
+  // font-size: $font-size-hxl; // Changed for MVP landing page
+  font-size: $font-size-hl;
+}
+
+h2 {
+  font-size: $font-size-hl;
+}
+
+h3 {
+  font-size: $font-size-hm;
+}
+
+h4 {
+  font-size: $font-size-hs;
+}
+
+h5 {
+  font-size: $font-size-hxs;
+}
+
+h6 {
+  font-size: $font-size-hxs;
+}
+
+// // Paragraphs
+// // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
+p {
+  color: $brand-light;
+  font-family: $typeface-lato;
+  font-size: $font-size-cm;
+  font-weight: $font-weight-regular;
+  line-height: $leading-regular;
+  letter-spacing: $tracking-normal;
+  margin-bottom: $spacing-m;
+}
+
+.--dark {
+  p {
+    color: $brand-light--dark;
+  }
+}
+
+// // Links
+// // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a
+a,
+a:link,
+a:visited {
+  font-family: $typeface-lato;
+  color: $brand-light;
+  font-size: $font-size-cm;
+  font-weight: $font-weight-bold;
+  line-height: $leading-regular;
+  letter-spacing: $tracking-normal;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+
+  &:hover,
+  &:active,
+  &.focus-visible {
+    background: $brand-accent;
+  }
+}
+
+.--dark {
+  a,
+  a:link,
+  a:visited {
+    color: $brand-light--dark;
+
+    &:hover,
+    &:active,
+    &.focus-visible {
+      color: $brand-dark--dark;
+    }
+  }
+}
+
+// Microcopy
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/small
+small {
+  font-size: $font-size-cs;
+  font-weight: $font-weight-regular;
+}
+
+// Emphasis
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em
+em {
+  font-size: $font-size-cm;
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
+
+// Idiomatic Text
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i
+i {
+  font-size: $font-size-cm;
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
+
+// Strong Importance
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong
+strong {
+  font-weight: $font-weight-bold;
+}
+
+// Bring Attention
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b
+b {
+  font-weight: $font-weight-bold;
+}
+
+// Highlighting
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/mark
+// https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible
+// Note: Accessibility Concerns
+// The presence of the mark element is not announced by most screen reading technology in its default configuration.
+// It can be made to be announced using a span with the .sr-only class at the start and end of the highlighted text.
+// ie: <mark><span className="sr-only"> [highlight starts] </span> Highlighed Text <span className="sr-only"> [highlight ends] </span><mark>
+mark {
+  color: $brand-dark;
+  background-color: $brand-accent;
+}
+
+.--dark mark {
+  color: $brand-dark--dark;
+  background-color: $brand-accent--dark;
+}
+
+// Abbreviations
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr
+abbr {
+  font-style: italic;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 3px;
+  text-decoration-color: $brand-light;
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
+.--dark {
+  abbr {
+    text-decoration-color: $brand-light--dark;
+  }
+}
+
+// Definitions
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dfn
+dfn {
+  font-size: $font-size-cm;
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
+
+// Unarticulated Annotation
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/u
+u {
+  font-style: italic;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
+  text-decoration-color: $action-red;
+}
+
+.--dark {
+  u {
+    text-decoration-color: $action-red--dark;
+  }
+}
+
+// Strikethrough
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/s
+s {
+  text-decoration: line-through;
+  text-decoration-thickness: 3px;
+}
+
+// Deleted / Inserted Text
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins
+del,
+ins {
+  color: $brand-light;
+  font-weight: $font-weight-bold;
+  padding: $spacing-xxxxs $spacing-xxxs;
+}
+
+del {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  background-color: tint($action-red, tint-50);
+}
+
+ins {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  background-color: tint($action-green, tint-50);
+}
+
+// Lists
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol
+ul,
+ol {
+  margin: $spacing-xl 0;
+  padding-left: $spacing-xxxxl;
+
+  li {
+    font-family: $typeface-lato;
+    font-size: $font-size-cm;
+    font-weight: $font-weight-bold;
+    color: $brand-light;
+    margin: $spacing-xxs 0;
+  }
+}
+
+body.--dark {
+  ul,
+  ol {
+    li {
+      color: $brand-light--dark;
+    }
+  }
+}
+
+// Time
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time
+time {
+  font-family: $typeface-mono;
+  line-height: $leading-regular;
+  font-size: $font-size-cs;
+  font-weight: $font-weight-bold;
+  color: $brand-dark;
+  background: $brand-light;
+  letter-spacing: $tracking-normal;
+  border: 0;
+  border-radius: $radius-rounded;
+  padding: $spacing-xxs $spacing-xs;
+  margin: 0 $spacing-xxxs;
+}
+
+.--dark time {
+  color: $brand-dark--dark;
+  background: $brand-light--dark;
+}
+
+// Address
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address
+address {
+  font-style: italic;
+  padding-bottom: $spacing-l;
+}
+
+// Figure Captions
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figcaption
+figcaption {
+  font-family: $typeface-raleway;
+  font-size: $font-size-cs;
+  font-weight: $font-weight-bold;
+  line-height: $leading-tall;
+  margin: $spacing-xxs 0 0 $spacing-xxxxs;
+}
+
+// Inline Quotation
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q
+q {
+  font-style: italic;
+
+  a,
+  a:link,
+  a:visited,
+  a:active {
+    font-style: italic;
+    font-weight: $font-weight-bold;
+  }
+
+  &::before,
+  &::after {
+    font-size: 1.2em;
+    font-weight: $font-weight-x-bold;
+  }
+  &::before {
+    margin-right: $spacing-xxxs;
+  }
+  &::after {
+    margin-left: $spacing-xxxxs;
+  }
+}
+
+// Block Quotations
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote
+blockquote {
+  margin: $spacing-xxxl 0 $spacing-l;
+  width: 100%;
+  max-width: $wrapper-block-max-width;
+
+  p {
+    font-size: $font-size-cm;
+    line-height: $leading-regular;
+    font-weight: $font-weight-bold;
+    padding: $spacing-xl $spacing-xxl;
+    border-radius: $radius-square;
+    box-shadow: $shadow-solid;
+    border: $border-solid $brand-light;
+    background: $brand-accent;
+  }
+
+  & ~ figcaption {
+    font-family: $typeface-raleway;
+    font-size: $font-size-cs;
+    font-weight: $font-weight-bold;
+    line-height: $leading-tall;
+    margin: $spacing-xxs;
+    padding: 0;
+    max-width: $wrapper-block-max-width;
+    text-align: right;
+  }
+}
+
+.--dark blockquote p {
+  color: $brand-dark;
+  background: $brand-accent--dark;
+}
+
+figure > figcaption > cite > a,
+figure > figcaption > cite > a:link,
+figure > figcaption > cite > a:visited,
+figure > figcaption > cite > a:active {
+  font-size: $font-size-cs;
+  margin-left: $spacing-xxxs;
+}
+
+// Citations (for Quotations)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite
+cite,
+cite a {
+  font-style: italic;
+}
+
+// Inline Code
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code
+code {
+  font-family: $typeface-mono;
+  line-height: $leading-regular;
+  font-size: $font-size-cs;
+  font-weight: $font-weight-bold;
+  color: $brand-dark;
+  background: $brand-light;
+  border: 0;
+  border-radius: $radius-rounded;
+  padding: $spacing-xxs $spacing-xs;
+  margin: 0 $spacing-xxxs;
+}
+
+.--dark code {
+  color: $brand-dark--dark;
+  background: $brand-light--dark;
+}
+
+// Code Blocks (Preformatted Text)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre
+pre {
+  display: block;
+  width: 100%;
+  max-width: $wrapper-block-max-width;
+  background: $brand-light;
+  border: 0;
+  border-radius: $radius-rounded;
+  padding: $spacing-m;
+  margin: $spacing-s 0;
+}
+
+// Sample Output
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/samp
+samp {
+  display: block;
+  font-family: $typeface-mono;
+  font-size: $font-size-cs;
+  font-weight: $font-weight-bold;
+  color: $brand-dark;
+  border-radius: $radius-rounded;
+  background: $brand-light;
+  padding: $spacing-m;
+  margin: 0 0 $spacing-xl;
+}
+
+.--dark samp {
+  color: $brand-dark--dark;
+  background: $brand-light--dark;
+}
+
+// Variable
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/var
+var {
+  font-size: $font-size-cm;
+  font-weight: $font-weight-bold;
+  font-style: italic;
+}
+
+// Superscript
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup
+// sup {}
+
+// // Subscript
+// // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub
+// // sub {}
+
+// Keyboard Input
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd
+.innerZoomElementWrapper kbd, // So it is not overridden by sbdocs styling in storybook
+kbd {
+  display: inline-block;
+  color: $brand-dark;
+  font-family: $typeface-mono;
+  font-size: $font-size-cm;
+  font-weight: $font-weight-bold;
+  line-height: 1;
+  background: shade($brand-light, shade-20);
+  border-radius: $radius-rounded;
+  box-shadow: 0 $spacing-xxxs $spacing-xxxs tint($brand-dark, tint-20),
+    0 $spacing-xxxs 0 0 shade($brand-light, shade-20) inset;
+  padding: $spacing-xxs $spacing-xs;
+  margin: auto $spacing-xxxs;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.--dark .innerZoomElementWrapper kbd, // So it is not overridden by sbdocs styling in storybook
+.--dark kbd {
+  color: $brand-dark--dark;
+  background: $brand-light--dark;
+}
+
+// Thematic Break (Horizontal Rule)
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr
+hr {
+  border: none;
+  border-top: $border-solid $brand-light;
+  margin: $spacing-xxxl 0;
+}
+
+.--dark {
+  hr {
+    border-color: $brand-light--dark;
+  }
+}

@@ -1,0 +1,60 @@
+/*
+ * Accessibility Styles
+ *
+ */
+
+// Focus Visible Styles
+// ====================
+// WICG Polyfill for `:focus-visible`: https://github.com/wicg/focus-visible
+// Demo: https://wicg.github.io/focus-visible/demo/
+// JavaScript imported in `./gatsby-browser.js` for Gatsby Build
+// JavaScript imported in `.storybook/preview.js` for Storybook Build
+
+// This will hide the focus indicator if the element receives focus via the mouse,
+// but it will still show up on keyboard focus.
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+// This defines a strong focus indicator for keyboard focus.
+// If this styling is removed the browser's default focus indicator will be displayed instead.
+.js-focus-visible .focus-visible {
+  outline: $border-solid $brand-dark;
+  outline-offset: 3px;
+}
+
+// Does not work in storybook unless browser / system is set to dark mode
+@media (prefers-color-scheme: dark) {
+  .js-focus-visible .focus-visible,
+  .--dark .js-focus-visible .focus-visible {
+    outline: $border-solid $brand-light--dark;
+  }
+}
+
+// Screen Reader Only
+// ==================
+// Utility for improving accessibility with screen readers.
+// Use .sr-only to hide an element visually without hiding it from screen readers.
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+// Reduced Motion Preferences
+// ==========================
+// Remove All Animations And Transitions For People Who Prefer Not to See Them
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

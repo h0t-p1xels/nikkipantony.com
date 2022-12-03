@@ -1,0 +1,130 @@
+/*
+ * Color Design Tokens
+ *
+ * To update "design-tokens.json" for export to Storybook run "yarn gen-dt"
+ */
+
+// Brand Color Tokens
+/**
+ * @sass-export-section="brand-colors"
+ */
+$brand-accent: #ff5500;
+$brand-dark: #06060d;
+$brand-light: #fff6d7;
+//@end-sass-export-section
+
+// Action Color Tokens
+/**
+ * @sass-export-section="action-colors"
+ */
+$action-green: #18d14c;
+$action-amber: #ff9d00;
+$action-red: #f30b17;
+//@end-sass-export-section
+
+// Gradient Tokens
+/**
+ * @sass-export-section="gradients"
+ */
+$gradient-mgs: linear-gradient(
+  140deg,
+  $brand-dark 0%,
+  $brand-accent 70%,
+  $brand-light 90%
+);
+$gradient-gs: linear-gradient(35deg, $brand-accent 0%, $brand-light 80%);
+//@end-sass-export-section
+
+// Opacities
+/**
+ * @sass-export-section="opacities"
+ */
+$opacity-0: 0;
+$opacity-25: 0.25;
+$opacity-5: 0.5;
+$opacity-75: 0.75;
+$opacity-1: 1;
+//@end-sass-export-section
+
+// Shade Function Values
+/**
+ * @sass-export-section="shades"
+ */
+$shades: (
+  shade-10: 10%,
+  shade-20: 20%,
+  shade-30: 30%,
+  shade-40: 40%,
+  shade-50: 50%,
+);
+//@end-sass-export-section
+
+// Shade Design Token Function
+// Example Use: shade($brand-accent, 40)
+@function shade($color, $number) {
+  @if map-has-key($shades, $number) {
+    @return mix(#000, $color, map-get($shades, $number));
+  }
+
+  @error "The key #{$number} is not in the $shades design token map, please choose between shade-10/20/30/40/50";
+  @return null;
+}
+
+// Tint Function Values
+/**
+ * @sass-export-section="tints"
+ */
+$tints: (
+  tint-10: 10%,
+  tint-20: 20%,
+  tint-30: 30%,
+  tint-40: 40%,
+  tint-50: 50%,
+);
+//@end-sass-export-section
+
+// Tint Design Token Function
+// Example Use: tint($brand-accent, 40)
+@function tint($color, $number) {
+  @if map-has-key($tints, $number) {
+    @return mix(#fff, $color, map-get($tints, $number));
+  }
+
+  @error "The key #{$number} is not in the $tints design token map, please choose between tint-10/20/30/40/50";
+  @return null;
+}
+
+// Dark Mode Brand Color Tokens
+/**
+ * @sass-export-section="brand-colors--dark"
+ */
+$brand-accent--dark: shade($brand-accent, shade-10);
+$brand-dark--dark: tint($brand-dark, tint-10);
+$brand-light--dark: shade($brand-light, shade-10);
+//@end-sass-export-section
+
+// Dark Mode Action Color Tokens
+/**
+ * @sass-export-section="action-colors--dark"
+ */
+$action-green--dark: shade($action-green, shade-20);
+$action-amber--dark: shade($action-amber, shade-20);
+$action-red--dark: shade($action-red, shade-20);
+//@end-sass-export-section
+
+// Dark Mode Gradient Tokens
+/**
+ * @sass-export-section="gradients--dark"
+ */
+$gradient-mgs--dark: linear-gradient(
+  140deg,
+  $brand-dark--dark 0%,
+  $brand-accent--dark 70%,
+  $brand-light--dark 90%
+);
+$gradient-gs--dark: linear-gradient(
+  35deg,
+  $brand-accent--dark 0%,
+  $brand-light--dark 80%
+);
+//@end-sass-export-section

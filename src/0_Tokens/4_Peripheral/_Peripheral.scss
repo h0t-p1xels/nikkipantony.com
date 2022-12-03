@@ -1,0 +1,30 @@
+/*
+ * Peripheral Design Tokens
+ *
+ * To update "design-tokens.json" for export to Storybook run "yarn gen-dt"
+ */
+
+// Border Tokens
+/**
+ * @sass-export-section="borders"
+ */
+$border-solid: 3px solid;
+$border-dashed: 3px dashed;
+//@end-sass-export-section
+
+// Shadow Tokens
+/**
+ * @sass-export-section="shadows"
+ */
+$shadow-solid: 13px 13px 0 0 #000013;
+$shadow-blur: 0 0 4px #000013;
+$shadow-blur--thin: 0 0 1px #000013;
+//@end-sass-export-section
+
+// Radii Tokens
+/**
+ * @sass-export-section="radii"
+ */
+$radius-square: 0px;
+$radius-rounded: 6px;
+//@end-sass-export-section

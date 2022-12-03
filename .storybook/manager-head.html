@@ -1,0 +1,160 @@
+<!-- 
+* Custom CSS Theme for Storybook UI 
+* Extends base theming set in `preview.js`
+* Storybook docs: https://storybook.js.org/docs/react/configure/theming
+*
+-->
+
+<style>
+  /* Theme variables */
+  /* =============== */
+
+  :root {
+    --ally-gold: #ffd700;
+    --ally-gold--dark: #ffe343;
+    --ally-gold--hover: #fff9d8;
+    --ally-midnight: #000013;
+    --ally-midnight--dark: #dddddd;
+    --ally-snow: #fefefe;
+    --ally-snow--dark: #333333;
+    --ally-snow--code: #1f1f1f;
+    --ally-rubik: "Rubik", sans-serif;
+    --ally-archivo: "Archivo", sans-serif;
+    --ally-mono: "IBM Plex Mono", monospace;
+  }
+
+  div[role="main"] {
+    top: 17px !important;
+  }
+
+  .--dark * a {
+    color: var(--ally-midnight--dark) !important;
+  }
+
+  .sidebar-header a {
+    display: flex !important;
+    align-content: center !important;
+    justify-content: center !important;
+    font-size: 20px !important;
+    background: var(--ally-gold) !important;
+    text-align: center !important;
+    border-radius: 4px !important;
+    padding: 6px 0 !important;
+  }
+
+  button[title="Shortcuts"] {
+    color: var(--ally-midnight) !important;
+    background: var(--ally-gold) !important;
+  }
+
+  button[title="Shortcuts"]:hover,
+  button[title="Shortcuts"]:focus {
+    background: var(--ally-gold--hover) !important;
+  }
+
+  .--dark button[title="Shortcuts"] {
+    color: var(--ally-snow--dark) !important;
+    background: var(--ally-gold) !important;
+  }
+
+  .--dark button[title="Shortcuts"]:hover,
+  .--dark button[title="Shortcuts"]:focus {
+    background: var(--ally-gold--hover) !important;
+  }
+
+  .search-field {
+    color: var(--ally-midnight) !important;
+    margin: 20px 0 0 -4px !important;
+  }
+
+  .search-field input {
+    color: var(--ally-midnight) !important;
+    box-shadow: var(--ally-midnight) 0 0 2px !important;
+    font-weight: 600 !important;
+  }
+  .--dark .search-field input {
+    border: 2px solid var(--ally-midnight--dark) !important;
+  }
+
+  .search-field svg {
+    color: var(--ally-midnight) !important;
+  }
+
+  .--dark .search-field svg {
+    color: var(--ally-gold) !important;
+  }
+
+  .search-field code {
+    display: none !important;
+    color: var(--ally-midnight) !important;
+    background: var(--ally-gold) !important;
+  }
+
+  .sidebar-subheading {
+    color: var(--ally-midnight) !important;
+    border-bottom: solid var(--ally-midnight) 3px;
+    margin-bottom: 0 !important;
+    background: var(--ally-gold) !important;
+    border-top: solid var(--ally-midnight) 2px !important;
+  }
+
+  .sidebar-subheading button {
+    flex-direction: row-reverse !important;
+    width: 100% !important;
+    justify-content: space-between !important;
+    color: var(--ally-midnight) !important;
+    font-size: 15px !important;
+    line-height: 20px !important;
+    min-height: 20px !important;
+    letter-spacing: 0.05rem !important;
+    text-transform: capitalize !important;
+    padding: 6px 20px !important;
+  }
+
+  .sidebar-subheading span {
+    color: var(--ally-midnight) !important;
+    border-top: 4px solid transparent !important;
+    border-bottom: 4px solid transparent !important;
+    border-left: 5px solid !important;
+  }
+
+  .sidebar-subheading-action {
+    display: none !important;
+  }
+
+  .sidebar-item {
+    font-size: 14px !important;
+    padding: 10px 0px 10px 20px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05rem !important;
+    border-bottom: solid rgba(153, 153, 153, 0.4) 1px !important;
+  }
+
+  .sidebar-item[data-selected="true"] {
+    color: var(--ally-midnight) !important;
+    background: rgba(153, 153, 153, 0.2) !important;
+    font-weight: 700 !important;
+  }
+
+  .--dark .sidebar-item[data-selected="true"] {
+    color: var(--ally-midnight--dark) !important;
+  }
+
+  .sidebar-item:hover {
+    background: rgba(153, 153, 153, 0.1) !important;
+  }
+
+  .sidebar-item svg {
+    display: none !important;
+  }
+
+  /* This hides the button "skip to canvas" used for improved a11y, hiding it is not good, this needs future development */
+  a[href="#storybook-preview-wrapper"] {
+    display: none !important;
+  }
+
+  /* Open in new window icons */
+  .sto-mkd0wg > svg {
+    color: var(--ally-midnight) !important;
+  }
+</style>
