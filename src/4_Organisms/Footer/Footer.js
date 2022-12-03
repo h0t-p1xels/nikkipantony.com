@@ -7,16 +7,14 @@
  */
 
 import React from "react"
-// import DarkModeButton from "../../03_Atoms/DarkModeButton/DarkModeButton"
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__inner">
-        <p className="footer__text">
+        <p className="footer__content">
           <small>&copy; {new Date().getFullYear()}</small>
         </p>
-        {/* <DarkModeButton /> */}
       </div>
     </footer>
   )
