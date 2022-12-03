@@ -1,0 +1,11 @@
+/*
+ * Avatar Styles
+ *
+ */
+
+.avatar {
+  border-radius: 50%;
+  box-shadow: $brand-dark 0 0 $spacing-xxs 0;
+  margin: auto auto $spacing-xxxl;
+  padding: 0;
+}
