@@ -11,7 +11,7 @@ import SEO from "../8_Utilities/SEO"
 import PageTemplate from "../5_Templates/PageTemplate/PageTemplate"
 // import Contact from "../04_Molecules/Contact/Contact"
 // import Social from "../04_Molecules/SocialIcons/SocialIcons"
-// import Avatar from "../03_Atoms/Avatar/Avatar"
+import Avatar from "../2_Atoms/Avatar/Avatar"
 
 const IndexPage = () => (
   <>
@@ -21,15 +21,16 @@ const IndexPage = () => (
       description="I'm passionate about designing and building fast, secure and scalable digital products that achieve business goals, build value and convert visitors to customers."
     />
     <PageTemplate>
-      {/* <Avatar /> */}
-      <div>
-        <h1>NIKKI PANTONY</h1>
-        <p className="sub-heading">
-          Digital Product Designer, Web Developer & soon to be Founder.
-        </p>
-        {/* <Contact /> */}
-        {/* <Social /> */}
-      </div>
+      <Avatar />
+      <h1>NIKKI PANTONY</h1>
+      <p className="sub-heading">
+        Digital product designer, jamstack web developer & founder @{" "}
+        <a href="http://weareseed.co" rel="noopener" target="_blank">
+          weareseed.co
+        </a>
+      </p>
+      {/* <Contact /> */}
+      {/* <Social /> */}
     </PageTemplate>
   </>
 )
