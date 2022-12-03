@@ -13,7 +13,7 @@ const DarkMode = () => {
 
   if (typeof document !== `undefined`) {
     if (prefersDark) {
-      document.body.classList.add("dark-mode")
+      document.body.classList.add("--dark")
     }
   }
   return null
