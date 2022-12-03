@@ -3,14 +3,11 @@
  *
  */
 
-// Height of Footer Component
-$footer: 6rem;
-
 .page-template {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  // Sets minimum page height to viewport height - (Header + Footer) height to keep footer at bottom of page
-  min-height: calc(100vh - #{$footer});
+  min-height: 100vh;
 
   &__main {
     margin: auto;
