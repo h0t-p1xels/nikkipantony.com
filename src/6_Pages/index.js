@@ -1,57 +1,33 @@
+/*
+ * 404 Error Page
+ *
+ * Gatsby 404 Page: https://www.gatsbyjs.org/docs/add-404-page/
+ * Gatsby Link API: https://www.gatsbyjs.org/docs/gatsby-link/
+ *
+ */
+
 import React from "react"
+import SEO from "../8_Utilities/SEO"
+import PageTemplate from "../5_Templates/PageTemplate/PageTemplate"
+// import Contact from "../04_Molecules/Contact/Contact"
+// import Social from "../04_Molecules/SocialIcons/SocialIcons"
+// import Avatar from "../03_Atoms/Avatar/Avatar"
 
-export default function index() {
-  return (
-    <div className="container">
-      <main>
-        <div className="content">
-          <svg
-            width="359"
-            height="100"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="logo"
-          >
-            <path
-              d="M158.326 74.474v22.433H91.555V3.217h65.583V25.65h-39.851v13.195h34.045v20.85h-34.045v14.78h41.039ZM234.486 74.474v22.433h-66.772V3.217h65.584V25.65h-39.852v13.195h34.046v20.85h-34.046v14.78h41.04ZM243.874 96.907V3.217h36.025c10.381 0 19.046 2.11 25.996 6.334 7.038 4.134 12.316 9.764 15.835 16.89 3.607 7.038 5.41 14.868 5.41 23.489 0 9.501-1.979 17.77-5.938 24.808-3.871 7.038-9.369 12.492-16.495 16.363-7.038 3.87-15.307 5.806-24.808 5.806h-36.025Zm57.138-46.977c0-4.838-.835-9.061-2.507-12.668-1.671-3.695-4.09-6.554-7.258-8.577-3.167-2.024-6.949-3.035-11.348-3.035h-10.293v48.824h10.293c4.487 0 8.269-1.055 11.348-3.167 3.168-2.111 5.587-5.014 7.258-8.709 1.672-3.783 2.507-8.005 2.507-12.668Z"
-              fill="#FFF6D7"
-            />
-            <circle cx="342.784" cy="84.536" r="15.464" fill="#F50" />
-            <path
-              d="m68.939 32.828-2.452-1.38c-1.635-.92-3.798-1.93-6.49-3.034-2.692-1.196-5.625-2.253-8.798-3.173-3.173-.92-6.298-1.379-9.374-1.379-2.404 0-4.375.368-5.914 1.104-1.538.735-2.307 1.976-2.307 3.724 0 1.655.77 2.988 2.307 4 1.539 1.011 3.702 1.93 6.49 2.758a723.7 723.7 0 0 1 10.24 3.035c6.346 1.839 11.827 3.954 16.442 6.345 4.615 2.39 8.172 5.47 10.672 9.241 2.5 3.678 3.75 8.598 3.75 14.759 0 5.885-1.106 10.85-3.317 14.896-2.211 3.954-5.192 7.127-8.942 9.517-3.75 2.391-7.932 4.138-12.547 5.242A65.83 65.83 0 0 1 44.565 100c-4.904 0-10.048-.46-15.432-1.38a121.931 121.931 0 0 1-15.432-4c-5-1.746-9.567-3.77-13.701-6.068l12.115-23.587 2.884 1.656c1.923 1.103 4.471 2.345 7.644 3.724 3.173 1.38 6.682 2.62 10.528 3.724 3.942 1.103 7.885 1.655 11.827 1.655 3.076 0 5.192-.368 6.345-1.103 1.25-.828 1.875-1.885 1.875-3.173 0-1.93-1.057-3.402-3.173-4.413C47.93 65.93 45.142 64.92 41.681 64a1199.92 1199.92 0 0 1-11.25-3.448c-5.961-1.931-10.865-4.092-14.71-6.483-3.847-2.483-6.683-5.38-8.51-8.69-1.827-3.402-2.74-7.494-2.74-12.276 0-7.264 1.779-13.333 5.336-18.207 3.558-4.873 8.22-8.551 13.99-11.034C29.662 1.287 35.96 0 42.69 0c5 0 9.807.598 14.422 1.793 4.712 1.104 9.086 2.483 13.125 4.138 4.134 1.655 7.74 3.218 10.816 4.69L68.94 32.828Z"
-              fill="#FFF6D7"
-            />
-          </svg>
-
-          <h1>Creating value through innovative digital experiences</h1>
-
-          <a
-            href="https://linkedin.com/company/weareseed"
-            rel="noopener"
-            target="_blank"
-          >
-            <svg
-              width="34"
-              height="34"
-              viewBox="0 0 34 34"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="linkedin-logo"
-            >
-              <path d="M0 2.43525C0 1.09013 1.11775 0 2.49687 0H31.5031C32.8822 0 34 1.09013 34 2.43525V31.5648C34 32.9099 32.8822 34 31.5031 34H2.49687C1.11775 34 0 32.9099 0 31.5648V2.43525ZM10.5039 28.4622V13.1091H5.40175V28.4622H10.5039ZM7.95388 11.0118C9.7325 11.0118 10.8396 9.8345 10.8396 8.35975C10.8077 6.85313 9.73462 5.70775 7.98787 5.70775C6.24113 5.70775 5.1 6.85525 5.1 8.35975C5.1 9.8345 6.20713 11.0118 7.91988 11.0118H7.95388ZM18.3834 28.4622V19.8879C18.3834 19.4289 18.4174 18.9699 18.5534 18.6426C18.921 17.7267 19.7604 16.7769 21.1714 16.7769C23.018 16.7769 23.7554 18.1836 23.7554 20.2491V28.4622H28.8575V19.6562C28.8575 14.9388 26.3415 12.7458 22.984 12.7458C20.2768 12.7458 19.0634 14.2332 18.3834 15.2809V15.334H18.3494C18.3607 15.3163 18.372 15.2986 18.3834 15.2809V13.1091H13.2834C13.3471 14.5499 13.2834 28.4622 13.2834 28.4622H18.3834Z" />
-            </svg>
-            <span className="sr-only">LinkedIn company profile</span>
-          </a>
-        </div>
-      </main>
-      <footer className="footer">
-        <div className="footer__inner">
-          <hr />
-          <p className="footer__text">
-            <small>&copy; {new Date().getFullYear()} Seed.</small>
-          </p>
-        </div>
-      </footer>
+const IndexPage = () => (
+  <PageTemplate>
+    <SEO
+      lang="en"
+      title="Digital Product Designer and Web Developer."
+      description="I'm passionate about designing and building fast, secure and scalable digital products that achieve business goals, build value and convert visitors to customers."
+    />
+    {/* <Avatar /> */}
+    <div>
+      <h1>NIKKI PANTONY</h1>
+      <p>Digital Product Designer, Web Developer & soon to be Founder.</p>
+      {/* <Contact /> */}
+      {/* <Social /> */}
     </div>
-  )
-}
+  </PageTemplate>
+)
+
+export default IndexPage
