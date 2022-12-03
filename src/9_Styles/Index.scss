@@ -45,13 +45,14 @@
 // ================
 
 // Atom Component Styles
-// @import "../2_Atoms/Xx/Xx";
+@import "../2_Atoms/Icon/Icon";
 
 // Molecule Component Styles
-// @import "../3_Molecules/Xx/Xx";
+@import "../3_Molecules/DarkModeButton/DarkModeButton";
 
 // Organism Component Styles
 @import "../4_Organisms/Footer/Footer";
+@import "../4_Organisms/Header/Header";
 
 // Template Component Styles
 @import "../5_Templates/PageTemplate/PageTemplate";
