@@ -8,11 +8,14 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Seed.`,
-    description: `Creating value through innovative digital experiences.`,
-    // If you didn't use the resolveSiteUrl option this needs to be set
-    siteUrl: `https://weareseed.co`,
-    author: `Nikki Pantony`,
+    title: `Nikki Pantony`,
+    titleTemplate: `%s Nikki Pantony`,
+    description: `Personal website of Independent UI/UX Product Designer and Front-End Web Developer Nikki Pantony.`,
+    url: "https://www.nikkipantony.com", // Remember no trailing slash
+    image: "/socialmedia_images/nikkipantonycom.png", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@nikkipantony",
+    author: `Nikki Pantony @nikkipantony`,
+    lang: `en`,
   },
   plugins: [
     {
