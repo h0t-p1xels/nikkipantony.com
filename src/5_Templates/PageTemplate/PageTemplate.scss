@@ -10,17 +10,18 @@
   min-height: 100vh;
 
   &__main {
+    text-align: center;
     margin: auto;
-    max-width: $wrapper-block-max-width;
+    max-width: $wrapper-site-max-width;
     padding: $spacing-xxxl $spacing-l;
 
-    @media (min-width: $breakpoint-s) {
-      max-width: $wrapper-block-max-width;
-    }
+    // @media (min-width: $breakpoint-s) {
+    //   max-width: $wrapper-block-max-width;
+    // }
 
-    @media (min-width: $breakpoint-m) {
-      display: flex;
-      max-width: $wrapper-block-max-width;
-    }
+    // @media (min-width: $breakpoint-m) {
+    //   display: flex;
+    //   max-width: $wrapper-block-max-width;
+    // }
   }
 }
