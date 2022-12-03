@@ -23,11 +23,17 @@
   outline-offset: 3px;
 }
 
-// Does not work in storybook unless browser / system is set to dark mode
+// Outline styling for dark mode
+// When selected via system settings
 @media (prefers-color-scheme: dark) {
-  .js-focus-visible .focus-visible,
-  .--dark .js-focus-visible .focus-visible {
-    outline: $border-solid $brand-light--dark;
+  .js-focus-visible .focus-visible {
+    outline: $border-solid $brand-light;
+  }
+}
+// And when selected via toggle button
+body.--dark {
+  & .focus-visible {
+    outline: $border-solid $brand-light;
   }
 }
 
