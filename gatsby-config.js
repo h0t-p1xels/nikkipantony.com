@@ -18,12 +18,12 @@ module.exports = {
     lang: `en`,
   },
   plugins: [
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `ADDYOURTRAKINGID`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: `ADDYOURTRAKINGID`,
+    //   },
+    // },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
