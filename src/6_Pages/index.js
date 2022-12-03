@@ -14,20 +14,24 @@ import PageTemplate from "../5_Templates/PageTemplate/PageTemplate"
 // import Avatar from "../03_Atoms/Avatar/Avatar"
 
 const IndexPage = () => (
-  <PageTemplate>
+  <>
     <SEO
       lang="en"
       title="Digital Product Designer and Web Developer."
       description="I'm passionate about designing and building fast, secure and scalable digital products that achieve business goals, build value and convert visitors to customers."
     />
-    {/* <Avatar /> */}
-    <div>
-      <h1>NIKKI PANTONY</h1>
-      <p>Digital Product Designer, Web Developer & soon to be Founder.</p>
-      {/* <Contact /> */}
-      {/* <Social /> */}
-    </div>
-  </PageTemplate>
+    <PageTemplate>
+      {/* <Avatar /> */}
+      <div>
+        <h1>NIKKI PANTONY</h1>
+        <p className="sub-heading">
+          Digital Product Designer, Web Developer & soon to be Founder.
+        </p>
+        {/* <Contact /> */}
+        {/* <Social /> */}
+      </div>
+    </PageTemplate>
+  </>
 )
 
 export default IndexPage
