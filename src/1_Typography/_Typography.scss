@@ -15,7 +15,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: $brand-light;
+  color: $brand-dark;
   font-family: $typeface-raleway;
   font-weight: $font-weight-x-bold;
   line-height: normal;
@@ -23,14 +23,14 @@ h6 {
   margin-bottom: $spacing-m;
 }
 
-.--dark {
+body.--dark {
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    color: $brand-light--dark;
+    color: $brand-light;
   }
 }
 
@@ -43,8 +43,7 @@ h6 {
 }
 
 h1 {
-  // font-size: $font-size-hxl; // Changed for MVP landing page
-  font-size: $font-size-hl;
+  font-size: $font-size-hxl;
 }
 
 h2 {
@@ -70,7 +69,7 @@ h6 {
 // // Paragraphs
 // // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p
 p {
-  color: $brand-light;
+  color: $brand-dark;
   font-family: $typeface-lato;
   font-size: $font-size-cm;
   font-weight: $font-weight-regular;
@@ -79,9 +78,9 @@ p {
   margin-bottom: $spacing-m;
 }
 
-.--dark {
+body.--dark {
   p {
-    color: $brand-light--dark;
+    color: $brand-light;
   }
 }
 
@@ -91,7 +90,7 @@ a,
 a:link,
 a:visited {
   font-family: $typeface-lato;
-  color: $brand-light;
+  color: $brand-dark;
   font-size: $font-size-cm;
   font-weight: $font-weight-bold;
   line-height: $leading-regular;
@@ -111,12 +110,12 @@ a:visited {
   a,
   a:link,
   a:visited {
-    color: $brand-light--dark;
+    color: $brand-dark;
 
     &:hover,
     &:active,
     &.focus-visible {
-      color: $brand-dark--dark;
+      color: $brand-light;
     }
   }
 }
@@ -164,13 +163,13 @@ b {
 // It can be made to be announced using a span with the .sr-only class at the start and end of the highlighted text.
 // ie: <mark><span className="sr-only"> [highlight starts] </span> Highlighed Text <span className="sr-only"> [highlight ends] </span><mark>
 mark {
-  color: $brand-dark;
+  color: $brand-light;
   background-color: $brand-accent;
 }
 
 .--dark mark {
-  color: $brand-dark--dark;
-  background-color: $brand-accent--dark;
+  color: $brand-light;
+  background-color: $brand-accent;
 }
 
 // Abbreviations
@@ -180,14 +179,14 @@ abbr {
   text-decoration-line: underline;
   text-decoration-style: dotted;
   text-decoration-thickness: 3px;
-  text-decoration-color: $brand-light;
+  text-decoration-color: $brand-dark;
   text-underline-offset: 2px;
   cursor: help;
 }
 
 .--dark {
   abbr {
-    text-decoration-color: $brand-light--dark;
+    text-decoration-color: $brand-dark;
   }
 }
 
@@ -227,7 +226,7 @@ s {
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins
 del,
 ins {
-  color: $brand-light;
+  color: $brand-dark;
   font-weight: $font-weight-bold;
   padding: $spacing-xxxxs $spacing-xxxs;
 }
@@ -256,7 +255,7 @@ ol {
     font-family: $typeface-lato;
     font-size: $font-size-cm;
     font-weight: $font-weight-bold;
-    color: $brand-light;
+    color: $brand-dark;
     margin: $spacing-xxs 0;
   }
 }
@@ -265,7 +264,7 @@ body.--dark {
   ul,
   ol {
     li {
-      color: $brand-light--dark;
+      color: $brand-dark;
     }
   }
 }
@@ -277,8 +276,8 @@ time {
   line-height: $leading-regular;
   font-size: $font-size-cs;
   font-weight: $font-weight-bold;
-  color: $brand-dark;
-  background: $brand-light;
+  color: $brand-light;
+  background: $brand-dark;
   letter-spacing: $tracking-normal;
   border: 0;
   border-radius: $radius-rounded;
@@ -287,8 +286,8 @@ time {
 }
 
 .--dark time {
-  color: $brand-dark--dark;
-  background: $brand-light--dark;
+  color: $brand-light;
+  background: $brand-dark;
 }
 
 // Address
@@ -348,7 +347,7 @@ blockquote {
     padding: $spacing-xl $spacing-xxl;
     border-radius: $radius-square;
     box-shadow: $shadow-solid;
-    border: $border-solid $brand-light;
+    border: $border-solid $brand-dark;
     background: $brand-accent;
   }
 
@@ -366,7 +365,7 @@ blockquote {
 
 .--dark blockquote p {
   color: $brand-dark;
-  background: $brand-accent--dark;
+  background: $brand-accent;
 }
 
 figure > figcaption > cite > a,
@@ -391,8 +390,8 @@ code {
   line-height: $leading-regular;
   font-size: $font-size-cs;
   font-weight: $font-weight-bold;
-  color: $brand-dark;
-  background: $brand-light;
+  color: $brand-light;
+  background: $brand-dark;
   border: 0;
   border-radius: $radius-rounded;
   padding: $spacing-xxs $spacing-xs;
@@ -400,8 +399,8 @@ code {
 }
 
 .--dark code {
-  color: $brand-dark--dark;
-  background: $brand-light--dark;
+  color: $brand-light;
+  background: $brand-dark;
 }
 
 // Code Blocks (Preformatted Text)
@@ -424,7 +423,7 @@ samp {
   font-family: $typeface-mono;
   font-size: $font-size-cs;
   font-weight: $font-weight-bold;
-  color: $brand-dark;
+  color: $brand-light;
   border-radius: $radius-rounded;
   background: $brand-light;
   padding: $spacing-m;
@@ -432,8 +431,8 @@ samp {
 }
 
 .--dark samp {
-  color: $brand-dark--dark;
-  background: $brand-light--dark;
+  color: $brand-light;
+  background: $brand-light;
 }
 
 // Variable
@@ -457,14 +456,14 @@ var {
 .innerZoomElementWrapper kbd, // So it is not overridden by sbdocs styling in storybook
 kbd {
   display: inline-block;
-  color: $brand-dark;
+  color: $brand-light;
   font-family: $typeface-mono;
   font-size: $font-size-cm;
   font-weight: $font-weight-bold;
   line-height: 1;
   background: shade($brand-light, shade-20);
   border-radius: $radius-rounded;
-  box-shadow: 0 $spacing-xxxs $spacing-xxxs tint($brand-dark, tint-20),
+  box-shadow: 0 $spacing-xxxs $spacing-xxxs tint($brand-light, tint-20),
     0 $spacing-xxxs 0 0 shade($brand-light, shade-20) inset;
   padding: $spacing-xxs $spacing-xs;
   margin: auto $spacing-xxxs;
@@ -474,8 +473,8 @@ kbd {
 
 .--dark .innerZoomElementWrapper kbd, // So it is not overridden by sbdocs styling in storybook
 .--dark kbd {
-  color: $brand-dark--dark;
-  background: $brand-light--dark;
+  color: $brand-light;
+  background: $brand-light;
 }
 
 // Thematic Break (Horizontal Rule)
@@ -488,6 +487,6 @@ hr {
 
 .--dark {
   hr {
-    border-color: $brand-light--dark;
+    border-color: $brand-light;
   }
 }
