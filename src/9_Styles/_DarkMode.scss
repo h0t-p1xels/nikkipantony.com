@@ -7,12 +7,12 @@
 body,
 body.--light {
   // Unset / Light mode
-  color: $brand-light;
-  background-color: $brand-dark;
+  color: $brand-dark;
+  background-color: $brand-light;
 
   // Dark mode
   &.--dark {
-    color: $brand-light--dark;
-    background-color: $brand-dark--dark;
+    color: $brand-light;
+    background-color: $brand-dark;
   }
 }
