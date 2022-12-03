@@ -1,0 +1,29 @@
+/*
+ * Page Template Styles
+ *
+ */
+
+// Height of Footer Component
+$footer: 6rem;
+
+.page-template {
+  display: grid;
+  width: 100%;
+  // Sets minimum page height to viewport height - (Header + Footer) height to keep footer at bottom of page
+  min-height: calc(100vh - #{$footer});
+
+  &__main {
+    margin: auto;
+    max-width: $wrapper-block-max-width;
+    padding: $spacing-xxxl $spacing-l;
+
+    @media (min-width: $breakpoint-s) {
+      max-width: $wrapper-block-max-width;
+    }
+
+    @media (min-width: $breakpoint-m) {
+      display: flex;
+      max-width: $wrapper-block-max-width;
+    }
+  }
+}

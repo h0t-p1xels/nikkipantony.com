@@ -1,36 +1,14 @@
-// /*
-//  * PageTemplate Component Story
-//  *
-//  */
+/*
+ * Main Layout Template Storybook Component Stories
+ *
+ */
 
-// import React from "react"
-// import Component from "../PageTemplate/PageTemplate"
+import React from "react"
+import PageTemplate from "./PageTemplate"
 
-// export default {
-//   title: "Templates/PageTemplate",
-//   component: Component,
-//   parameters: {
-//     docs: {
-//       description: {
-//         component: "PageTemplate component.",
-//       },
-//     },
-//   },
-//   // argTypes: {
-//   // text: {
-//   //     description: "PageTemplate text",
-//   //     defaultValue: "PageTemplate",
-//   // },
-//   // modifier: {
-//   //     description: "Modifier options",
-//   //     control: {
-//   //         type: "select",
-//   //         labels: {
-//   //             "": "no modifier",
-//   //         },
-//   //     },
-//   // },
-//   // },
-// }
+export default {
+  title: "Templates/PageTemplate",
+  component: Layout,
+}
 
-// export const PageTemplate = (args) => <Component {...args} />
+export const Working = () => <PageTemplate />
