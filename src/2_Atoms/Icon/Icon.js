@@ -18,7 +18,7 @@ const Icon = (props) => {
       viewBox="0 0 24 24"
       focusable="false"
       role="img"
-      className={`icon ${props.fill} ${props.modifier}`}
+      className={`icon ${props.fill} ${props.modifier} ${props.className}`}
       aria-label={props.label}
     >
       <title>{props.title}</title>
@@ -33,6 +33,7 @@ Icon.defaultProps = {
   fill: "midnight",
   modifier: "",
   label: "",
+  className: "",
 }
 
 Icon.propTypes = {
@@ -41,6 +42,7 @@ Icon.propTypes = {
   fill: PropTypes.oneOf(["midnight", "snow"]),
   modifier: PropTypes.oneOf(["", "--small"]),
   label: PropTypes.string,
+  className: PropTypes.string,
 }
 
 export default Icon
