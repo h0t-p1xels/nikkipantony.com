@@ -1,201 +1,183 @@
 /*
  * Storybook Preview Configuration
+ * Configures Storybook global decorators and parameters.
+ * Storybook docs: https://storybook.js.org/docs/react/configure/overview#configure-story-rendering
  *
- * Configure Storybook global decorators and parameters in this file.
- *
- * Storybook Manager & Preview Configuration: https://storybook.js.org/docs/configurations/overview/#manager--preview
  */
 
-// Import `focus-visible` globally within storybook so it is applied in component stories
+// Contents
+// ========
+// * SASS Styles
+// * Focus-Visible Support
+// * Brand Image
+// * Actions Addon
+// * Light/Dark Theming
+// * Gatsby Configuration
+
+// * SASS Styles
+// =============
+// Import styles with loaders to Storybook
+import "!style-loader!css-loader!sass-loader!../src/9_Styles/Index.scss"
+
+// * Focus-Visible Support
+// =======================
+// Import `focus-visible` globally within Storybook so it is applied in component stories
 import "focus-visible"
 
-// Import global styling with loaders to compile component Sass/Scss styling
-import "!style-loader!css-loader!sass-loader!../src/10_Styles/Main.scss"
+// * Brand Image
+// =============
+// Import custom Storybook brand image
+import storybookBrandImage from "./StorybookBrandImage.svg"
 
+// * Actions Addon
+// ===============
 // Import Storybook Actions addon
 import { action } from "@storybook/addon-actions"
 
-// Import addParameters from React Storybook
-import { addParameters } from "@storybook/react"
+// * Light/Dark Theming
+// ====================
+// Import theming from Storybook
+import { themes } from "@storybook/theming"
 
-// Import DocsPage and DocsContainer from Doc Bloacks
-import { DocsPage, DocsContainer } from "@storybook/addon-docs/blocks"
+// Detect if users preferred color scheme is dark
+const isDark =
+  typeof window !== `undefined`
+    ? window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    : null
 
-// Set up the Docs parameter including the DocsPage for rendering the page, a container, and various configuration
-// options, such as extractComponentDescription for manually extracting a component description
-addParameters({
-    docs: {
-        container: DocsContainer,
-        page: DocsPage,
+// Custom Addon Parameters
+export const parameters = {
+  darkMode: {
+    // Set initial theme based on users preferred color scheme
+    current: isDark ? "dark" : "light",
+
+    // Add light base theme
+    light: {
+      ...themes.normal,
+
+      // Theme Variables
+      // --ally-gold: #ffd700;
+      // --ally-gold--dark: #ffe343;
+      // --ally-gold--hover: #fde978;
+      // --ally-midnight: #000013;
+      // --ally-midnight--dark: #dddddd;
+      // --ally-snow: #fefefe;
+      // --ally-snow--dark: #333333;
+      // --ally-snow--code: #1f1f1f;
+      // --ally-rubik: "Rubik", sans-serif;
+      // --ally-archivo: "Archivo", sans-serif;
+      // --ally-mono: "IBM Plex Mono", monospace;
+
+      // Branding
+      brandTitle: "AllY Starter Kit", // Title text, still shows on hover if storybookBrandImage is set
+      brandUrl: "/", // URL opens in new tab
+      brandImage: storybookBrandImage, // For best results make this either a SVG or PNG file, 165px x 30px, with a transparent background
+      brandTarget: "_self",
+
+      // Typography
+      fontBase: '"Rubik", sans-serif', // --ally-rubik
+      fontCode: '"IBM Plex Mono", monospace', // --ally-mono
+
+      // Borders
+      appBorderRadius: "4px",
+      inputBorderRadius: "4px",
+
+      // Theme base colors
+      colorPrimary: "#000013", // --ally-midnight
+      colorSecondary: "#000013", // --ally-midnight
+
+      // UI colors
+      appBg: "#fefefe", // --ally-snow
+      appContentBg: "#fefefe", // --ally-snow
+      appBorderColor: "#ffd700", // --ally-gold
+
+      // Text colors
+      textColor: "#000013", // --ally-midnight
+      textInverseColor: "#000013", // --ally-midnight
+
+      // Toolbar and active colors
+      barTextColor: "#000013", // --ally-midnight
+      barSelectedColor: "#000013", // --ally-midnight
+      barBg: "#ffd700", // --ally-gold
+
+      // Form colors
+      inputBg: "#fefefe", // --ally-snow
+      inputBorder: "#ffd700", // --ally-gold
+      inputTextColor: "#000013", // --ally-midnight
     },
-})
+    // Add dark base theming
+    dark: {
+      ...themes.dark,
+
+      // Typography
+      fontBase: '"Rubik", sans-serif', // --ally-rubik
+      fontCode: '"IBM Plex Mono", monospace', // --ally-mono
+
+      // Borders
+      appBorderRadius: "4px",
+      inputBorderRadius: "4px",
+
+      // Theme base colors
+      colorPrimary: "#fefefe", // --ally-midnight--dark
+      colorSecondary: "#000013", // --ally-midnight
+
+      // UI colors
+      appBg: "#333333", // --ally-snow--dark
+      appContentBg: "#333333", // --ally-snow--dark
+      appBorderColor: "#ffe343", // --ally-gold--dark
+
+      // Text colors
+      textColor: "#dddddd", // --ally-midnight--dark
+      textInverseColor: "#000013", // --ally-midnight
+
+      // Toolbar and active colors
+      barTextColor: "#000013", // --ally-midnight
+      barSelectedColor: "#000013", // --ally-midnight
+      barBg: "#ffe343", // --ally-gold--dark
+
+      // Form colors
+      inputBg: "#333333", // --ally-snow--dark
+      inputBorder: "#ffe343", // --ally-gold--dark
+      inputTextColor: "#dddddd", // --ally-midnight--dark
+    },
+    // Dark class name
+    darkClass: "--dark",
+    // darkClass: "lights-out", // Default
+    // Light class name
+    lightClass: "--light",
+    // lightClass: "lights-on", // Default
+    // Apply darkClass and lightClass classes to the preview iframe also
+    stylePreview: true,
+  },
+}
+
+// * Gatsby Configuration
+// ======================
+// - Use with Gatsby V4
 
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
 // This global object isn't set in storybook context, requiring you to override it to empty functions (no-op),
-// so Gatsby Link doesn't throw any errors.
+// so Gatsby Link doesn't throw errors.
 global.___loader = {
-    enqueue: () => {},
-    hovering: () => {},
+  enqueue: () => {},
+  hovering: () => {},
 }
-// __PATH_PREFIX__ is used inside gatsby-link an other various places. For storybook not to crash, you need to set it as well.
-global.__PATH_PREFIX__ = ""
+// This global variable prevents the "__BASE_PATH__ is not defined" error inside Storybook.
+global.__BASE_PATH__ = "/"
 // Navigating through a gatsby app using gatsby-link or any other gatsby component will use the `___navigate` method.
-// In Storybook it makes more sense to log an action than doing an actual navigate. Checkout the actions addon docs for more info: https://github.com/storybookjs/storybook/tree/master/addons/actions.
-window.___navigate = pathname => {
-    action("NavigateTo:")(pathname)
+// In Storybook, it makes more sense to log an action than doing an actual navigate. Check out the actions addon docs for more info: https://storybook.js.org/docs/react/essentials/actions
+window.___navigate = (pathname) => {
+  action("NavigateTo:")(pathname)
 }
 
-// Custom Viewports for the Storybook Viewport Addon
-const customViewports = {
-    iphone5: {
-        name: "iPhone 5",
-        styles: {
-            height: "568px",
-            width: "320px",
-        },
-        type: "mobile",
-    },
-    iphone6: {
-        name: "iPhone 6",
-        styles: {
-            height: "667px",
-            width: "375px",
-        },
-        type: "mobile",
-    },
-    iphone6p: {
-        name: "iPhone 6 Plus",
-        styles: {
-            height: "736px",
-            width: "414px",
-        },
-        type: "mobile",
-    },
-    iphone8p: {
-        name: "iPhone 8 Plus",
-        styles: {
-            height: "736px",
-            width: "414px",
-        },
-        type: "mobile",
-    },
-    iphonex: {
-        name: "iPhone X",
-        styles: {
-            height: "812px",
-            width: "375px",
-        },
-        type: "mobile",
-    },
-    iphonexr: {
-        name: "iPhone XR",
-        styles: {
-            height: "896px",
-            width: "414px",
-        },
-        type: "mobile",
-    },
-    iphonexsmax: {
-        name: "iPhone XS Max",
-        styles: {
-            height: "896px",
-            width: "414px",
-        },
-        type: "mobile",
-    },
-    ipad: {
-        name: "iPad",
-        styles: {
-            height: "1024px",
-            width: "768px",
-        },
-        type: "tablet",
-    },
-    ipad10p: {
-        name: "iPad Pro 10.5-in",
-        styles: {
-            height: "1112px",
-            width: "834px",
-        },
-        type: "tablet",
-    },
-    ipad12p: {
-        name: "iPad Pro 12.9-in",
-        styles: {
-            height: "1366px",
-            width: "1024px",
-        },
-        type: "tablet",
-    },
-    kindleFire2: {
-        name: "Kindle Fire 2",
-        styles: {
-            width: "600px",
-            height: "963px",
-        },
-    },
-    kindleFireHD: {
-        name: "Kindle Fire HD",
-        styles: {
-            width: "533px",
-            height: "801px",
-        },
-    },
-    galaxys5: {
-        name: "Galaxy S5",
-        styles: {
-            height: "640px",
-            width: "360px",
-        },
-        type: "mobile",
-    },
-    galaxys9: {
-        name: "Galaxy S9",
-        styles: {
-            height: "740px",
-            width: "360px",
-        },
-        type: "mobile",
-    },
-    nexus5x: {
-        name: "Nexus 5X",
-        styles: {
-            height: "660px",
-            width: "412px",
-        },
-        type: "mobile",
-    },
-    nexus6p: {
-        name: "Nexus 6P",
-        styles: {
-            height: "732px",
-            width: "412px",
-        },
-        type: "mobile",
-    },
-    pixel: {
-        name: "Pixel",
-        styles: {
-            height: "960px",
-            width: "540px",
-        },
-        type: "mobile",
-    },
-    pixelxl: {
-        name: "Pixel XL",
-        styles: {
-            height: "1280px",
-            width: "720px",
-        },
-        type: "mobile",
-    },
-}
-
-// Custom Addon Parameters
-export const parameters = {
-    // Add Custom Viewports for the Storybook Viewport Addon
-    viewport: { viewports: customViewports },
-    // Enable expanded mode globally in Controls to show property documentation alongside your controls
-    // controls: { expanded: true },
-}
+// export const parameters = {
+//     actions: { argTypesRegex: "^on[A-Z].*" },
+//     controls: {
+//         matchers: {
+//             color: /(background|color)$/i,
+//             date: /Date$/,
+//         },
+//     },
+// }

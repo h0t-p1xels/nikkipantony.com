@@ -1,0 +1,19 @@
+/*
+ * Page Template Styles
+ *
+ */
+
+.page-template {
+  display: flex;
+  flex-direction: column;
+  min-width: 310px;
+  width: 100%;
+  min-height: 100vh;
+
+  &__main {
+    text-align: center;
+    margin: auto;
+    max-width: $wrapper-site-max-width;
+    padding: $spacing-xxxl $spacing-l;
+  }
+}

@@ -1,0 +1,16 @@
+/*
+ * Icon Styles
+ *
+ */
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: $brand-dark;
+}
+
+body.--dark {
+  .icon {
+    fill: $brand-light;
+  }
+}

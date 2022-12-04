@@ -1,19 +1,18 @@
 /*
  * Storybook Manager Configuration
+ * Manages Storybook UI options.
+ * Storybook docs: https://storybook.js.org/docs/configurations/overview/#manager--preview
  *
- * Manage Storybook UI options in this file.
- *
- * Storybook Manager & Preview Configuration: https://storybook.js.org/docs/configurations/overview/#manager--preview
  */
 
-// Import Storybook addons package
-import { addons } from "@storybook/addons"
+// Import custom favicon icon
+import favicon from "../public/icons/icon-192x192.png"
+const link = document.createElement("link")
+link.setAttribute("rel", "shortcut icon")
+link.setAttribute("href", favicon)
+document.head.appendChild(link)
 
-// Import local custom storybook theme from `.storybook/theme.js`
-import theme from "./theme"
+// import { addons } from "@storybook/addons"
 
-// Storybook addon configurations
-addons.setConfig({
-    // Use local custom storybook theme
-    theme: theme,
-})
+// addons.setConfig({
+// })
