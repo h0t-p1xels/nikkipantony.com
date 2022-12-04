@@ -6,6 +6,7 @@
 .page-template {
   display: flex;
   flex-direction: column;
+  min-width: 310px;
   width: 100%;
   min-height: 100vh;
 
@@ -14,14 +15,5 @@
     margin: auto;
     max-width: $wrapper-site-max-width;
     padding: $spacing-xxxl $spacing-l;
-
-    // @media (min-width: $breakpoint-s) {
-    //   max-width: $wrapper-block-max-width;
-    // }
-
-    // @media (min-width: $breakpoint-m) {
-    //   display: flex;
-    //   max-width: $wrapper-block-max-width;
-    // }
   }
 }

@@ -43,7 +43,11 @@ h6 {
 }
 
 h1 {
-  font-size: $font-size-hl;
+  font-size: calc($font-size-hl / 1.6);
+
+  @media (min-width: $breakpoint-s) {
+    font-size: $font-size-hl;
+  }
 }
 
 h2 {
@@ -124,11 +128,16 @@ a:visited {
 // Sub Heading styling specific to nikkipantony.com
 p.sub-heading,
 p.sub-heading a {
-  font-size: $font-size-hxs;
+  font-size: calc($font-size-hxs / 1.2);
   font-weight: $font-weight-bold;
-  max-width: 460px;
+  max-width: 380px;
   padding: 0;
   margin: 0 auto;
+
+  @media (min-width: $breakpoint-s) {
+    font-size: $font-size-hxs;
+    max-width: 460px;
+  }
 }
 
 p.sub-heading a {
