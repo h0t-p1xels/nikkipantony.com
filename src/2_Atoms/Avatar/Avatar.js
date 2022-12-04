@@ -10,8 +10,8 @@ const Avatar = () => {
         alt="Nikki Pantony with trees behind her in the woods."
         placeholder="blurred"
         layout="fixed"
-        width={200}
-        height={200}
+        width={180}
+        height={180}
       />
     </>
   )
