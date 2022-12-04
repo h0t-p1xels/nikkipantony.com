@@ -11,7 +11,7 @@ module.exports = {
     title: `Nikki Pantony`,
     titleTemplate: `%s Nikki Pantony`,
     description: `Personal website of Independent UI/UX Product Designer and Front-End Web Developer Nikki Pantony.`,
-    url: "https://www.nikkipantony.com", // Remember no trailing slash
+    siteUrl: "https://www.nikkipantony.com", // Remember no trailing slash
     image: "/socialmedia_images/nikkipantony-com.png", // Path to your image you placed in the 'static' folder
     twitterUsername: "@nikkipantony",
     author: `Nikki Pantony @nikkipantony`,
@@ -28,56 +28,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
-    // TODO: Update Sitemap Config
-    // For details visit: https://www.gatsbyjs.com/plugins/gatsby-plugin-sitemap
-    // {
-    //   resolve: "gatsby-plugin-sitemap",
-    //   options: {
-    //     query: `
-    //     {
-    //       allSitePage {
-    //         nodes {
-    //           path
-    //         }
-    //       }
-    //       allWpContentNode(filter: {nodeType: {in: ["Post", "Page"]}}) {
-    //         nodes {
-    //           ... on WpPost {
-    //             uri
-    //             modifiedGmt
-    //           }
-    //           ... on WpPage {
-    //             uri
-    //             modifiedGmt
-    //           }
-    //         }
-    //       }
-    //     }
-    //   `,
-    //     resolveSiteUrl: () => siteUrl,
-    //     resolvePages: ({
-    //       allSitePage: { nodes: allPages },
-    //       allWpContentNode: { nodes: allWpNodes },
-    //     }) => {
-    //       const wpNodeMap = allWpNodes.reduce((acc, node) => {
-    //         const { uri } = node
-    //         acc[uri] = node
-
-    //         return acc
-    //       }, {})
-
-    //       return allPages.map((page) => {
-    //         return { ...page, ...wpNodeMap[page.path] }
-    //       })
-    //     },
-    //     serialize: ({ path, modifiedGmt }) => {
-    //       return {
-    //         url: path,
-    //         lastmod: modifiedGmt,
-    //       }
-    //     },
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -146,31 +96,5 @@ module.exports = {
         path: `${__dirname}/design-tokens.json`,
       },
     },
-    // This optional plugin integrates react-axe for a11y testing
-    // To learn more, visit: https://www.gatsbyjs.com/plugins/gatsby-plugin-react-axe
-    // {
-    //   resolve: "gatsby-plugin-react-axe",
-    //   options: {
-    //     // Number of milliseconds to wait for component updates to cease before
-    //     // performing an analysis of all the changes. This defaults to 1000ms (1 second).
-    //     debounce: 1000,
-    //     // Do not integrate react-axe in production.
-    //     showInProduction: false,
-    //     // Options to pass to axe-core.
-    //     // See: https://github.com/dequelabs/axe-core/blob/master/doc/API.md#api-name-axeconfigure
-    //     // axeOptions: {
-    //     // Your axe-core options.
-    //     // },
-    //     // Context to pass to axe-core.
-    //     // See: https://github.com/dequelabs/axe-core/blob/master/doc/API.md#context-parameter
-    //     // axeContext: {
-    //     // Your axe-core context.
-    //     // },
-    //   },
-    // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://www.gatsbyjs.com/plugins/gatsby-plugin-offline / https://gatsby.dev/offline
-    // https://www.gatsbyjs.com/docs/resource-handling-and-service-workers/#offline-plugin-gatsby-plugin-offline
-    // `gatsby-plugin-offline`,
   ],
 }
