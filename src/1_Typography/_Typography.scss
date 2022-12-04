@@ -20,7 +20,7 @@ h6 {
   font-weight: $font-weight-x-bold;
   line-height: normal;
   letter-spacing: $tracking-normal;
-  margin-bottom: $spacing-m;
+  margin-bottom: $spacing-xs;
 }
 
 body.--dark {
@@ -133,16 +133,22 @@ p.sub-heading a {
 
 p.sub-heading a {
   text-decoration: underline;
-  // text-decoration-color: $brand-dark;
+  text-decoration-color: $brand-dark;
   text-decoration-thickness: 3px;
-  text-underline-offset: 4px;
+  text-underline-offset: 6px;
 
   &:hover,
   &:active,
   &.focus-visible {
     color: $brand-light;
-    text-decoration-color: $brand-dark;
-    background: $brand-dark;
+    background: $brand-accent;
+  }
+}
+
+body.--dark {
+  p.sub-heading a {
+    color: $brand-light;
+    text-decoration-color: $brand-light;
   }
 }
 
