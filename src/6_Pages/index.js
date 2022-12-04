@@ -9,8 +9,7 @@
 import React from "react"
 import SEO from "../8_Utilities/SEO"
 import PageTemplate from "../5_Templates/PageTemplate/PageTemplate"
-// import Contact from "../04_Molecules/Contact/Contact"
-// import Social from "../04_Molecules/SocialIcons/SocialIcons"
+import SocialLinks from "../3_Molecules/SocialLinks/SocialLinks"
 import Avatar from "../2_Atoms/Avatar/Avatar"
 
 const IndexPage = () => (
@@ -29,8 +28,7 @@ const IndexPage = () => (
           weareseed.co
         </a>
       </p>
-      {/* <Contact /> */}
-      {/* <Social /> */}
+      <SocialLinks />
     </PageTemplate>
   </>
 )
