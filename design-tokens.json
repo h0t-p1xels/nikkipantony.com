@@ -3,8 +3,8 @@
   "brand-colors": [
     {
       "name": "$brand-accent",
-      "value": "#ff5500",
-      "compiledValue": "#ff5500"
+      "value": "#007555",
+      "compiledValue": "#007555"
     },
     {
       "name": "$brand-dark",
@@ -38,12 +38,12 @@
     {
       "name": "$gradient-mgs",
       "value": "linear-gradient( 140deg, $brand-dark 0%, $brand-accent 70%, $brand-light 90% )",
-      "compiledValue": "linear-gradient(140deg, #06060d 0%, #ff5500 70%, #fff6d7 90%)"
+      "compiledValue": "linear-gradient(140deg, #06060d 0%, #007555 70%, #fff6d7 90%)"
     },
     {
       "name": "$gradient-gs",
       "value": "linear-gradient(35deg, $brand-accent 0%, $brand-light 80%)",
-      "compiledValue": "linear-gradient(35deg, #ff5500 0%, #fff6d7 80%)"
+      "compiledValue": "linear-gradient(35deg, #007555 0%, #fff6d7 80%)"
     }
   ],
   "opacities": [
@@ -145,7 +145,7 @@
     {
       "name": "$brand-accent--dark",
       "value": "shade($brand-accent, shade-10)",
-      "compiledValue": "#e64d00"
+      "compiledValue": "#00694d"
     },
     {
       "name": "$brand-dark--dark",
@@ -179,12 +179,12 @@
     {
       "name": "$gradient-mgs--dark",
       "value": "linear-gradient( 140deg, $brand-dark--dark 0%, $brand-accent--dark 70%, $brand-light--dark 90% )",
-      "compiledValue": "linear-gradient(140deg, #1f1f25 0%, #e64d00 70%, #e6ddc2 90%)"
+      "compiledValue": "linear-gradient(140deg, #1f1f25 0%, #00694d 70%, #e6ddc2 90%)"
     },
     {
       "name": "$gradient-gs--dark",
       "value": "linear-gradient( 35deg, $brand-accent--dark 0%, $brand-light--dark 80% )",
-      "compiledValue": "linear-gradient(35deg, #e64d00 0%, #e6ddc2 80%)"
+      "compiledValue": "linear-gradient(35deg, #00694d 0%, #e6ddc2 80%)"
     }
   ],
   "typefaces": [
