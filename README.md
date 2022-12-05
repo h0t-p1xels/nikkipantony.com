@@ -1,5 +1,5 @@
-# SEED
+# Nikki Pantony
 
-Creating value through innovative digital experiences.
+Personal [MVP] landing page website with basic info and links.
 
-[weareseed.co](https://weareseed.co)
+[nikkipantony.com](https://nikkipantony.com)
