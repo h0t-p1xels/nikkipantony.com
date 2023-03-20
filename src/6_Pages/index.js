@@ -23,9 +23,9 @@ const IndexPage = () => (
       <Avatar />
       <h1>NIKKI PANTONY</h1>
       <p className="sub-heading">
-        Digital product designer, jamstack web developer & founder @{" "}
+        Digital Product Designer, Web Developer & Co-Founder @{" "}
         <a href="http://weareseed.co" rel="noopener" target="_blank">
-          weareseed.co
+          SEED.
         </a>
       </p>
       <SocialLinks />
