@@ -1,0 +1,604 @@
+/*  add custom theme
+    ================
+
+    > reset white colour scale
+    > reset black colour scale
+    > reset default light mode palette
+    > reset default dark mode palette
+    > reset cursor styles
+*/
+
+/*  > note: default accent colour variables are named as `indigo` as this is set as the default theme accent colour
+      see https://www.radix-ui.com/themes/docs/theme/color#brand-color for more information
+*/
+/*  reset white colour scale
+    ========================
+    generated using: https://www.radix-ui.com/colors/custom
+    with --brand-l #fefefe
+*/
+:root {
+	--white: #fefefe;
+	--white-1: #fdfdfd;
+	--white-2: #f9f9f9;
+	--white-3: #f1f1f1;
+	--white-4: #e8e8e8;
+	--white-5: #dedede;
+	--white-6: #d2d2d2;
+	--white-7: #c1c1c1;
+	--white-8: #aaa;
+	--white-9: #7d7d7d;
+	--white-10: #717171;
+	--white-11: #666;
+	--white-12: #333;
+
+	--white-a1: #00000002;
+	--white-a2: #00000006;
+	--white-a3: #0000000e;
+	--white-a4: #00000017;
+	--white-a5: #00000021;
+	--white-a6: #0000002d;
+	--white-a7: #0000003e;
+	--white-a8: #00000055;
+	--white-a9: #00000082;
+	--white-a10: #0000008e;
+	--white-a11: #00000099;
+	--white-a12: #000000cc;
+
+	--white-contrast: #fff;
+	--white-surface: #f8f8f8cc;
+	--white-indicator: #7d7d7d;
+	--white-track: #7d7d7d;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+	@media (color-gamut: p3) {
+		:root {
+			--white-1: oklch(99.4% 0 0);
+			--white-2: oklch(98.3% 0 0);
+			--white-3: oklch(95.7% 0 0);
+			--white-4: oklch(93% 0 0);
+			--white-5: oklch(90% 0 0);
+			--white-6: oklch(86.2% 0 0);
+			--white-7: oklch(81.1% 0 0);
+			--white-8: oklch(73.9% 0 0);
+			--white-9: oklch(59.1% 0 0);
+			--white-10: oklch(54.7% 0 0);
+			--white-11: oklch(50.9% 0 0);
+			--white-12: oklch(32.3% 0 0);
+
+			--white-a1: color(display-p3 0 0 0 / 0.008);
+			--white-a2: color(display-p3 0 0 0 / 0.024);
+			--white-a3: color(display-p3 0 0 0 / 0.055);
+			--white-a4: color(display-p3 0 0 0 / 0.09);
+			--white-a5: color(display-p3 0 0 0 / 0.129);
+			--white-a6: color(display-p3 0 0 0 / 0.176);
+			--white-a7: color(display-p3 0 0 0 / 0.243);
+			--white-a8: color(display-p3 0 0 0 / 0.333);
+			--white-a9: color(display-p3 0 0 0 / 0.51);
+			--white-a10: color(display-p3 0 0 0 / 0.557);
+			--white-a11: color(display-p3 0 0 0 / 0.6);
+			--white-a12: color(display-p3 0 0 0 / 0.8);
+
+			--white-contrast: #fff;
+			--white-surface: color(
+				display-p3 0.973 0.973 0.973 / 0.8
+			);
+			--white-indicator: oklch(59.1% 0 0);
+			--white-track: oklch(59.1% 0 0);
+		}
+	}
+}
+
+/*  reset black colour scale
+    ========================
+    generated using: https://www.radix-ui.com/colors/custom
+    with --brand-d: #0f172a;
+*/
+:root {
+	--black: #0f172a;
+	--black-1: #fafcff;
+	--black-2: #f5f9ff;
+	--black-3: #ebf0fd;
+	--black-4: #e1e8f9;
+	--black-5: #d8e1f7;
+	--black-6: #cedaf3;
+	--black-7: #c0cfef;
+	--black-8: #aabce3;
+	--black-9: #0f172a;
+	--black-10: #262f43;
+	--black-11: #556485;
+	--black-12: #161f33;
+
+	--black-a1: #0066ff05;
+	--black-a2: #0066ff0a;
+	--black-a3: #0040e614;
+	--black-a4: #003ccc1e;
+	--black-a5: #003bcb27;
+	--black-a6: #003fc131;
+	--black-a7: #003dbf3f;
+	--black-a8: #0036ab55;
+	--black-a9: #00091df0;
+	--black-a10: #000b22d9;
+	--black-a11: #001748aa;
+	--black-a12: #000a20e9;
+
+	--black-contrast: #fff;
+	--black-surface: #f3f8ffcc;
+	--black-indicator: #0f172a;
+	--black-track: #0f172a;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+	@media (color-gamut: p3) {
+		:root {
+			--black-1: oklch(99.1% 0.006 265.8);
+			--black-2: oklch(98.2% 0.012 265.8);
+			--black-3: oklch(95.6% 0.018 265.8);
+			--black-4: oklch(93.1% 0.024 265.8);
+			--black-5: oklch(91% 0.031 265.8);
+			--black-6: oklch(88.8% 0.037 265.8);
+			--black-7: oklch(85.3% 0.047 265.8);
+			--black-8: oklch(79.4% 0.06 265.8);
+			--black-9: oklch(20.8% 0.04 265.8);
+			--black-10: oklch(30.5% 0.04 265.8);
+			--black-11: oklch(50.3% 0.056 265.8);
+			--black-12: oklch(24.1% 0.04 265.8);
+
+			--black-a1: color(display-p3 0.02 0.412 1 / 0.02);
+			--black-a2: color(
+				display-p3 0.024 0.349 0.894 / 0.036
+			);
+			--black-a3: color(
+				display-p3 0.008 0.216 0.843 / 0.075
+			);
+			--black-a4: color(
+				display-p3 0.004 0.212 0.725 / 0.114
+			);
+			--black-a5: color(
+				display-p3 0.008 0.196 0.733 / 0.146
+			);
+			--black-a6: color(
+				display-p3 0.004 0.22 0.706 / 0.185
+			);
+			--black-a7: color(
+				display-p3 0.004 0.204 0.686 / 0.236
+			);
+			--black-a8: color(
+				display-p3 0.004 0.173 0.624 / 0.322
+			);
+			--black-a9: color(display-p3 0 0.024 0.102 / 0.934);
+			--black-a10: color(display-p3 0 0.031 0.118 / 0.844);
+			--black-a11: color(display-p3 0 0.075 0.251 / 0.655);
+			--black-a12: color(display-p3 0 0.031 0.11 / 0.906);
+
+			--black-contrast: #fff;
+			--black-surface: color(
+				display-p3 0.957 0.973 1 / 0.8
+			);
+			--black-indicator: oklch(20.8% 0.04 265.8);
+			--black-track: oklch(20.8% 0.04 265.8);
+		}
+	}
+}
+
+/*  reset custom light mode palette
+    ===============================
+    generated using: https://www.radix-ui.com/colors/custom
+    > accent:     --brand-p #22D3EE
+    > gray:       --brand-d #0F172A
+    > background: --brand-l #FEFEFE 
+*/
+/* > accent scale in light mode from --brand-p #22d3ee */
+
+/* [data-theme="light"] {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+}
+
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-fg: #ffffff;
+} */
+
+:root,
+html[data-theme="light"] .radix-themes {
+	--indigo: #22d3ee;
+	--indigo-1: #f8fdfe;
+	--indigo-2: #effafc;
+	--indigo-3: #dbf6fc;
+	--indigo-4: #c6f1f9;
+	--indigo-5: #b0e8f4;
+	--indigo-6: #96ddeb;
+	--indigo-7: #72cee0;
+	--indigo-8: #18b9d2;
+	--indigo-9: #00c5df;
+	--indigo-10: #13b8d0;
+	--indigo-11: #007b90;
+	--indigo-12: #00414b;
+
+	--indigo-a1: #24dafe07;
+	--indigo-a2: #0fbfdf10;
+	--indigo-a3: #07c6f024;
+	--indigo-a4: #04c4e839;
+	--indigo-a5: #03b7de4f;
+	--indigo-a6: #02aed069;
+	--indigo-a7: #00a7c78d;
+	--indigo-a8: #00b2cde7;
+	--indigo-a9: #00c5df;
+	--indigo-a10: #00b2ccec;
+	--indigo-a11: #007b90;
+	--indigo-a12: #00414b;
+
+	--indigo-contrast: #fff;
+	--indigo-surface: #ebf9fbcc;
+	--indigo-indicator: #00c5df;
+	--indigo-track: #00c5df;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+	@media (color-gamut: p3) {
+		:root,
+		html[data-theme="light"] .radix-themes {
+			--indigo-1: oklch(98.9% 0.005 211.5);
+			--indigo-2: oklch(97.7% 0.011 211.5);
+			--indigo-3: oklch(95.6% 0.03 211.5);
+			--indigo-4: oklch(93% 0.046 211.5);
+			--indigo-5: oklch(89.7% 0.06 211.5);
+			--indigo-6: oklch(85.6% 0.074 211.5);
+			--indigo-7: oklch(80.1% 0.091 211.5);
+			--indigo-8: oklch(72.3% 0.122 211.5);
+			--indigo-9: oklch(75.3% 0.134 211.5);
+			--indigo-10: oklch(71.8% 0.122 211.5);
+			--indigo-11: oklch(52.9% 0.134 211.5);
+			--indigo-12: oklch(34.1% 0.064 211.5);
+
+			--indigo-a1: color(display-p3 0.02 0.804 1 / 0.02);
+			--indigo-a2: color(
+				display-p3 0.016 0.698 0.847 / 0.052
+			);
+			--indigo-a3: color(
+				display-p3 0.008 0.702 0.898 / 0.119
+			);
+			--indigo-a4: color(
+				display-p3 0.008 0.702 0.871 / 0.186
+			);
+			--indigo-a5: color(
+				display-p3 0.004 0.635 0.816 / 0.26
+			);
+			--indigo-a6: color(
+				display-p3 0.004 0.604 0.761 / 0.347
+			);
+			--indigo-a7: color(
+				display-p3 0.004 0.576 0.718 / 0.465
+			);
+			--indigo-a8: color(display-p3 0 0.569 0.718 / 0.662);
+			--indigo-a9: color(display-p3 0 0.635 0.792 / 0.65);
+			--indigo-a10: color(display-p3 0 0.565 0.706 / 0.666);
+			--indigo-a11: color(display-p3 0 0.337 0.435 / 0.792);
+			--indigo-a12: color(display-p3 0 0.173 0.216 / 0.906);
+
+			--indigo-contrast: #fff;
+			--indigo-surface: color(
+				display-p3 0.933 0.973 0.98 / 0.8
+			);
+			--indigo-indicator: oklch(75.3% 0.134 211.5);
+			--indigo-track: oklch(75.3% 0.134 211.5);
+		}
+	}
+}
+
+/* > gray scale in light mode from --brand-d #0f172a */
+:root,
+html[data-theme="light"] .radix-themes {
+	--gray: #0f172a;
+	--gray-1: #f9fbff;
+	--gray-2: #f4f8ff;
+	--gray-3: #e9effc;
+	--gray-4: #dfe7f8;
+	--gray-5: #d6e0f5;
+	--gray-6: #cdd9f2;
+	--gray-7: #bfcded;
+	--gray-8: #a8bae2;
+	--gray-9: #7b8cb1;
+	--gray-10: #7181a6;
+	--gray-11: #536283;
+	--gray-12: #161f33;
+
+	--gray-a1: #f9fbff;
+	--gray-a2: #f4f8ff;
+	--gray-a3: #0b51e716;
+	--gray-a4: #0747cf20;
+	--gray-a5: #0644c729;
+	--gray-a6: #0542c132;
+	--gray-a7: #033bbb40;
+	--gray-a8: #0237ac57;
+	--gray-a9: #00216984;
+	--gray-a10: #001d608e;
+	--gray-a11: #001647ac;
+	--gray-a12: #000a20e9;
+
+	--gray-contrast: #ffffff;
+	--gray-surface: #ffffffcc;
+	--gray-indicator: #7b8cb1;
+	--gray-track: #7b8cb1;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+	@media (color-gamut: p3) {
+		:root,
+		html[data-theme="light"] .radix-themes {
+			--gray-1: oklch(98.8% 0.006 265.8);
+			--gray-2: oklch(97.9% 0.012 265.8);
+			--gray-3: oklch(95.2% 0.018 265.8);
+			--gray-4: oklch(92.7% 0.024 265.8);
+			--gray-5: oklch(90.6% 0.031 265.8);
+			--gray-6: oklch(88.3% 0.037 265.8);
+			--gray-7: oklch(84.9% 0.047 265.8);
+			--gray-8: oklch(78.9% 0.06 265.8);
+			--gray-9: oklch(64.1% 0.06 265.8);
+			--gray-10: oklch(60.5% 0.06 265.8);
+			--gray-11: oklch(49.8% 0.056 265.8);
+			--gray-12: oklch(24.1% 0.04 265.8);
+
+			--gray-a1: color(display-p3 0.976 0.984 1);
+			--gray-a2: color(display-p3 0.02 0.345 1 / 0.036);
+			--gray-a3: color(
+				display-p3 0.004 0.255 0.851 / 0.079
+			);
+			--gray-a4: color(
+				display-p3 0.008 0.239 0.733 / 0.119
+			);
+			--gray-a5: color(display-p3 0.004 0.212 0.71 / 0.15);
+			--gray-a6: color(display-p3 0.008 0.22 0.702 / 0.186);
+			--gray-a7: color(
+				display-p3 0.004 0.188 0.667 / 0.237
+			);
+			--gray-a8: color(
+				display-p3 0.004 0.169 0.627 / 0.327
+			);
+			--gray-a9: color(display-p3 0 0.102 0.376 / 0.504);
+			--gray-a10: color(display-p3 0 0.094 0.341 / 0.544);
+			--gray-a11: color(display-p3 0 0.071 0.251 / 0.662);
+			--gray-a12: color(display-p3 0 0.031 0.11 / 0.906);
+
+			--gray-contrast: #ffffff;
+			--gray-surface: color(display-p3 1 1 1 / 80%);
+			--gray-indicator: oklch(64.1% 0.06 265.8);
+			--gray-track: oklch(64.1% 0.06 265.8);
+		}
+	}
+}
+
+/* > background colour in light mode from --brand-l #fefefe */
+:root,
+html[data-theme="light"],
+html[data-theme="light"] .radix-themes {
+	--color-background: #fefefe;
+	background-color: var(--color-background);
+}
+
+/*  custom dark mode palette
+    ========================
+    generated using: https://www.radix-ui.com/colors/custom
+    with the following base colours:
+    > accent:     --brand-p #22D3EE
+    > gray:       --brand-l #FEFEFE 
+    > background: --brand-d #0F172A
+*/
+
+/* > accent scale in dark mode from --brand-p #22d3ee */
+:root,
+html[data-theme="dark"] .radix-themes {
+	--indigo-1: #0c1a1d;
+	--indigo-2: #101e21;
+	--indigo-3: #002f37;
+	--indigo-4: #003b46;
+	--indigo-5: #004855;
+	--indigo-6: #005766;
+	--indigo-7: #006b7c;
+	--indigo-8: #008499;
+	--indigo-9: #22d3ee;
+	--indigo-10: #00c8e3;
+	--indigo-11: #18cfea;
+	--indigo-12: #aeeefa;
+
+	--indigo-a1: #00d70004;
+	--indigo-a2: #2ff70008;
+	--indigo-a3: #00faa51b;
+	--indigo-a4: #00fddd28;
+	--indigo-a5: #00fff636;
+	--indigo-a6: #00f9ff48;
+	--indigo-a7: #00f0fd63;
+	--indigo-a8: #00e8ff85;
+	--indigo-a9: #24e3ffeb;
+	--indigo-a10: #00e2ffde;
+	--indigo-a11: #19e3ffe6;
+	--indigo-a12: #b1f3fefa;
+
+	--indigo-contrast: #04272d;
+	--indigo-surface: #11251980;
+	--indigo-indicator: #22d3ee;
+	--indigo-track: #22d3ee;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+	@media (color-gamut: p3) {
+		:root,
+		html[data-theme="dark"] .radix-themes {
+			--indigo-1: oklch(20.8% 0.02 211.5);
+			--indigo-2: oklch(22.5% 0.021 211.5);
+			--indigo-3: oklch(27.8% 0.051 211.5);
+			--indigo-4: oklch(31.8% 0.073 211.5);
+			--indigo-5: oklch(36.3% 0.082 211.5);
+			--indigo-6: oklch(41.4% 0.087 211.5);
+			--indigo-7: oklch(47.8% 0.096 211.5);
+			--indigo-8: oklch(55.8% 0.114 211.5);
+			--indigo-9: oklch(79.7% 0.134 211.5);
+			--indigo-10: oklch(76.4% 0.134 211.5);
+			--indigo-11: oklch(78.6% 0.134 211.5);
+			--indigo-12: oklch(90.9% 0.066 211.5);
+
+			--indigo-a1: color(display-p3 0 0.996 0 / 0.013);
+			--indigo-a2: color(display-p3 0.322 0.976 0 / 0.031);
+			--indigo-a3: color(
+				display-p3 0.027 0.992 0.671 / 0.1
+			);
+			--indigo-a4: color(display-p3 0.2 0.996 0.89 / 0.151);
+			--indigo-a5: color(display-p3 0.278 1 0.953 / 0.207);
+			--indigo-a6: color(display-p3 0.325 0.984 1 / 0.276);
+			--indigo-a7: color(display-p3 0.357 0.941 1 / 0.379);
+			--indigo-a8: color(display-p3 0.376 0.914 1 / 0.51);
+			--indigo-a9: color(display-p3 0.431 0.894 1 / 0.902);
+			--indigo-a10: color(display-p3 0.4 0.894 1 / 0.851);
+			--indigo-a11: color(display-p3 0.424 0.89 1 / 0.884);
+			--indigo-a12: color(display-p3 0.757 0.953 1 / 0.968);
+
+			--indigo-contrast: #04272d;
+			--indigo-surface: color(
+				display-p3 0.078 0.141 0.098 / 0.5
+			);
+			--indigo-indicator: oklch(79.7% 0.134 211.5);
+			--indigo-track: oklch(79.7% 0.134 211.5);
+		}
+	}
+}
+
+/* > gray scale in dark mode from --brand-l #fefefe */
+:root,
+html[data-theme="dark"] .radix-themes {
+	--gray: #fefefe;
+	--gray-1: #181818;
+	--gray-2: #1f1f1f;
+	--gray-3: #272727;
+	--gray-4: #2d2d2d;
+	--gray-5: #333;
+	--gray-6: #3b3b3b;
+	--gray-7: #484848;
+	--gray-8: #616161;
+	--gray-9: #6f6f6f;
+	--gray-10: #7c7c7c;
+	--gray-11: #b4b4b4;
+	--gray-12: #eee;
+
+	--gray-a1: #f531000a;
+	--gray-a2: #ff8f0011;
+	--gray-a3: #fbb40d1a;
+	--gray-a4: #ffc74220;
+	--gray-a5: #fbcf6527;
+	--gray-a6: #fedb872f;
+	--gray-a7: #fee4a83d;
+	--gray-a8: #fdeec958;
+	--gray-a9: #fff3d766;
+	--gray-a10: #fff5df74;
+	--gray-a11: #fefbf2b0;
+	--gray-a12: #fffefded;
+
+	--gray-contrast: #ffffff;
+	--gray-surface: rgba(0, 0, 0, 0.05);
+	--gray-indicator: #6f6f6f;
+	--gray-track: #6f6f6f;
+}
+
+@supports (color: color(display-p3 1 1 1)) {
+	@media (color-gamut: p3) {
+		:root,
+		html[data-theme="dark"] .radix-themes {
+			--gray-1: oklch(20.8% 0 0);
+			--gray-2: oklch(23.8% 0 0);
+			--gray-3: oklch(27.2% 0 0);
+			--gray-4: oklch(29.6% 0 0);
+			--gray-5: oklch(32.1% 0 0);
+			--gray-6: oklch(35.4% 0 0);
+			--gray-7: oklch(40.3% 0 0);
+			--gray-8: oklch(49.3% 0 0);
+			--gray-9: oklch(54.1% 0 0);
+			--gray-10: oklch(58.6% 0 0);
+			--gray-11: oklch(77% 0 0);
+			--gray-12: oklch(94.9% 0 0);
+
+			--gray-a1: color(display-p3 0.984 0.224 0 / 0.03);
+			--gray-a2: color(display-p3 1 0.624 0 / 0.059);
+			--gray-a3: color(
+				display-p3 0.996 0.769 0.078 / 0.093
+			);
+			--gray-a4: color(display-p3 1 0.824 0.294 / 0.118);
+			--gray-a5: color(display-p3 1 0.859 0.435 / 0.143);
+			--gray-a6: color(display-p3 1 0.89 0.561 / 0.177);
+			--gray-a7: color(display-p3 1 0.918 0.686 / 0.232);
+			--gray-a8: color(display-p3 1 0.953 0.816 / 0.337);
+			--gray-a9: color(display-p3 1 0.965 0.855 / 0.395);
+			--gray-a10: color(display-p3 1 0.969 0.882 / 0.45);
+			--gray-a11: color(display-p3 1 0.992 0.957 / 0.685);
+			--gray-a12: color(display-p3 1 0.996 0.992 / 0.929);
+
+			--gray-contrast: #ffffff;
+			--gray-surface: color(display-p3 0 0 0 / 5%);
+			--gray-indicator: oklch(54.1% 0 0);
+			--gray-track: oklch(54.1% 0 0);
+		}
+	}
+}
+
+/* > background colour in dark mode from --brand-d #0f172a */
+:root,
+html[data-theme="dark"],
+html[data-theme="dark"] .radix-themes {
+	--color-background: #0f172a;
+	background-color: var(--color-background);
+}
+
+/*  reset custom cursor styles
+    ==========================
+*/
+.radix-themes {
+	--cursor-button: pointer;
+	--cursor-checkbox: pointer;
+	--cursor-disabled: default;
+	--cursor-link: pointer;
+	--cursor-menu-item: pointer;
+	--cursor-radio: pointer;
+	--cursor-slider-thumb: grab;
+	--cursor-slider-thumb-active: grabbing;
+	--cursor-switch: pointer;
+}
+
+html,
+body,
+main {
+	display: grid;
+	max-width: 100%;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+/*  reset custom typography styles
+    ==============================
+*/
+/* font famlies */
+.radix-themes {
+	--default-font-family: "Pixelify Sans Variable", system-ui;
+	--heading-font-family: "IBM Plex Mono", monospace;
+	--code-font-family: "Pixelify Sans Variable", system-ui;
+	--strong-font-family: "Pixelify Sans Variable", system-ui;
+	--em-font-family: "Pixelify Sans Variable", system-ui;
+	--quote-font-family: "Pixelify Sans Variable", system-ui;
+}
+
+/* font weights */
+.radix-themes {
+	--font-weight-light: 200;
+	--font-weight-regular: 300;
+	--font-weight-medium: 600;
+	--font-weight-bold: 800;
+}
+
+/* advanced type settings */
+/* .radix-themes {
+	--heading-font-family: "Untitled Sans", sans-serif;
+	--heading-font-size-adjust: 1.05;
+	--heading-font-style: normal;
+	--heading-leading-trim-start: 0.42em;
+	--heading-leading-trim-end: 0.38em;
+	--heading-letter-spacing: -0.01em;
+} */
