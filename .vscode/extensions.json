@@ -1,7 +1,12 @@
 {
 	"recommendations": [
+		"astro-build.astro-vscode",
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
-		"silvenon.mdx"
-	]
+		"equinusocio.vsc-material-theme-icons",
+		"unifiedjs.vscode-mdx",
+		"zainchen.json",
+		"ms-vscode.powershell",
+		"yoavbls.pretty-ts-errors",
+	],
 }

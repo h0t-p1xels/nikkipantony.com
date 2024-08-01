@@ -1,0 +1,172 @@
+---
+import PageLayout from "../components/templates/PageLayout.astro"
+// import Button from "../components/atoms/Button/Button"
+---
+
+<PageLayout
+	title="nikki PANTONY- digital product designer / developer."
+	desc="desc"
+>
+	<main class="main">
+		<div class="content-container">
+			<h1>
+				<span class="plain-text">Nikki</span>
+				<span class="gradient-text">PANTONY</span>
+			</h1>
+			<p class="job">
+				<span class="open">//</span>digital product designer <span
+					class="slash">/</span
+				> developer <sub class="end"> | </sub>
+			</p>
+			<div class="links-container">
+				<p>follow me...</p>
+				<div class="links">
+					<span class="link">X@</span>
+					<span class="link">Ma</span>
+					<span class="link">Gi</span>
+					<span class="link">Me</span>
+					<span class="link">De</span>
+				</div>
+			</div>
+		</div>
+	</main>
+</PageLayout>
+
+<style>
+	.main {
+		display: grid;
+		width: 100%;
+		height: 100%;
+	}
+
+	h1 {
+		font-family: var(--heading-font-family);
+		font-size: 6.2rem;
+		font-weight: 900;
+		line-height: 1;
+		transform: rotate(359deg);
+		margin: 0 0 0.5rem -1rem;
+	}
+
+	h1 span.gradient-text {
+		position: relative;
+		background: linear-gradient(
+			to right,
+			var(--brand-s),
+			var(--brand-t),
+			var(--brand-p)
+		);
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+		margin-left: -2.4rem;
+	}
+
+	h1 span.gradient-text::before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		background-color: var(--brand-d);
+		border-radius: 0.3rem;
+		width: 106%;
+		height: calc(100% - 1rem);
+		margin: -0.4rem 0 auto -0.5rem;
+	}
+
+	p.job {
+		position: relative;
+		display: flex;
+		align-items: center;
+		color: var(--brand-l);
+		border-radius: 0.3rem;
+		font-size: 1.4rem;
+		margin: 1rem 0 1.4rem 0.4rem;
+		transform: rotate(1deg);
+	}
+
+	p.job span.open {
+		color: var(--brand-s);
+		font-size: 2rem;
+		font-weight: 800;
+		letter-spacing: -0.2rem;
+		margin-right: 0.8rem;
+	}
+
+	p.job span.slash {
+		color: var(--brand-p);
+		font-size: 2rem;
+		font-weight: 800;
+		margin: 0 0.3rem;
+	}
+
+	p.job sub.end {
+		font-size: 2rem;
+		color: var(--brand-t);
+		font-weight: 900;
+		margin: 1.4rem 0.8rem -0.4rem;
+		transform: rotate(90deg);
+	}
+
+	p.job::before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		background-color: var(--brand-d);
+		border-radius: 0.3rem;
+		width: 102%;
+		height: 100%;
+		padding: 0 0 0.2rem 0.2rem;
+		margin: 0 0 0 -1rem;
+	}
+
+	.content-container {
+		display: grid;
+		padding: 20px 20px 60px;
+		margin: auto;
+	}
+
+	.links-container {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+		gap: 1rem;
+		height: min-content;
+		width: 90%;
+		padding: 0;
+		margin: 0;
+		transform: rotate(-1deg);
+	}
+
+	.links {
+		display: flex;
+		justify-content: end;
+		gap: 1rem;
+		padding: 0;
+		margin: 0;
+	}
+
+	span.link {
+		background-color: var(--brand-d);
+		border-radius: 0.3rem;
+		width: 32px;
+		height: 32px;
+		margin: 0.2rem 0.3rem;
+	}
+
+	html[data-theme="dark"] h1 {
+		color: var(--brand-l-4);
+	}
+
+	html[data-theme="dark"] h1 span.gradient-text::before {
+		background-color: var(--brand-l-12);
+		opacity: 0.2;
+	}
+
+	html[data-theme="dark"] p {
+		color: var(--brand-l-4);
+	}
+
+	html[data-theme="dark"] p::before {
+		background-color: var(--brand-l-12);
+		opacity: 0.2;
+	}
+</style>

@@ -1,7 +1,6 @@
 {
 	"window.zoomLevel": 1,
 	"workbench.colorTheme": "Visual Studio Dark",
-	"html.format.endWithNewline": true,
 	"html.format.indentInnerHtml": true,
 	"files.associations": {
 		"*.js,*.jsx,.tsx": "javascriptreact"
@@ -10,6 +9,7 @@
 	"editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
 	"editor.tabSize": 2,
+	"prettier.enable": true,
 	"prettier.trailingComma": "none",
 	"prettier.arrowParens": "avoid",
 	"prettier.printWidth": 60,
@@ -27,5 +27,8 @@
 			"path": "C:\\Program Files\\Git\\bin\\bash.exe",
 			"args": []
 		}
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
 	}
 }
