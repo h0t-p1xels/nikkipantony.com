@@ -1,12 +1,9 @@
 ---
-import PageLayout from "../components/templates/PageLayout.astro"
+import Layout from "../components/templates/Layout.astro"
 import { Icon } from "astro-icon/components"
 ---
 
-<PageLayout
-	title="nikki PANTONY- digital product designer / developer."
-	desc="desc"
->
+<Layout>
 	<main class="main">
 		<div class="content-container">
 			<h1>
@@ -16,11 +13,20 @@ import { Icon } from "astro-icon/components"
 			<p class="job">
 				<span class="open">//</span>digital product designer <span
 					class="slash">/</span
-				> developer <sub class="end"> | </sub>
+				> developer <span class="symbol">@</span>
+				<a
+					href="https://weareseed.studio"
+					target="_blank"
+					rel="noopener">weareseed.studio</a
+				>
+				<sub class="end"> | </sub>
 			</p>
 			<div class="links-container">
 				<p>
-					find me <a href="" target="_blank" rel="noopener"
+					find me <a
+						href="https://x.com/h0t_p1xels"
+						target="_blank"
+						rel="noopener"
 						><span class="social-handle"
 							><span class="symbol">@</span>h0t_p1xels</span
 						></a
@@ -28,42 +34,89 @@ import { Icon } from "astro-icon/components"
 				</p>
 				<ul class="links">
 					<li class="link">
-						<a href="" target="_blank" rel="noopener"
-							><Icon name="ph:x-logo-bold" /></a
+						<a
+							href="https://x.com/h0t_p1xels"
+							target="_blank"
+							rel="noopener"
+							><span class="sr-only">x.com</span><Icon
+								name="ph:x-logo-bold"
+							/></a
 						>
 					</li>
 					<li class="link">
-						<a href="" target="_blank" rel="noopener"
-							><Icon name="ph:linkedin-logo-bold" /></a
+						<a
+							href="https://www.linkedin.com/in/nikkipantony"
+							target="_blank"
+							rel="noopener"
+							><span class="sr-only">linkedin</span><Icon
+								name="ph:linkedin-logo-bold"
+							/></a
 						>
 					</li>
 					<li class="link">
-						<a href="" target="_blank" rel="noopener"
-							><Icon name="ph:mastodon-logo-bold" /></a
+						<a
+							href="https://me.dm/@h0t_p1xels"
+							target="_blank"
+							rel="noopener"
+							><span class="sr-only">mastodon</span><Icon
+								name="ph:mastodon-logo-bold"
+							/></a
 						>
 					</li>
 					<li class="link">
-						<a href="" target="_blank" rel="noopener"
-							><Icon name="ph:github-logo-bold" /></a
+						<a
+							href="https://github.com/h0t-p1xels"
+							target="_blank"
+							rel="noopener"
+							><span class="sr-only">github</span><Icon
+								name="ph:github-logo-bold"
+							/></a
 						>
 					</li>
 					<li class="link">
-						<a href="" target="_blank" rel="noopener"
-							><Icon name="ph:medium-logo-bold" /></a
+						<a
+							href="https://medium.com/@h0t-p1xels"
+							target="_blank"
+							rel="noopener"
+							><span class="sr-only">medium</span><Icon
+								name="ph:medium-logo-bold"
+							/></a
 						>
 					</li>
 					<li class="link">
-						<a href="" target="_blank" rel="noopener"
-							><Icon name="ph:dev-to-logo-bold" /></a
+						<a
+							href="https://dev.to/h0t_p1xels"
+							target="_blank"
+							rel="noopener"
+							><span class="sr-only">dev.to</span><Icon
+								name="ph:dev-to-logo-bold"
+							/></a
 						>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</main>
-</PageLayout>
+</Layout>
 
 <style is:global>
+	html {
+		font-size: 16px;
+	}
+
+	/* TODO make design responsive so it is usable on smaller screen sizes */
+
+	/* screen reader only utility class */
+	.sr-only:not(:focus):not(:active) {
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+
 	/* main page styling */
 	.main {
 		display: grid;
@@ -74,7 +127,8 @@ import { Icon } from "astro-icon/components"
 	/* main content container */
 	.content-container {
 		display: grid;
-		padding: 20px 20px 60px;
+		min-width: max-content;
+		padding: 1rem 1rem 3rem;
 		margin: auto;
 	}
 
@@ -120,7 +174,8 @@ import { Icon } from "astro-icon/components"
 		align-items: center;
 		color: var(--brand-l);
 		border-radius: 0.3rem;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
+		font-weight: 500;
 		letter-spacing: 0.05rem;
 		margin: 1rem 0 2rem 0.4rem;
 		transform: rotate(1deg);
@@ -128,23 +183,48 @@ import { Icon } from "astro-icon/components"
 
 	p.job span.open {
 		color: var(--brand-s);
-		font-size: 2rem;
-		font-weight: 800;
+		font-size: 1.8rem;
+		font-weight: 500;
 		letter-spacing: -0.2rem;
 		margin-right: 0.8rem;
 	}
 
 	p.job span.slash {
 		color: var(--brand-p);
-		font-size: 2rem;
-		font-weight: 800;
+		font-size: 1.8rem;
+		font-weight: 700;
 		margin: 0 0.3rem;
+	}
+
+	p.job span.symbol {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1rem;
+		font-weight: 700;
+		margin: 0 0.4rem;
+	}
+
+	p.job a,
+	p.job a:link,
+	p.job a:active,
+	p.job a:visited,
+	p.job a:any-link {
+		color: var(--brand-l);
+		font-size: 1.2rem;
+		font-weight: 500;
+		letter-spacing: 0.05rem;
+		text-decoration: none;
+		transition: color 0.3s ease-in-out;
+	}
+
+	p.job a:hover,
+	p.job a:focus-visible {
+		color: var(--brand-s);
 	}
 
 	p.job sub.end {
 		font-size: 2rem;
 		color: var(--brand-t);
-		font-weight: 900;
+		font-weight: 700;
 		margin: 1.4rem 0.8rem -0.4rem;
 		transform: rotate(90deg);
 	}
@@ -338,10 +418,10 @@ import { Icon } from "astro-icon/components"
 
 	footer p small strong span.symbol {
 		font-family: Arial, Helvetica, sans-serif;
-		font-size: 1.4em;
+		font-size: 1.2rem;
 		font-weight: 900;
 		padding: 0;
-		margin: 0 0.3em 0 0;
+		margin: 0 0.3rem 0.15rem 0;
 	}
 
 	/* dark mode styling */
