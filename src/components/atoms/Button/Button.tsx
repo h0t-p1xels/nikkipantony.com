@@ -2,11 +2,10 @@ import { Button as RadixButton } from "@radix-ui/themes"
 import "./Button.css"
 
 type ButtonProps = {
-	icon: string
 	children?: string
 }
 
-const Button = ({ icon: children }: ButtonProps) => {
+const Button = ({ children }: ButtonProps) => {
 	return (
 		<RadixButton
 			type="button"
