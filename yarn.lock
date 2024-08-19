@@ -1274,10 +1274,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-mono/-/ibm-plex-mono-4.5.12.tgz#d33bf0d7bc39630cc46cd4e91ac8f4d5c889d720"
   integrity sha512-ysF4GfudxLgDnpycjzrHFKqsEMOYHt0IUJN6dRECg6YLvVggLMj/SPh+w0QWjdgXkIbjqIbcho0O5mNcLCJMiQ==
 
-"@fontsource/lato@^4.5.10":
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-4.5.10.tgz#1ab3d33282e605886e4a8b4c32b1f230a4cb5ea6"
-  integrity sha512-2hYR6r661Cq9B8zugtu6yxuOKqrVhAgfOSaPSq8XoxbC4ebsl0KOTy/vPoP+9U7JuQVLfrmikirW4a9Z0nDUug==
+"@fontsource/lato@^5.0.22":
+  version "5.0.22"
+  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-5.0.22.tgz#3b3c64eda10de3f94c724dbf13306c33ecff59b2"
+  integrity sha512-Q0ok83IXWY5DG3pp1KLxzpq7ax5ys7/B/huKl2QtACiTFfsqFjy8n4B709NdK/Vd/CO3mYFBwg9cdYQtKGXiGQ==
 
 "@fontsource/raleway@^4.5.11":
   version "4.5.11"
