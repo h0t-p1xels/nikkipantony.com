@@ -5,15 +5,26 @@ import react from "@astrojs/react";
 // icon sets: https://icon-sets.iconify.design/?category=General&license=MIT&attribution=false
 import icon from "astro-icon";
 
+import tailwind from "@astrojs/tailwind";
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), icon({
     include: {
-      gg: ["*"], // include full css.gg icon set, please remember to install the icon set first eg: `npm i -D @iconify-json/gg`
+      gg: ["*"],
+      // include full css.gg icon set, please remember to install the icon set first eg: `npm i -D @iconify-json/gg`
       // to include only specific icons use this syntax instead `gg: ["account"]` where `gg` is the set and `account` is the name of the icon
       // for all available icon sets available see: https://icon-sets.iconify.design
       ph: ["*"]
     }
-  }),
+  }), tailwind(
+    {
+      // Example: Allow writing nested CSS declarations
+      // alongside Tailwind's syntax
+      // https://docs.astro.build/en/guides/integrations-guide/tailwind/#nesting
+      // https://tailwindcss.com/docs/using-with-preprocessors#nesting
+      // nesting: true,
+      applyBaseStyles: false,
+    }),
   ],
 });
