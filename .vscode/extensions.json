@@ -8,5 +8,6 @@
 		"zainchen.json",
 		"ms-vscode.powershell",
 		"yoavbls.pretty-ts-errors",
+		"bradlc.vscode-tailwindcss",
 	],
 }
