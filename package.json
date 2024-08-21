@@ -11,19 +11,24 @@
 		"preview": "astro preview"
 	},
 	"dependencies": {
-		"@astrojs/react": "^3.6.0",
+		"@astrojs/react": "^3.6.2",
+		"@astrojs/tailwind": "^5.1.0",
 		"@fontsource-variable/pixelify-sans": "^5.0.3",
 		"@fontsource/ibm-plex-mono": "^5.0.13",
-		"@radix-ui/colors": "^3.0.0",
-		"@radix-ui/react-switch": "^1.1.0",
-		"@radix-ui/themes": "^3.1.1",
+		"@radix-ui/react-slot": "^1.1.0",
 		"@types/react": "^18.3.3",
 		"@types/react-dom": "^18.3.0",
-		"astro": "^4.12.2",
+		"astro": "^4.14.3",
 		"astro-icon": "^1.1.0",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.424.0",
 		"prop-types": "^15.8.1",
 		"react": "^18.3.1",
-		"react-dom": "^18.3.1"
+		"react-dom": "^18.3.1",
+		"tailwind-merge": "^2.4.0",
+		"tailwindcss": "^3.4.7",
+		"tailwindcss-animate": "^1.0.7"
 	},
 	"devDependencies": {
 		"@iconify-json/gg": "^1.1.9",
