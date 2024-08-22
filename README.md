@@ -1,5 +1,5 @@
 # Nikki Pantony
 
-Personal [MVP] landing page website with basic info and links.
+Personal website (MVP v2.0.0).
 
 [nikkipantony.com](https://nikkipantony.com)
