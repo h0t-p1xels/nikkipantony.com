@@ -1,38 +1,38 @@
 {
-	"name": "nikkipantony",
-	"description": "nikki pantony - digital product designer / developer",
+	"name": "nikkipantony.com",
+	"description": "Nikki Pantony - digital product designer & developer.",
 	"type": "module",
 	"version": "2.0.0",
 	"scripts": {
-		"start": "astro dev",
-		"astro": "astro",
-		"dev": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview"
+		"open:dev": "astro dev --port 8080 --open /",
+		"build:prod": "astro check && astro build",
+		"open:prod": "astro preview --port 4321 --open /",
+		"list:preferences": "astro preferences list",
+		"enable:toolbar": "astro preferences enable devToolbar",
+		"disable:toolbar": "astro preferences disable devToolbar",
+		"enable:updates": "astro preferences enable checkUpdates",
+		"disable:updates": "astro preferences disable checkUpdates"
 	},
 	"dependencies": {
+		"@astrojs/check": "^0.9.3",
 		"@astrojs/react": "^3.6.2",
 		"@astrojs/tailwind": "^5.1.0",
-		"@fontsource-variable/pixelify-sans": "^5.0.3",
-		"@fontsource/ibm-plex-mono": "^5.0.13",
+		"@radix-ui/react-dropdown-menu": "^2.1.1",
 		"@radix-ui/react-slot": "^1.1.0",
 		"@types/react": "^18.3.3",
 		"@types/react-dom": "^18.3.0",
 		"astro": "^4.14.3",
-		"astro-icon": "^1.1.0",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.1",
-		"lucide-react": "^0.424.0",
-		"prop-types": "^15.8.1",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
+		"react-icons": "^5.3.0",
 		"tailwind-merge": "^2.4.0",
 		"tailwindcss": "^3.4.7",
-		"tailwindcss-animate": "^1.0.7"
+		"tailwindcss-animate": "^1.0.7",
+		"typescript": "^5.5.4"
 	},
 	"devDependencies": {
-		"@iconify-json/gg": "^1.1.9",
-		"@iconify-json/ph": "^1.1.13",
-		"@iconify/json": "^2.2.233"
+		"astro-webmanifest": "^1.0.0"
 	}
 }
