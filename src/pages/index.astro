@@ -1,0 +1,317 @@
+---
+import "@/components/base/globals.css"
+import { ModeToggle } from "@/components/modules/modeToggle"
+import {
+	FaXTwitter,
+	FaLinkedinIn,
+	FaMedium,
+	FaGithub
+} from "react-icons/fa6"
+import { PiDevToLogo } from "react-icons/pi"
+---
+
+<script is:inline>
+	const getThemePreference = () => {
+		if (
+			typeof localStorage !== "undefined" &&
+			localStorage.getItem("theme")
+		) {
+			return localStorage.getItem("theme")
+		}
+		return window.matchMedia("(prefers-color-scheme: dark)")
+			.matches
+			? "dark"
+			: "light"
+	}
+	const isDark = getThemePreference() === "dark"
+	document.documentElement.classList[
+		isDark ? "add" : "remove"
+	]("dark")
+
+	if (typeof localStorage !== "undefined") {
+		const observer = new MutationObserver(() => {
+			const isDark =
+				document.documentElement.classList.contains("dark")
+			localStorage.setItem(
+				"theme",
+				isDark ? "dark" : "light"
+			)
+		})
+		observer.observe(document.documentElement, {
+			attributes: true,
+			attributeFilter: ["class"]
+		})
+	}
+</script>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="/favicon.svg"
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>
+			Nikki Pantony - digital product designer & developer
+		</title>
+		<meta
+			name="description"
+			content="digital product designer & developer at weareseed.studio based in Whitley Bay,
+      England, UK."
+		/>
+		<meta
+			property="og:title"
+			content="Nikki Pantony - digital product designer & developer"
+		/>
+		<meta property="og:site_name" content="Nikki Pantony" />
+		<meta property="og:type" content="profile" />
+		<meta
+			property="og:url"
+			content="https://nikkipantony.com"
+		/>
+		<meta property="og:locale" content="en_UK" />
+		<link rel="canonical" href="https://nikkipantony.com" />
+		<meta
+			property="og:url"
+			content="https://nikkipantony.com"
+		/>
+		<meta
+			property="og:image"
+			content="/thumbnail_1200x630.png"
+		/>
+		<meta
+			property="og:image:secure_url"
+			content="/thumbnail_1200x630.png"
+		/>
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:type" content="image/png" />
+		<meta property="profile:first_name" content="Nikki" />
+		<meta property="profile:last_name" content="Pantony" />
+		<meta property="profile:gender" content="female" />
+		<meta
+			property="profile:username"
+			content="h0t_p1xels"
+		/>
+		<meta name="twitter:site" content="@h0t_p1xels" />
+		<meta name="twitter:creator" content="@h0t_p1xels" />
+		<meta
+			name="twitter:title"
+			content="Nikki Pantony - digital product designer & developer"
+		/>
+		<meta
+			name="twitter:description"
+			content="digital product designer & developer at weareseed.studio based in Whitley Bay,
+      England, UK."
+		/>
+		<meta
+			name="twitter:image"
+			content="/thumbnail_1200x630.png"
+		/>
+		<meta
+			name="twitter:image:alt"
+			content="preview thumbnail of the personal website of Nikki Pantony, nikkipantony.com"
+		/>
+	</head>
+	<body>
+		<div
+			class="grid align-middle content-center relative h-full w-full min-h-screen min-w-[320px] bg-ally-light-50 text-ally-key-black-950 dark:bg-[#000013] dark:text-ally-light-300 p-1"
+		>
+			<div
+				class="absolute mt-0 mr-0 ml-0 mb-auto w-full flex flex-row-reverse px-6 py-4"
+			>
+				<ModeToggle client:load />
+			</div>
+			<main
+				class="flex flex-col w-auto md:w-full mt-0 mr-1 mb-0 ml-1 md:m-auto"
+			>
+				<h1
+					class="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl min-w-[320px] font-black leading-none tracking-[0.01em] rotate-[359deg] mt-0 mr-auto mb-12 ml-auto"
+				>
+					<span class="pr-3 font-normal">NiKKi</span>
+
+					<span
+						class="relative gradient-text tracking-[0.05em] bg-gradient-to-r from-ally-magenta-400 via-ally-yellow-400 to-ally-cyan-400 before:contents-[''] before:z-[-1] before:absolute before:bg-ally-key-black-950 before:rounded-md before:h-fit"
+						>PANTONY</span
+					>
+				</h1>
+				<p
+					class="relative text-sm sm:text-base lg:text-xl text-center text-ally-light-50 dark:text-ally-light-300 rounded-md font-semibold w-fit max-w-[87%] bg-ally-key-black-950 rotate-1 p-4 mt-0 mr-auto mb-6 ml-auto xs:pr-10 md:mt-4 md:mb-8"
+				>
+					<span
+						class="text-ally-magenta-600 font-medium mr-2"
+						>//</span
+					>digital product designer <span
+						class="text-ally-cyan-400 font-medium mr-1 ml-1"
+						>/</span
+					> developer <span
+						class="mt-auto mr-1 mb-auto ml-1">@</span
+					>
+					<a
+						class="border-b-2 border-ally-key-black-950 hover:border-ally-magenta-600"
+						href="https://weareseed.studio"
+						target="_blank"
+						rel="noopener">weareseed.studio</a
+					>
+					<sub
+						class="absolute text-ally-yellow-400 rotate-[90deg] ml-[1rem] mb-[1.5rem] font-black"
+					>
+						|
+					</sub>
+				</p>
+				<div
+					class="flex justify-center align-middle w-full"
+				>
+					<ul class="flex gap-4 m-auto">
+						<li class="link">
+							<a
+								href="https://x.com/h0t_p1xels"
+								target="_blank"
+								rel="noopener"
+								><span class="sr-only"
+									>follow me on twitter</span
+								><FaXTwitter className="x" /></a
+							>
+						</li>
+						<li class="link">
+							<a
+								href="https://www.linkedin.com/in/nikkipantony"
+								target="_blank"
+								rel="noopener"
+								><span class="sr-only"
+									>connect with me on linkedin</span
+								><FaLinkedinIn className="in" /></a
+							>
+						</li>
+						<li class="link">
+							<a
+								href="https://github.com/h0t-p1xels"
+								target="_blank"
+								rel="noopener"
+								><span class="sr-only"
+									>view my github profile</span
+								><FaGithub className="gh" /></a
+							>
+						</li>
+						<li class="link">
+							<a
+								href="https://medium.com/@h0t-p1xels"
+								target="_blank"
+								rel="noopener"
+								><span class="sr-only"
+									>read my articles on medium</span
+								><FaMedium className="me" /></a
+							>
+						</li>
+						<li class="link">
+							<a
+								href="https://dev.to/h0t_p1xels"
+								target="_blank"
+								rel="noopener"
+								><span class="sr-only"
+									>read my articles on dev.to</span
+								><PiDevToLogo
+									className="w-[2.5rem] h-[2.5rem] dev"
+								/></a
+							>
+						</li>
+					</ul>
+				</div>
+			</main>
+		</div>
+		<footer>
+			<p
+				class="text-ally-key-black-950 dark:text-ally-light-300"
+			>
+				<small
+					><strong
+						><span>&copy;</span>
+						{new Date().getFullYear()} \ v2.0.0</strong
+					></small
+				>
+			</p>
+		</footer>
+	</body>
+</html>
+
+<style is:global>
+	h1 span.gradient-text {
+		-webkit-text-fill-color: transparent;
+		-webkit-background-clip: text;
+	}
+
+	h1 span.gradient-text::before {
+		width: calc(100% + 2rem);
+		height: 100%;
+		margin: -2% auto 0 -1rem;
+	}
+
+	li {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+	}
+
+	p a:hover,
+	p a:focus,
+	p a:focus-visible {
+		transition: border 0.2s ease-in-out;
+	}
+
+	li a svg {
+		width: 2rem;
+		height: 2rem;
+		margin: auto 0;
+	}
+
+	li a:hover svg,
+	li a:focus svg,
+	li a:focus-visible svg {
+		transition: color 0.2s ease-in-out;
+
+		&.x {
+			color: #ff5fac;
+		}
+
+		&.in {
+			color: #ff985f;
+		}
+
+		&.gh {
+			color: #ffd50c;
+		}
+
+		&.me {
+			color: #b6d556;
+		}
+
+		&.dev {
+			color: #2bd3e4;
+		}
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		display: flex;
+		justify-content: center;
+		padding: 0.75rem;
+	}
+
+	footer p small strong {
+		display: flex;
+		align-items: center;
+	}
+
+	footer p small strong span {
+		font-size: 1rem;
+		font-weight: 800;
+		padding: 0;
+		margin: 0 0.2rem;
+	}
+</style>

@@ -1,62 +1,22 @@
 {
-	"window.zoomLevel": 1,
-	"powermode.enabled": true,
-	"workbench.colorTheme": "Visual Studio Dark",
-	"workbench.iconTheme": "material-icon-theme",
-	"material-icon-theme.folders.theme": "specific",
-	"material-icon-theme.activeIconPack": "react",
-	"material-icon-theme.hidesExplorerArrows": true,
-	"material-icon-theme.showUpdateMessage": true,
-	"material-icon-theme.folders.color": "#ffd700",
-	"material-icon-theme.folders.associations": {
-		".cache": "Database",
-		".storybook": "Storybook",
-		".vscode": "Vscode",
-		".yarn": "Yarn",
-		"node_modules": "Node",
-		"public": "Public",
-		"_templates": "Core",
-		"atom": "Core",
-		"molecule": "Core",
-		"organism": "Core",
-		"template": "Core",
-		"page": "Core",
-		"guide": "Core",
-		"0_Guides": "Lib",
-		"0_Tokens": "Theme",
-		"1_Typography": "Font",
-		"2_Atoms": "Cluster",
-		"3_Molecules": "App",
-		"4_Organisms": "Components",
-		"5_Templates": "Layout",
-		"6_Pages": "Content",
-		"7_Assets": "Images",
-		"8_utilities": "Pipe",
-		"9_styles": "Sass"
-	},
-	"material-icon-theme.files.associations": {
-		"*.js": "React",
-		"*.md": "Markdown",
-		"*.mdx": "Mdx",
-		"*.t": "Xml",
-		"favicon.png": "Favicon",
-		".all-contributorsrc": "Authors"
-	},
-	"scss.validate": true,
-	"scss.lint.duplicateProperties": "warning",
-	"scss.lint.unknownProperties": "warning",
-	"scss.lint.unknownAtRules": "warning",
-	"scss.lint.emptyRules": "warning",
-	"scss.lint.important": "ignore",
-	"html.format.endWithNewline": true,
+	"window.zoomLevel": 1.1,
+	"workbench.colorTheme": "Fallout Pip Boy Retrowave dark",
+	"npm.packageManager": "npm",
 	"html.format.indentInnerHtml": true,
+	"astro.content-intellisense": true,
+	"typescript.inlayHints.parameterNames.enabled": "all",
 	"files.associations": {
-		"*.js": "javascriptreact"
+		"*.js,*.jsx,*.tsx,*.mjs": "javascriptreact",
+		"*.css": "tailwindcss",
+		"*.astro": "astro",
 	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
 	"editor.tabSize": 2,
+	"editor.cursorBlinking": "solid",
+	"editor.cursorWidth": 6,
+	"prettier.enable": true,
 	"prettier.trailingComma": "none",
 	"prettier.arrowParens": "avoid",
 	"prettier.printWidth": 60,
@@ -65,11 +25,8 @@
 	"emmet.includeLanguages": {
 		"javascript": "javascriptreact"
 	},
-	"mdx-preview.preview.useWhiteBackground": true,
 	"editor.suggestSelection": "first",
-	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	"git.autofetch": true,
-	"material-icon-theme.languages.associations": {},
 	"terminal.integrated.tabs.enabled": true,
 	"terminal.integrated.defaultProfile.windows": "C:\\Program Files\\Git\\bin\\bash.exe (migrated)",
 	"terminal.integrated.profiles.windows": {
@@ -78,21 +35,37 @@
 			"args": []
 		}
 	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[mjs]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
+	},
 	"cSpell.words": [
-		"ADDYOURTRAKINGID",
-		"archivo",
-		"atomicdesign",
-		"bradfrost",
-		"designsystemsrepo",
-		"fontsource",
-		"getbem",
-		"hygen",
-		"jamstack",
-		"lato",
-		"prismjs",
-		"raleway",
-		"sbdocs",
-		"vdvg",
+		"astro",
+		"astrojs",
+		"clsx",
+		"iconify",
+		"lucide",
+		"nikkipantony",
+		"Pantony",
+		"prefs",
+		"tailwindcss",
+		"tsconfigs",
 		"weareseed"
-	]
+	],
+	"editor.linkedEditing": true,
+	"codesnap.showWindowControls": false,
+	"codesnap.target": "window",
+	"codesnap.backgroundColor": "#000013",
+	"[svg]": {
+		"editor.defaultFormatter": "jock.svg"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"terminal.integrated.fontSize": 14
 }
