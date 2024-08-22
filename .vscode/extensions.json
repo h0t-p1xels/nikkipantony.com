@@ -1,13 +1,27 @@
 {
-	"recommendations": [
-		"astro-build.astro-vscode",
-		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode",
-		"equinusocio.vsc-material-theme-icons",
-		"unifiedjs.vscode-mdx",
-		"zainchen.json",
-		"ms-vscode.powershell",
-		"yoavbls.pretty-ts-errors",
-		"bradlc.vscode-tailwindcss",
-	],
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "zainchen.json",
+    "yoavbls.pretty-ts-errors",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag",
+    "streetsidesoftware.code-spell-checker",
+    "adpyke.codesnap",
+    "mikestead.dotenv",
+    "tamasfe.even-better-toml",
+    "figma.figma-vscode-extension",
+    "visualstudioexptteam.vscodeintellicode",
+    "visualstudioexptteam.intellicode-api-usage-examples",
+    "zignd.html-css-class-completion",
+    "pkief.material-icon-theme",
+    "christian-kohler.npm-intellisense",
+    "christian-kohler.path-intellisense",
+    "jock.svg",
+    "gruntfuggly.todo-tree",
+    "github.copilot",
+    "xyztoshi.pipboy-retrowave"
+  ],
+  "unwantedRecommendations": []
 }
