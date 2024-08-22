@@ -1,30 +1,27 @@
-import { defineConfig } from 'astro/config';
-import react from "@astrojs/react";
+import { defineConfig } from "astro/config"
+import tailwind from "@astrojs/tailwind"
+import react from "@astrojs/react"
+import webmanifest from "astro-webmanifest"
 
-// docs: https://www.astroicon.dev/getting-started/
-// icon sets: https://icon-sets.iconify.design/?category=General&license=MIT&attribution=false
-import icon from "astro-icon";
-
-import tailwind from "@astrojs/tailwind";
-
-// https://astro.build/config
+// docs: https://astro.build/config
 export default defineConfig({
-  integrations: [react(), icon({
-    include: {
-      gg: ["*"],
-      // include full css.gg icon set, please remember to install the icon set first eg: `npm i -D @iconify-json/gg`
-      // to include only specific icons use this syntax instead `gg: ["account"]` where `gg` is the set and `account` is the name of the icon
-      // for all available icon sets available see: https://icon-sets.iconify.design
-      ph: ["*"]
-    }
-  }), tailwind(
-    {
-      // Example: Allow writing nested CSS declarations
-      // alongside Tailwind's syntax
-      // https://docs.astro.build/en/guides/integrations-guide/tailwind/#nesting
-      // https://tailwindcss.com/docs/using-with-preprocessors#nesting
-      // nesting: true,
-      applyBaseStyles: false,
-    }),
-  ],
-});
+	integrations: [
+		tailwind({
+			applyBaseStyles: true,
+			nesting: true
+		}),
+		react(),
+		webmanifest({
+			// docs: https://github.com/alextim/astro-lib/tree/main/packages/astro-webmanifest#readme
+			name: "Nikki Pantony", // required
+			icon: "./public/favicon.svg", // Favicon file name using automatic icon generation mode
+			short_name: "Nikki Pantony",
+			description:
+				"digital product designer & developer at weareseed.studio based in Whitley Bay, England, UK.",
+			start_url: "/", // index
+			theme_color: "#fefefe", // ally-light-50
+			background_color: "#0f172a", // ally-key-black-950
+			display: "standalone"
+		})
+	]
+})
