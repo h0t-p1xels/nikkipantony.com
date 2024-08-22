@@ -1,14 +1,21 @@
 {
-	"window.zoomLevel": 1,
-	"workbench.colorTheme": "Visual Studio Dark",
+	"window.zoomLevel": 1.1,
+	"workbench.colorTheme": "Fallout Pip Boy Retrowave dark",
+	"npm.packageManager": "npm",
 	"html.format.indentInnerHtml": true,
+	"astro.content-intellisense": true,
+	"typescript.inlayHints.parameterNames.enabled": "all",
 	"files.associations": {
-		"*.js,*.jsx,.tsx": "javascriptreact"
+		"*.js,*.jsx,*.tsx,*.mjs": "javascriptreact",
+		"*.css": "tailwindcss",
+		"*.astro": "astro",
 	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
 	"editor.tabSize": 2,
+	"editor.cursorBlinking": "solid",
+	"editor.cursorWidth": 6,
 	"prettier.enable": true,
 	"prettier.trailingComma": "none",
 	"prettier.arrowParens": "avoid",
@@ -30,5 +37,35 @@
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
-	}
+	},
+	"[mjs]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
+	},
+	"cSpell.words": [
+		"astro",
+		"astrojs",
+		"clsx",
+		"iconify",
+		"lucide",
+		"nikkipantony",
+		"Pantony",
+		"prefs",
+		"tailwindcss",
+		"tsconfigs",
+		"weareseed"
+	],
+	"editor.linkedEditing": true,
+	"codesnap.showWindowControls": false,
+	"codesnap.target": "window",
+	"codesnap.backgroundColor": "#000013",
+	"[svg]": {
+		"editor.defaultFormatter": "jock.svg"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"terminal.integrated.fontSize": 14
 }
